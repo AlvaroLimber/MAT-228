@@ -1,24 +1,24 @@
 {
-    "id": "818B683F",
-    "path": "~/GitHub/EST-145/index.Rmd",
+    "id": "C3A77E4D",
+    "path": "~/GitHub/MAT-228/index.Rmd",
     "project_path": "index.Rmd",
     "type": "r_markdown",
-    "hash": "1179575007",
+    "hash": "0",
     "contents": "",
-    "dirty": false,
-    "created": 1611240070093.0,
+    "dirty": true,
+    "created": 1613648269736.0,
     "source_on_save": false,
     "relative_order": 1,
     "properties": {
-        "cursorPosition": "57,7",
-        "scrollLine": "40"
+        "cursorPosition": "55,0",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1611241966,
+    "lastKnownWriteTime": 1613585102,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1611241966910,
+    "last_content_update": 1613671097828,
     "read_only": false,
     "read_only_alternatives": []
 }

@@ -1,14 +1,14 @@
 --- 
-title: "Estadística II"
-subtitle: "EST-145"
+title: "Estadística Social"
+subtitle: "MAT-228"
 author: "Alvaro Chirino Gutierrez"
-description: "Este libro esta destinado a la materia de Estadística II de la carrera de Estadística de la Universidad Mayor de San Andres."
+description: "Este libro esta destinado a la materia de Estadística Social de la carrera de Trabajo Social de la Universidad Mayor de San Andres."
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 output: bookdown::gitbook
 documentclass: book
 graphics: yes
-github-repo: alvarolimber/EST-145
+github-repo: alvarolimber/EST-228
 bibliography: book.bib
 nocite: '@*'
 pandoc_args: ["-Fpandoc-crossref"]
@@ -24,18 +24,16 @@ knitr::include_graphics('images/cover.jpg', dpi = NA)
 
 ## Audiencia  {-}
 
-El libro fue diseñado originalmente para los estudiantes de la materia de Estadística II, una materia del pregrado de la carrera de Informática de la Universidad Mayor de San Ándres.
+El libro fue diseñado originalmente para los estudiantes de la materia de Estadística Social, una materia del pregrado de la carrera de Trabajo Social de la Universidad Mayor de San Ándres.
 
 ## Estructura del libro  {-}
 
 El libro incluye 6 capítulos, estos son:
 
-1. Distribuciones de probabilidad bivariada
-2. Distribuciones muestrales
-3. Distribuciones Chi cuadrado, t-student y Fisher
-4. Estimación puntual de parámetros
-5. Estimación de parámetros por intervalos de confianza
-6. Pruebas de hipótesis
+1. Introducción a la Estadística
+2. Estadística descriptiva
+3. Diseño y desarrollo de encuestas 
+4. Inferencia
 
 
 ## Software y acuerdos {-}
@@ -55,4 +53,3 @@ Estas bases de datos se encuentran disponibles en formato $.RData$ en el reposit
 
 ## Agradecimiento  {-}
 
-Sarndal

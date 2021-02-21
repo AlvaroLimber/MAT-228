@@ -1,0 +1,45 @@
+# Introducción a la Estadística y la importancia para la parte Social
+
+## Población
+Un conjunto de elementos, este conjunto lo representaremos con $U$ y sus elementos los denotaremos por $u$. La población puede ser finita o infinita, para la parte social se trabaja normalmente con poblaciones finitas, donde denotaremos su tamaño por $N$
+
+$$U=\{u_1,u_2,u_3,\ldots,u_i,\ldots,u_N \}$$
+Es importante al definir una población de estudio, especificar la cobertura espacial, temporal de esta y temática.
+
+Ejemplos,
+
+  * Las personas que viven en Bolivia
+  * Los vendedores en el prado de la ciudad de La Paz 
+  * Los venezolanos migrantes en Santa Cruz
+  * Las mujeres victimas de violencia en el barrio de Cota Cota
+  * Los/las niños/as que trabajan en la calle en Bolivia
+  * Los productos que conforman la canasta familiar en Bolivia
+  * Adultos mayores en situación de calle en la ciudad de Oruro
+  * Mujeres en condición de trata y tráfico en La Paz
+  * Bebedores en las calles de Villa Fatima
+  * Perros callejeros en El Alto
+  
+## Unidades elementales
+Son las unidades mínimas o más pequeñas dentro de una población, también, son llamdadas unidades de análisis. Estas unidades contienen información dentro de ellas, a estas las llamamos variables. 
+
+$$u_i=\{X_1, X_2, \ldots,X_j,\ldots, X_p \}$$
+Las variables son características de interés de las unidades de análisis.
+
+
+  * Persona que vive en Bolivia; Edad, sexo, años de educación, ocupado o no, área donde vive, etc
+  * Mujer victima de violencia; edad, número de hijos, nivel de educación, condición económica, dirección.
+  * Adulto mayor en situación de calle; cuenta con familiares, estado económico, estado de salud, sexo, edad, vocación. 
+  
+Estas características de las unidades elementales, no siempre son medibles y la forma de obtenerlas puede variar dependiendo el método para conocer estas variables.
+
+
+## Estadística
+
+> "La estadística es la gramática de las ciencias"
+> "La estadística es el arte de contar una historia con datos"
+> "La estadística (la forma femenina del término alemán Statistik, derivado a su vez del italiano statista, "hombre de Estado"),​ es la rama de las matemáticas que estudia la variabilidad, así como el proceso aleatorio que la genera siguiendo las leyes de la probabilidad"
+
+## Métodos en estadística
+
+## Usos de la estadística en la parte social
+
