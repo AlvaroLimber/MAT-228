@@ -16,11 +16,11 @@ Ejemplos,
   * Los productos que conforman la canasta familiar en Bolivia
   * Adultos mayores en situación de calle en la ciudad de Oruro
   * Mujeres en condición de trata y tráfico en La Paz
-  * Bebedores en las calles de Villa Fatima
+  * Bebedores en las calles de Villa Fátima
   * Perros callejeros en El Alto
   
 ## Unidades elementales
-Son las unidades mínimas o más pequeñas dentro de una población, también, son llamdadas unidades de análisis. Estas unidades contienen información dentro de ellas, a estas las llamamos variables. 
+Son las unidades mínimas o más pequeñas dentro de una población, también, son llamadas unidades de análisis. Estas unidades contienen información dentro de ellas, a estas las llamamos variables. 
 
 $$u_i=\{X_1, X_2, \ldots,X_j,\ldots, X_p \}$$
 Las variables son características de interés de las unidades de análisis.
@@ -37,9 +37,61 @@ Estas características de las unidades elementales, no siempre son medibles y la
 
 > "La estadística es la gramática de las ciencias"
 > "La estadística es el arte de contar una historia con datos"
-> "La estadística (la forma femenina del término alemán Statistik, derivado a su vez del italiano statista, "hombre de Estado"),​ es la rama de las matemáticas que estudia la variabilidad, así como el proceso aleatorio que la genera siguiendo las leyes de la probabilidad"
+> "La estadística (la forma femenina del término alemán Statistik, derivado a su vez del italiano statista, "hombre de Estado"), es la rama de las matemáticas que estudia la variabilidad, así como el proceso aleatorio que la genera siguiendo las leyes de la probabilidad"
 
-## Métodos en estadística
+## Fases en la estadística (Principalmente en la Social)
+
+  1. Planteamiento del problema, pregunta de investigación; Puede tener componentes estrictamente descriptivos o basado en encontrar o plantear una relación (entre variables $X\rightarrow Y$)
+  2. Estado del arte o le revisión de literatura; Entender como otros autores respondieron al problema planteado
+  3. Metodología; Describir la manera en que se responderá el problema
+  4. Recolección de evidencia o datos; Puede ser de fuentes primarias (recolección propia), de fuentes secundarias (bases de datos o reportes ya recolectados)
+  5. Depuración, procesamiento y arreglo de la información recolectada; entender, gestionar y "corregir" la información recolectada
+  6. Análisis; responder al problema planteado o a la pregunta de investigación
+  7. Conclusiones y recomendaciones; Hallazgos del estudio y plantear preguntas nuevas
+  
+Actividad 1: Realizar los puntos 1 y 2 para la siguiente clase.
+
+Ejemplo,
+
+1.1 ¿Cuáles serán las características de los *adultos mayores en situación de calle en el municipio La Paz*?
+  * Cantidad
+  * Salud; 
+  * Situación económica
+  * Tiempo: 2018 - Actual, 
+  * Rev. literatura: Página siete (2010), del 100 % de personas en situación de calle el 80% son adultos mayores  
+  
+1.2 ¿Cuáles son los factores que llevan a los *adultos mayores* a vivir en situación de calle, en el municipio La Paz*?  
+  * Rev. literatura:
+
+2. ¿Cuál será la *situación económica* de los *niños/as trabajadores/as de 7 a 13 años en el municipio de La Paz*?
+  * Tiempo:
+  * Rev. literatura: Página siete (2010), 400 niños/niñas La Paz, El deber INE (2018), Edades 10 a 13 años, 11.7% trabajan  
+  
+3. ¿Cuáles serán las *características* de los *niños/as en cárceles de Bolivia*?
+  * Cantidad
+  * Educación; Matricula educativa, asistencia, sabe leer o no (analfabetismo)
+  * Edades
+  * Empleo
+  * Rev. literatura: INE (2017). Cantidad de niños/as en cárceles, La Paz, Santa Cruz y Cochabamba.
+  * Tiempo:
+
+## Clasificación de la estadística
+Esta puede ser definida a partir de dos necesidades, (1) describir a una variable y (2) encontrar la relación entre 1 o más variables $X\rightarrow Y$ ("relación"; de causa y efecto, casual) 
+
+  1. Descriptivo 
+    * Censos; Recolecto la información de toda la población de estudio  
+    * Muestras probabilísticas (aleatorias); Siempre se va a poder describir a una población, mediante una muestra, si esta muestra ha sido recolectada de manera *probabilística*. 
+    * Estudios de observación: Son muestras de poblaciones recolectadas sin un criterio probabilístico 
+  
+Nota, los estudios de observación en la parte social, son útiles principalmente en poblaciones complejas; personas en situación de calle, trata y tráfico, prostitución, explotación laboral (población sumergidas)
+  2. Relación entre $X\rightarrow Y$, mejor a la peor.
+    * (Causa y efecto PURO) *Diseños experimentales*
+    * (Causa y efecto parciales) Muestras probabilísticas
+    * (Causa y efecto parciales bajas o casuales) Estudios de observación
+
+Investigar: (1) qué es un diseño experimental, (2) los usos en el ámbito social y (3) al menos 2 ejemplos.
+
+## Fuente de información
 
 ## Usos de la estadística en la parte social
 
