@@ -3,7 +3,7 @@
     "path": "~/GitHub/MAT-228/1_introduccion.Rmd",
     "project_path": "1_introduccion.Rmd",
     "type": "r_markdown",
-    "hash": "1373094838",
+    "hash": "0",
     "contents": "",
     "dirty": false,
     "created": 1613648461979.0,
@@ -11,15 +11,16 @@
     "relative_order": 2,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "85,178",
-        "scrollLine": "69"
+        "cursorPosition": "197,1",
+        "scrollLine": "115",
+        "docOutlineVisible": "1"
     },
     "folds": "",
-    "lastKnownWriteTime": 1614257979,
+    "lastKnownWriteTime": 1615294855,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1614257979479,
+    "last_content_update": 1615294855685,
     "read_only": false,
     "read_only_alternatives": []
 }

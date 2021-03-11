@@ -4,5 +4,15 @@ unidades-elementales
 estadística
 fases-en-la-estadística-principalmente-en-la-social
 clasificación-de-la-estadística
-fuente-de-información
-usos-de-la-estadística-en-la-parte-social
+descriptivo
+relación-entre-variables
+fuentes-de-información-tradicionales
+censo
+encuestas
+registro-administrativos
+fuentes-de-información-en-expansión-big-data
+estadística-descriptiva
+población-objetivo
+unidades-estadísticas
+coberturas-estadísticas
+clasificación-de-las-variables-según-su-naturaleza
