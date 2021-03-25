@@ -162,3 +162,53 @@ Otro ejemplo, la población de Bolivia es aproximadamente 11,787,669 para el 202
   * El porcentaje de positivos a COVID-19 en Bolivia: (265207/11787669)x100=2.25%
   * El porcentaje de muertes por COVID-19 en Bolivia: (12074/11787669)x100=0.102%, otra forma puede ser respecto los que dieron positivo a COVID-19. (12074/265207)x100=4.55%
 
+## Medidas de tendencia central. (Medidas de centralidad)
+
+Son medidas que buscan resumir la información dada de una variable de una población, principalmente estas medidas están diseñas para las variables cuantitativas (numérica). Las más usadas tradicionalmente son:
+
+  * Moda ($Mo$)
+  * Mediana ($Me$)
+  * Media, promedio ($\bar{Y}$, $\bar{X}$, $\bar{edad}$)
+
+### Definiendo algunas operaciones matemáticas 
+
+Símbolos:
+
+  * $\sum$: Sumatoria, se utiliza para resumir una suma.
+
+$$1+2+3+4+\ldots+100=\sum_{i=1}^{100} i$$
+$$x_1+x_2+x_3+\ldots+x_N=\sum_{i=1}^{N}x_i$$
+
+Operaciones básicas:
+
+  * $(x+y)^2=x^2+2xy+y^2$, $(x-y)^2=x^2-2xy+y^2$: Trinomio cuadrado perfecto $(x+y)^2=(x+y)*(x+y)=$
+  * Factorización: $2x+x^2=x(2+x)$
+  * $x^3*x^4=x^7$
+  * $\left(\frac{x}{y}\right)^3=\frac{x^3}{y^3}$
+  * $(x^a)^b=x^{a*b}$
+  * $\sqrt{x}=x^{1/2}$, $(\sqrt{x})^2=(x^{1/2})^2=x$
+  * Si $x$ es distinta de cero, $x^0=1$
+
+Una actividad de ejemplo; vamos a tomar 2 variables $x:$ ¿Cuántas horas durmió anoche? $y:$ ¿Cuántos minutos en total tardo en llegar desde su casa hasta la universidad, la última vez que fue?
+
+  * $X:$ 5, 7, 5, 7, 7.75, 5, 6, 6, 6, 8, 5, 4, 6 , 6, 7.5, 5, 5, 5, 6. $N=19$
+  * $Y:$ 37, 30, 30, 40, 40, 45, 30, 60, 15, 60, 45, 53, 30, 35, 45, 60, 60, 45, 40, 40, 60. $N=21$
+
+Para $X:$ 5 ya que es el que se repite más, 6 ya que esta al medio
+Para $Y:$ 40 o 35 ya que están en el centro, 60 ya que se repiten más
+
+### Moda
+
+La moda es una medida estadística que se obtiene al identificar el valor que se repite más en una variable, la denotamos por $Mo$
+
+En la actividad;
+
+  * $Mo(x)=5$
+  * $Mo(y)=60$
+
+
+
+
+
+
+

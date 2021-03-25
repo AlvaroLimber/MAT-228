@@ -22,3 +22,6 @@ organización-los-datos
 medidas-estadísticas
 conteos-frecuencias-absolutas-y-acumuladas
 porcentajes
+medidas-de-tendencia-central.-medidas-de-centralidad
+definiendo-algunas-operaciones-matemáticas
+moda
