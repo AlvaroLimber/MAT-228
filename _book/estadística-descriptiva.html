@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-03-28" />
+<meta name="date" content="2021-04-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -168,6 +168,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.9" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#medidas-de-tendencia-central.-medidas-de-centralidad"><i class="fa fa-check"></i><b>2.9</b> Medidas de tendencia central. (Medidas de centralidad)</a><ul>
 <li class="chapter" data-level="2.9.1" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#definiendo-algunas-operaciones-matemáticas"><i class="fa fa-check"></i><b>2.9.1</b> Definiendo algunas operaciones matemáticas</a></li>
 <li class="chapter" data-level="2.9.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#moda"><i class="fa fa-check"></i><b>2.9.2</b> Moda</a></li>
+<li class="chapter" data-level="2.9.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#mediana"><i class="fa fa-check"></i><b>2.9.3</b> Mediana</a></li>
+<li class="chapter" data-level="2.9.4" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#media-promedio-media-aritmética"><i class="fa fa-check"></i><b>2.9.4</b> Media, promedio, media aritmética</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -385,6 +387,118 @@ Para <span class="math inline">\(Y:\)</span> 40 o 35 ya que están en el centro,
 <li><span class="math inline">\(Mo(x)=5\)</span></li>
 <li><span class="math inline">\(Mo(y)=60\)</span></li>
 </ul>
+<blockquote>
+<p>Nota: pueden haber casos donde más de un número se repita la misma cantidad de veces, siendo estos los que se repiten más.</p>
+</blockquote>
+<p>En este caso decimos que existen más modas, ejemplo sea el conjunto de datos <span class="math inline">\(1, 1, 1, 2, 3, 4, 5 ,5 ,5\)</span>. Este conjunto de datos tiene dos modas el <span class="math inline">\(1\)</span> el <span class="math inline">\(5\)</span>, ya que ambos son los que se repiten más, el conjunto de datos es bi-modal</p>
+<blockquote>
+<p>Nota: Si no existe un número que se repita más veces, decimos que no existe moda.</p>
+</blockquote>
+<p><em>Ventajas y desventajas de la Moda</em></p>
+<ul>
+<li>Ventaja
+<ul>
+<li>El cálculo es simple</li>
+<li>La interpretación es simple</li>
+</ul></li>
+<li>Desventajas
+<ul>
+<li>Puede dar una falsa idea de representatividad cuando algún valor extremo es más frecuente</li>
+<li>En grandes volúmenes de información pueden existir muchas modas</li>
+</ul></li>
+</ul>
+</div>
+<div id="mediana" class="section level3">
+<h3><span class="header-section-number">2.9.3</span> Mediana</h3>
+<p><img src="https://www.aeutransmer.com/wp-content/uploads/2018/06/12-06-2018-punto-de-equilibrio.jpg" /></p>
+<p>La mediana es una medida estadística que se obtiene al identificar al valor central de la serie de datos ordenada. La denotaremos con <span class="math inline">\(Me\)</span>. Los pasos para obtener la mediana de una serie de datos:</p>
+<ol style="list-style-type: decimal">
+<li>Ordenar de forma descendente (mayor a menor) o ascendente (menor al mayor) la serie de datos.</li>
+<li>Identificar si <span class="math inline">\(N\)</span> es par o impar
+* Si <span class="math inline">\(N\)</span> es impar la mediana es el valor que deja exactamente la misma cantidad de información a la izquierda y a la derecha</li>
+</ol>
+<p><span class="math display">\[Me=X_{||N/2||+1}\]</span>
+* Si <span class="math inline">\(N\)</span> es par, la mediana se obtiene de los dos valores que se encuentran en el centro y se calcula la mediana de la siguiente forma.</p>
+<p><span class="math display">\[Me=\frac{X_{N/2}+X_{N/2+1}}{2}\]</span></p>
+<p>Ejemplo, sean los datos <span class="math inline">\(1, 1, 1, 2, 2, 3, 4, 5 ,5 ,5\)</span>, obtener la mediana. <span class="math inline">\(N=10\)</span></p>
+<p><span class="math display">\[Me=\frac{X_{N/2}+X_{N/2+1}}{2}=\frac{X_{5}+X_{6}}{2}=\frac{2+3}{2}=2.5\]</span></p>
+<p>Ejercicio, de los datos recolectados de las horas de sueño y minutos de transporte. Encontrar la mediana.</p>
+<ul>
+<li><span class="math inline">\(X:\)</span> 5, 7, 5, 7, 7.75, 5, 6, 6, 6, 8, 5, 4, 6 , 6, 7.5, 5, 5, 5, 6. <span class="math inline">\(N=19\)</span></li>
+<li><span class="math inline">\(Y:\)</span> 37, 30, 30, 40, 40, 45, 30, 60, 15, 60, 45, 53, 30, 35, 45, 60, 60, 45, 40, 40, 60. <span class="math inline">\(N=21\)</span></li>
+</ul>
+<p>Solución:</p>
+<ul>
+<li>Para <span class="math inline">\(X\)</span></li>
+</ul>
+<p>Ordenando el vector <span class="math inline">\(X: 4, 5, 5, 5, 5 ,5 ,5 ,5, 6, 6 ,6 ,6 ,6 , 6, 7, 7, 7.5 ,7.75, 8\)</span></p>
+<p><span class="math display">\[Me(X)=X_{||N/2||+1}=X_{||19/2||+1}=X_{||9.5||+1}=X_{9+1} =X_{10}=6\]</span>
+* Para <span class="math inline">\(Y\)</span></p>
+<p>Ordenando el vector <span class="math inline">\(Y: 15, 30, 30, 30, 30, 35, 37, 40, 40, 40, 40, 45, 45, 45, 45, 53, 60, 60, 60, 60, 60\)</span></p>
+<p><span class="math display">\[Me(Y)=X_{||N/2||+1}=X_{||21/2||+1}=X_{||10.5||+1}=X_{10+1}=X_{11}=40\]</span></p>
+<p>Ejemplo, Sea <span class="math inline">\(X=\{23,34,53,23,33,44,64,12,34,99\}\)</span> encontrar la moda y la mediana. <span class="math inline">\(N=10\)</span></p>
+<ul>
+<li><span class="math inline">\(Mo(X)=23,34\)</span>, es bi-modal</li>
+<li><span class="math inline">\(X: 12, 23, 23, 33, 34, 34, 44, 53, 64, 99\)</span></li>
+</ul>
+<p><span class="math display">\[Me(X)=\frac{X_{N/2}+X_{N/2+1}}{2}=\frac{X_{5}+X_{6}}{2}=\frac{34+34}{2}=68/2=34\]</span></p>
+</div>
+<div id="media-promedio-media-aritmética" class="section level3">
+<h3><span class="header-section-number">2.9.4</span> Media, promedio, media aritmética</h3>
+<p>La media es una medida estadística que tiene la principal característica; que para obtenerla contribuyen todos los valores de una variable. <strong>Tiene la lógica de repartir todo lo acumulado en partes iguales.</strong></p>
+<p>Ejemplo, 3 personas tienen naranjas, la primera tiene 100, la segunda 50 y la tercera 20, si se quiere repartir el conjunto de naranjas en partes iguales, ¿cuántas naranjas le toca a cada persona?.</p>
+<p>Solución. 56.67</p>
+<p><span class="math display">\[\frac{100+50+20}{3}=\frac{170}{3}=56.67\]</span></p>
+<p><span class="math display">\[\frac{100+50+20}{3}=\frac{100}{3}+\frac{50}{3}+\frac{20}{3}=33.33+16.67+6.67=56.67\]</span></p>
+<p>De manera formal la media de una variable <span class="math inline">\(X\)</span>, que se denota por <span class="math inline">\(\bar{X}\)</span> se obtiene de la siguiente forma, para una población de <span class="math inline">\(N\)</span> individuos:</p>
+<p><span class="math display">\[\bar{X}=\frac{\sum_{i=1}^N x_i}{N}=\frac{x_1+x_2+\ldots+x_N}{N}\]</span>
+Ejemplos, del ejemplo inicial. Donde <span class="math inline">\(X:\)</span> horas que durmió la noche pasada, y <span class="math inline">\(Y:\)</span> el tiempo en minutos que tardó la última vez de ir de su casa a la universidad.</p>
+<ul>
+<li><span class="math inline">\(X:\)</span> 5, 7, 5, 7, 7.75, 5, 6, 6, 6, 8, 5, 4, 6 , 6, 7.5, 5, 5, 5, 6. <span class="math inline">\(N=19\)</span></li>
+<li><span class="math inline">\(Y:\)</span> 37, 30, 30, 40, 40, 45, 30, 60, 15, 60, 45, 53, 30, 35, 45, 60, 60, 45, 40, 40, 60. <span class="math inline">\(N=21\)</span></li>
+</ul>
+<p>Obtener la media de <span class="math inline">\(X\)</span> y <span class="math inline">\(Y\)</span>.</p>
+<p><span class="math display">\[\bar{X}=\frac{\sum_{i=1}^N x_i}{N}=\frac{112.25}{19}=5.91 \]</span></p>
+<p><span class="math display">\[\bar{Y}=\frac{\sum_{i=1}^N y_i}{N}=\frac{900}{21}=42.86\]</span>
+Ejemplo, en un aula de 6 estudiantes de una universidad cualquiera, se tiene registrado la edad de estos 6 estudiantes de primer año. Estas son: <span class="math inline">\(edad=\{17,18,19,19,21,55\}\)</span>. Calcular la moda, mediana y media y comentar los resultados.</p>
+<ul>
+<li><span class="math inline">\(Mo_{edad}=19\)</span></li>
+<li><span class="math inline">\(Me(edad)=19\)</span></li>
+<li><span class="math inline">\(\bar{X}=\bar{edad}=24.83\)</span></li>
+</ul>
+<p>Ventajas y desventajas de la media</p>
+<ul>
+<li>Ventajas
+<ul>
+<li>Todo el conjunto de información participa</li>
+<li>El cálculo no es complicado</li>
+<li>Para grandes volúmenes de información el cálculo es mas fácil que la moda y la mediana</li>
+</ul></li>
+<li>Desventajas
+<ul>
+<li>Es sensible a números atípicos en los datos</li>
+<li>El valor obtenido no necesariamente se encuentra dentro de la información</li>
+</ul></li>
+</ul>
+<blockquote>
+<p>Nota: La media es una de las medidas estadísticas más utilizadas.</p>
+</blockquote>
+<p>Propiedades de la moda, mediana y media.</p>
+<p>Supongamos que tenemos un conjunto de datos <span class="math inline">\(X\)</span> de tamaño <span class="math inline">\(N\)</span>, y sea <span class="math inline">\(a\)</span>, <span class="math inline">\(b\)</span> valores constantes.</p>
+<ul>
+<li>¿Cuál es la moda, mediana y media de una constante?
+<ul>
+<li>la misma constante</li>
+</ul></li>
+<li>Si definimos a <span class="math inline">\(Y=X+a\)</span>, ¿Cuál es la moda, mediana y media de <span class="math inline">\(Y\)</span>?</li>
+<li>Si definimos a <span class="math inline">\(Y=a*X\)</span>, ¿Cuál es la moda, mediana y media de <span class="math inline">\(Y\)</span>?</li>
+<li>Si definimos a <span class="math inline">\(Y=a*X+b\)</span>, ¿Cuál es la moda, mediana y media de <span class="math inline">\(Y\)</span>?</li>
+</ul>
+<p>Suponga que tiene las edades de un grupo de 10 personas <span class="math inline">\(X=\{20, 21,22,22,22,24,25,30,32,19\}\)</span> sean <span class="math inline">\(a=5\)</span> y <span class="math inline">\(b=3\)</span>,y sea:</p>
+<p><span class="math display">\[Y_1=X+a\]</span></p>
+<p><span class="math display">\[Y_2=a*X\]</span>
+<span class="math display">\[Y_3=a*X+b\]</span>
+Encontrar la moda, mediana y media de <span class="math inline">\(X\)</span>, <span class="math inline">\(Y_1\)</span>, <span class="math inline">\(Y_2\)</span> y <span class="math inline">\(Y_3\)</span></p>
 
 <div id="refs" class="references">
 <div>

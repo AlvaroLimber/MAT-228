@@ -25,3 +25,5 @@ porcentajes
 medidas-de-tendencia-central.-medidas-de-centralidad
 definiendo-algunas-operaciones-matemáticas
 moda
+mediana
+media-promedio-media-aritmética
