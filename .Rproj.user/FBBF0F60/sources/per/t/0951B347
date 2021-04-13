@@ -3,7 +3,7 @@
     "path": "~/GitHub/MAT-228/2_descriptiva.Rmd",
     "project_path": "2_descriptiva.Rmd",
     "type": "r_markdown",
-    "hash": "29718748",
+    "hash": "3852302750",
     "contents": "",
     "dirty": false,
     "created": 1615462811140.0,
@@ -11,16 +11,16 @@
     "relative_order": 3,
     "properties": {
         "tempName": "Untitled1",
-        "cursorPosition": "319,61",
-        "scrollLine": "314",
+        "cursorPosition": "425,0",
+        "scrollLine": "414",
         "docOutlineVisible": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1617713733,
+    "lastKnownWriteTime": 1618318858,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1617713733837,
+    "last_content_update": 1618318858806,
     "read_only": false,
     "read_only_alternatives": []
 }

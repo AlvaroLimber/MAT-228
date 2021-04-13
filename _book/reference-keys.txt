@@ -27,3 +27,4 @@ definiendo-algunas-operaciones-matemáticas
 moda
 mediana
 media-promedio-media-aritmética
+media-o-promedio-ponderado

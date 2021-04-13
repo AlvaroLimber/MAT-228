@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-04-06" />
+<meta name="date" content="2021-04-13" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -170,6 +170,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.9.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#moda"><i class="fa fa-check"></i><b>2.9.2</b> Moda</a></li>
 <li class="chapter" data-level="2.9.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#mediana"><i class="fa fa-check"></i><b>2.9.3</b> Mediana</a></li>
 <li class="chapter" data-level="2.9.4" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#media-promedio-media-aritmética"><i class="fa fa-check"></i><b>2.9.4</b> Media, promedio, media aritmética</a></li>
+<li class="chapter" data-level="2.9.5" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#media-o-promedio-ponderado"><i class="fa fa-check"></i><b>2.9.5</b> Media o promedio ponderado</a></li>
 </ul></li>
 </ul></li>
 </ul>
@@ -496,9 +497,73 @@ Ejemplo, en un aula de 6 estudiantes de una universidad cualquiera, se tiene reg
 </ul>
 <p>Suponga que tiene las edades de un grupo de 10 personas <span class="math inline">\(X=\{20, 21,22,22,22,24,25,30,32,19\}\)</span> sean <span class="math inline">\(a=5\)</span> y <span class="math inline">\(b=3\)</span>,y sea:</p>
 <p><span class="math display">\[Y_1=X+a\]</span></p>
-<p><span class="math display">\[Y_2=a*X\]</span>
-<span class="math display">\[Y_3=a*X+b\]</span>
-Encontrar la moda, mediana y media de <span class="math inline">\(X\)</span>, <span class="math inline">\(Y_1\)</span>, <span class="math inline">\(Y_2\)</span> y <span class="math inline">\(Y_3\)</span></p>
+<p><span class="math display">\[Y_2=a*X\]</span></p>
+<p><span class="math display">\[Y_3=a*X+b\]</span></p>
+<p>Encontrar la moda, mediana y media de <span class="math inline">\(X\)</span>, <span class="math inline">\(Y_1\)</span>, <span class="math inline">\(Y_2\)</span> y <span class="math inline">\(Y_3\)</span></p>
+<ul>
+<li><span class="math inline">\(\bar{X}=23.7\)</span>, mediana y moda 22</li>
+<li><span class="math inline">\(\bar{Y}_1=28.7\)</span>, mediana y moda 27</li>
+<li><span class="math inline">\(\bar{Y}_2=118.5\)</span>, mediana y moda 110</li>
+<li><span class="math inline">\(\bar{Y}_3=121.5\)</span>, mediana y moda 113</li>
+</ul>
+<p>Solución,</p>
+<p>Para <span class="math inline">\(X\)</span>, <span class="math inline">\(\{19,20,21,22,22,22,24,25,30,32\}\)</span></p>
+<p><span class="math display">\[\bar{X}=\frac{\sum_{i=1}^N{x_i}}{N}=\frac{19+20+21+...+32}{10}=\frac{237}{10}=23.7\]</span>
+Para <span class="math inline">\(Y_1=\{19+5,20+5,21+5,22+5,22+5,22+5,24+5,25+5,30+5,32+5\}=\)</span> <span class="math inline">\(Y_1=\{24,25,26,27,27,27,29,30,35,37\}\)</span>.</p>
+<p><span class="math display">\[\bar{Y}_1=\frac{\sum_{i=1}^N{y_i}}{N}=\frac{\sum_{i=1}^N(x_i+a)}{N}=\frac{\sum_{i=1}^N x_i+\sum_{i=1}^N a}{N}=\frac{\sum_{i=1}^N x_i}{N}+\frac{\sum_{i=1}^N a}{N}=\]</span>
+<span class="math display">\[=\bar{X}+\frac{a+a+\ldots+a}{N}=\bar{X}+\frac{a*N}{N}=\bar{X}+a=\bar{Y}_1\]</span></p>
+<p><span class="math display">\[\bar{Y}_1=23.7+5=28.7\]</span></p>
+<p>Para <span class="math inline">\(Y_2=\{5*19,5*20,5*21,5*22,5*22,5*22,5*24,5*25,5*30,5*32\}\)</span></p>
+<p><span class="math display">\[\bar{Y}_2=\frac{\sum_{i=1}^N{y_i}}{N}=\frac{\sum_{i=1}^N{(a*x_i)}}{N}=a*\frac{\sum_{i=1}^N{x_i}}{N}=a*\bar{X}\]</span>
+<span class="math display">\[\bar{Y}_2=5*23.7=118.5\]</span>
+Recordar: <span class="math inline">\((5*1+5*2+5*3+5*4+5*5)=5*(1+2+3+4+5)\)</span></p>
+<p>Para <span class="math inline">\(Y_3=\{5*19+3,5*20+3,5*21+3,5*22+3,5*22+3,5*22+3,5*24+3,5*25+3,5*30+3,5*32+3\}\)</span></p>
+<p><span class="math display">\[\bar{Y}_3=\frac{\sum_{i=1}^N{y_i}}{N}=\frac{\sum_{i=1}^N{(a*x_i+b)}}{N}=a*\bar{X}+b\]</span>
+<span class="math display">\[\bar{Y}_3=5*23.7+3=121.5\]</span></p>
+<p>Propiedades, sea <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span> variables y sea <span class="math inline">\(a,b\)</span> constantes positivas.</p>
+<p>5,5,5,5,5,5,5</p>
+<ul>
+<li><span class="math inline">\(Mo(a)=a\)</span>, <span class="math inline">\(Me(a)=a\)</span>, <span class="math inline">\(\bar{a}=a\)</span></li>
+<li>Si <span class="math inline">\(Y=X+a\)</span>, entonces, <span class="math inline">\(Mo(Y)=Mo(X)+a\)</span>, <span class="math inline">\(Me(Y)=Me(X)+a\)</span>, <span class="math inline">\(\bar{Y}=\bar{X}+a\)</span></li>
+<li>Si <span class="math inline">\(Y=aX\)</span>, entonces, <span class="math inline">\(Mo(Y)=a*Mo(X)\)</span>, <span class="math inline">\(Me(Y)=a*Me(X)\)</span>, <span class="math inline">\(\bar{Y}=a\bar{X}\)</span></li>
+<li>Si <span class="math inline">\(Y=aX+b\)</span>, entonces, <span class="math inline">\(Mo(Y)=a*Mo(X)+b\)</span>, <span class="math inline">\(Me(Y)=a*Me(X)+b\)</span>, <span class="math inline">\(\bar{Y}=a\bar{X}+b\)</span></li>
+</ul>
+<p>Ejemplo,</p>
+<p>Para el 2020 el salario de 5 trabajadores era de <span class="math inline">\(2000,1500,1900,3000,2500\)</span>, para el 2021 se quiere dar un incremento del 50% a cada trabajador, además de un bono de 200 Bs. Calcular el salario promedio para 2020 y el salario promedio que se espera con el incremento y el bono. (TAREA)</p>
+<p>Recordar que si a un número le quiero incrementar un porcentaje: <span class="math inline">\(30*1.2=30*\frac{120}{100}=36\)</span> corresponde aumentar el 20% a 30.</p>
+<p><span class="math display">\[\bar{X}_{2020}=\frac{2000+1500+1900+3000+2500}{5}=\frac{10900}{5}=2180\]</span></p>
+<p><span class="math display">\[\bar{X}_{2021}=\bar{X}_{2020}*1.5+200=3270+200=3470\]</span></p>
+<p>300+50% = 300<em>1.5=300</em>(150/100) = 450
+100 +20% = 100<em>1.2 = 120
+350 + 76% = 350</em>1.76 = 616
+Se quiere un incremento del 5% al salario mínimo, ¿cuál será el nuevo salario mínimo para 2021?</p>
+<p><span class="math display">\[2122+5\%=2122*1.05=2228.1\]</span><br />
+Extraer el 5% del salario mínimo actual</p>
+<p><span class="math display">\[2122*0.05=106.1\]</span>
+<span class="math inline">\(4000*0.7\)</span></p>
+</div>
+<div id="media-o-promedio-ponderado" class="section level3">
+<h3><span class="header-section-number">2.9.5</span> Media o promedio ponderado</h3>
+<p>Esta medida es utilizada cuando ciertas poblaciones tienen un peso o ponderación basada en <strong>algún criterio</strong> o <strong>simplemente están agregadas</strong>.</p>
+<p>Ejemplo, Imagine que se cuenta con 3 cursos se sexto de secundaria que dieron un examen de matemática (el mismo) sobre 100 puntos, el primer curso tiene 33 estudiantes, el segundo 42 y el tercero 35. Se obtuvo el promedio para cada curso y el resultado fue:</p>
+<ul>
+<li>C1: 56 pts</li>
+<li>C2: 47 pts</li>
+<li>C3: 59 pts</li>
+</ul>
+<p>¿Cuál será el promedio en general de los tres cursos?</p>
+<p>Ps: 53.52, 54, 36,34</p>
+<p>Solución, sea el tamaño de los cursos <span class="math inline">\(N_1=33\)</span>, <span class="math inline">\(N_2=42\)</span> y <span class="math inline">\(N_3=35\)</span>, <span class="math inline">\(N=N_1+N_2+N_3=33+42+35=110\)</span>, <span class="math inline">\(\bar{X}_1=56\)</span>, <span class="math inline">\(\bar{X}_2=47\)</span>, <span class="math inline">\(\bar{X}_3=59\)</span></p>
+<p><span class="math display">\[\bar{X}_{global}=\frac{\sum_{i=1}^{110}{X_i}}{110}=\frac{X_1+X_2+\ldots+X_{110}}{110}=\]</span></p>
+<p><span class="math display">\[=\frac{X_1^{(c1)}+X_2^{(c1)}+\ldots+X_{33}^{(c1)}+X_{34}^{(c2)}+X_{35}^{(c2)}+\ldots+X_{75}^{(c2)}+X_{76}^{(c3)}+\ldots+X_{110}^{(c3)}}{110}=\]</span>
+<span class="math display">\[=\frac{\frac{N_1}{N_1}*\left(X_1^{(c1)}+X_2^{(c1)}+\ldots+X_{33}^{(c1)}\right)+\frac{N_2}{N_2}*\left(X_{34}^{(c2)}+X_{35}^{(c2)}+\ldots+X_{75}^{(c2)}\right)+\frac{N_3}{N_3}*\left(X_{76}^{(c3)}+\ldots+X_{110}^{(c3)}\right)}{110}=\]</span></p>
+<p><span class="math display">\[=\frac{N_1*\bar{X}_1+N_2*\bar{X}_2+N_3*\bar{X}_3}{N}=\frac{33*56+42*47+35*59}{110}=\frac{5887}{110}=53.52\]</span></p>
+<p>Para datos agregados la formula de la media ponderada, suponiendo que tenemos <span class="math inline">\(k\)</span> grupos es:</p>
+<p><span class="math display">\[\bar{X}=\frac{N_1*\bar{X}_1+N_2*\bar{X}_2+\ldots+N_k*\bar{X}_k}{N_1+N_2+\ldots+N_k}=\frac{\sum_{i=1}^k N_i *\bar{X}_i}{\sum_{i=1}^k N_i}\]</span></p>
+<p>Ejercicio, la estatura promedio de un grupo de 15 personas es de 159 centímetros, mientras que otro grupo de 29 personas tienen una estatura promedio de 162 cm. ¿Cuál será la estatura promedio del conjunto de personas?</p>
+<p>160.98 cm,</p>
+<p><span class="math display">\[\bar{X}=\frac{15*159+29*162}{15+29}=\frac{7083}{44}=160.98  cm\]</span></p>
+<p>Tarea, para la elección de una autoridad en la universidad los estudiantes y docentes tienen voto ponderado, es decir, ambos pesan lo mismo. El candidato X obtuvo un 80% en estudiantes, mientras que en docentes un 30%. ¿Cuál es el porcentaje de apoyo en general que obtuvo el candidato X?</p>
 
 <div id="refs" class="references">
 <div>

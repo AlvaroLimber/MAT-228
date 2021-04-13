@@ -322,17 +322,115 @@ Suponga que tiene las edades de un grupo de 10 personas $X=\{20, 21,22,22,22,24,
   $$Y_1=X+a$$
   
   $$Y_2=a*X$$
+  
   $$Y_3=a*X+b$$
+  
 Encontrar la moda, mediana y media de $X$, $Y_1$, $Y_2$ y $Y_3$
 
+  * $\bar{X}=23.7$, mediana y moda 22
+  * $\bar{Y}_1=28.7$, mediana y moda 27
+  * $\bar{Y}_2=118.5$, mediana y moda 110
+  * $\bar{Y}_3=121.5$, mediana y moda 113
+
+Solución, 
+
+Para $X$, $\{19,20,21,22,22,22,24,25,30,32\}$
+
+$$\bar{X}=\frac{\sum_{i=1}^N{x_i}}{N}=\frac{19+20+21+...+32}{10}=\frac{237}{10}=23.7$$
+Para $Y_1=\{19+5,20+5,21+5,22+5,22+5,22+5,24+5,25+5,30+5,32+5\}=$ $Y_1=\{24,25,26,27,27,27,29,30,35,37\}$.
+
+$$\bar{Y}_1=\frac{\sum_{i=1}^N{y_i}}{N}=\frac{\sum_{i=1}^N(x_i+a)}{N}=\frac{\sum_{i=1}^N x_i+\sum_{i=1}^N a}{N}=\frac{\sum_{i=1}^N x_i}{N}+\frac{\sum_{i=1}^N a}{N}=$$
+$$=\bar{X}+\frac{a+a+\ldots+a}{N}=\bar{X}+\frac{a*N}{N}=\bar{X}+a=\bar{Y}_1$$
+
+$$\bar{Y}_1=23.7+5=28.7$$
+
+Para $Y_2=\{5*19,5*20,5*21,5*22,5*22,5*22,5*24,5*25,5*30,5*32\}$
 
 
+$$\bar{Y}_2=\frac{\sum_{i=1}^N{y_i}}{N}=\frac{\sum_{i=1}^N{(a*x_i)}}{N}=a*\frac{\sum_{i=1}^N{x_i}}{N}=a*\bar{X}$$
+$$\bar{Y}_2=5*23.7=118.5$$
+Recordar: $(5*1+5*2+5*3+5*4+5*5)=5*(1+2+3+4+5)$
 
+Para $Y_3=\{5*19+3,5*20+3,5*21+3,5*22+3,5*22+3,5*22+3,5*24+3,5*25+3,5*30+3,5*32+3\}$
 
+$$\bar{Y}_3=\frac{\sum_{i=1}^N{y_i}}{N}=\frac{\sum_{i=1}^N{(a*x_i+b)}}{N}=a*\bar{X}+b$$
+$$\bar{Y}_3=5*23.7+3=121.5$$
 
+Propiedades, sea $X$ e $Y$ variables y sea $a,b$ constantes positivas.
 
+5,5,5,5,5,5,5
 
+  * $Mo(a)=a$, $Me(a)=a$, $\bar{a}=a$
+  * Si $Y=X+a$, entonces, $Mo(Y)=Mo(X)+a$, $Me(Y)=Me(X)+a$, $\bar{Y}=\bar{X}+a$
+  * Si $Y=aX$, entonces, $Mo(Y)=a*Mo(X)$, $Me(Y)=a*Me(X)$, $\bar{Y}=a\bar{X}$
+  * Si $Y=aX+b$, entonces, $Mo(Y)=a*Mo(X)+b$, $Me(Y)=a*Me(X)+b$, $\bar{Y}=a\bar{X}+b$
+
+Ejemplo,
+
+Para el 2020 el salario de 5 trabajadores era de $2000,1500,1900,3000,2500$, para el 2021 se quiere dar un incremento del 50% a cada trabajador, además de un bono de 200 Bs. Calcular el salario promedio para 2020 y el salario promedio que se espera con el incremento y el bono. (TAREA)
+
+Recordar que si a un número le quiero incrementar un porcentaje: $30*1.2=30*\frac{120}{100}=36$ corresponde aumentar el 20% a 30. 
+
+$$\bar{X}_{2020}=\frac{2000+1500+1900+3000+2500}{5}=\frac{10900}{5}=2180$$
+
+$$\bar{X}_{2021}=\bar{X}_{2020}*1.5+200=3270+200=3470$$
+
+300+50% = 300*1.5=300*(150/100) = 450
+100 +20% = 100*1.2 = 120
+350 + 76% = 350*1.76 = 616
+Se quiere un incremento del 5% al salario mínimo, ¿cuál será el nuevo salario mínimo para 2021?
+
+$$2122+5\%=2122*1.05=2228.1$$	
+Extraer el 5% del salario mínimo actual
+
+$$2122*0.05=106.1$$
+$4000*0.7$
+
+### Media o promedio ponderado
+
+Esta medida es utilizada cuando ciertas poblaciones tienen un peso o ponderación basada en **algún criterio** o **simplemente están agregadas**.
+
+Ejemplo, Imagine que se cuenta con 3 cursos se sexto de secundaria que dieron un examen de matemática (el mismo) sobre 100 puntos, el primer curso tiene 33 estudiantes, el segundo 42 y el tercero 35. Se obtuvo el promedio para cada curso y el resultado fue:
+
+  * C1: 56 pts
+  * C2: 47 pts
+  * C3: 59 pts
   
+¿Cuál será el promedio en general de los tres cursos?
+  
+Ps: 53.52, 54, 36,34
+  
+Solución, sea el tamaño de los cursos $N_1=33$, $N_2=42$ y $N_3=35$, $N=N_1+N_2+N_3=33+42+35=110$, $\bar{X}_1=56$, $\bar{X}_2=47$, $\bar{X}_3=59$
+
+$$\bar{X}_{global}=\frac{\sum_{i=1}^{110}{X_i}}{110}=\frac{X_1+X_2+\ldots+X_{110}}{110}=$$
+
+$$=\frac{X_1^{(c1)}+X_2^{(c1)}+\ldots+X_{33}^{(c1)}+X_{34}^{(c2)}+X_{35}^{(c2)}+\ldots+X_{75}^{(c2)}+X_{76}^{(c3)}+\ldots+X_{110}^{(c3)}}{110}=$$
+$$=\frac{\frac{N_1}{N_1}*\left(X_1^{(c1)}+X_2^{(c1)}+\ldots+X_{33}^{(c1)}\right)+\frac{N_2}{N_2}*\left(X_{34}^{(c2)}+X_{35}^{(c2)}+\ldots+X_{75}^{(c2)}\right)+\frac{N_3}{N_3}*\left(X_{76}^{(c3)}+\ldots+X_{110}^{(c3)}\right)}{110}=$$
+
+$$=\frac{N_1*\bar{X}_1+N_2*\bar{X}_2+N_3*\bar{X}_3}{N}=\frac{33*56+42*47+35*59}{110}=\frac{5887}{110}=53.52$$
+
+Para datos agregados la formula de la media ponderada, suponiendo que tenemos $k$ grupos es:
+
+$$\bar{X}=\frac{N_1*\bar{X}_1+N_2*\bar{X}_2+\ldots+N_k*\bar{X}_k}{N_1+N_2+\ldots+N_k}=\frac{\sum_{i=1}^k N_i *\bar{X}_i}{\sum_{i=1}^k N_i}$$
+
+Ejercicio, la estatura promedio de un grupo de 15 personas es de 159 centímetros, mientras que otro grupo de 29 personas tienen una estatura promedio de 162 cm. ¿Cuál será la estatura promedio del conjunto de personas? 
+
+160.98 cm, 
+
+$$\bar{X}=\frac{15*159+29*162}{15+29}=\frac{7083}{44}=160.98  cm$$
+
+Tarea, para la elección de una autoridad en la universidad los estudiantes y docentes tienen voto ponderado, es decir, ambos pesan lo mismo. El candidato X obtuvo un 80% en estudiantes, mientras que en docentes un 30%. ¿Cuál es el porcentaje de apoyo en general que obtuvo el candidato X? 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
