@@ -28,3 +28,11 @@ moda
 mediana
 media-promedio-media-aritmética
 media-o-promedio-ponderado
+medidas-de-tendencia-central-para-datos-agrupados-y-en-escalas-tabulados
+medidas-de-variabilidad-dispersión
+rango
+desviación-media-dm
+la-varianza-y-la-desviación-estándar
+formula-corta-para-la-varianza
+coeficiente-de-variación
+medidas-de-variabilidad-para-datos-agrupados.

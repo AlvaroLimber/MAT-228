@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Estadística Descriptiva
 
 La esdística descriptiva tiene la finalidad de describir la información vinculada a una *población de estudio*, este concepto de *describir* se refiere a buscar herramientas adecuadas según el *tipo de información* de la población, con un enfoque matemático.
@@ -421,19 +426,235 @@ $$\bar{X}=\frac{15*159+29*162}{15+29}=\frac{7083}{44}=160.98  cm$$
 
 Tarea, para la elección de una autoridad en la universidad los estudiantes y docentes tienen voto ponderado, es decir, ambos pesan lo mismo. El candidato X obtuvo un 80% en estudiantes, mientras que en docentes un 30%. ¿Cuál es el porcentaje de apoyo en general que obtuvo el candidato X? 
 
+Solución, se tienen 2 grupos y se sabe el porcentaje de apoyo para cada grupo. $\%X_e=80$ $\%X_d=30$, imaginemos una población $N=100\%$, los estudiantes y docentes pesan lo mismo, es decir $N_e=N_d=50\%$.
+
+$$\%X=\frac{N_e *\%X_e + N_d *\%X_d}{N_e+N_d}=\frac{50*80+50*30}{50+50}=\frac{5500}{100}=55$$
+
+### Medidas de tendencia central para datos agrupados y en escalas (Tabulados)
+
+Imaginemos que tenemos el dato de la edad de 200 personas
+```{r,echo}
+N<-200
+set.seed(999)
+edad<-abs(round(rnorm(N,21,7),0))
+edad
+```
+ Un problema es ordenar estos número de tal forma de calcular las medidas de tendencia central, una solución sería ordenar la información en grupos o clases.
+ 
+Ante de eso, veamos un ejemplo más simple, sean las edades de 20 personas; 
+
+```{r,echo=TRUE}
+sort(edad[1:20])
+```
+
+  * Moda: El procedimiento es similar a los datos simples, nos apoyamos en $f_i$, en el caso de tablas con intervalos hablamos de un intervalo modal.
+  * Media:  La formula para la media en tablas agrupadas es:
+  
+  $$\bar{X}=\frac{\sum_{i=1}^k x_i * f_i}{N}=\frac{\sum_{i=1}^k x_i * f_i}{\sum_{i=1}^k f_i}$$
+  
+Para tablas con intervalos de clase, la $x_i$ se denomina representante de clase y se obtiene como:
+
+$$x_i=\frac{LI_i+LS_i}{2}$$
+  
+Para calcular la mediana en tablas con clases se utilizan los siguientes pasos:
+
+  1. Localizar el intervalo que contiene la mediana. Calcular $N/2$ e identificar el valor más cercano por arriba en la columna $F_i$. $N/2\leq F_i$, la clase que contiene a la mediana es la clase $i$
+  2. Calcular la mediana
+
+$$Me=LI_i+\left(\frac{\frac{N}{2}-F_{i-1}}{f_i} \right)*c_i$$
+
+Donde $c_i=LS_i-LI_i$ es el ancho de clase. 
+
+Para el ejercicio de excel:
+
+$$Me=14+\left(\frac{10-6}{5} \right)*8=14+6.4=20.4$$
+  
+Para el ejercicio de las edades en excel
 
 
+$$Me=20+\left(\frac{5-3}{2} \right)*5=20+5=25$$
+
+$$Me=15+\left(\frac{5-0}{5} \right)*10=15+10=25$$
+
+## Medidas de variabilidad / dispersión
+
+Podemos tener estas 3 poblaciones de tamaño $N=5$, con la siguiente información:
+
+  * P1: 3 3 3 3 3
+  * P2: 3 2 3 4 3
+  * P3: 1 2 3 4 5
+
+Obtener las medidas de moda, mediana y media de las tres poblaciones:
+
+  * P1: $Mo=3$, $Me=3$, $\bar{X}=3$
+  * P2: $Mo=3$, $Me=3$, $\bar{X}=3$
+  * P3: $Mo=.$, $Me=3$, $\bar{X}=3$
+
+Este ejemplo muestra que las medidas de tendencia central no son suficientes para conocer la naturaleza de los datos. Las medidas de variabilidad/dispersión tienen el objetivo de informar respecto cuan diferente (variable) es la información de la variable de estudio. 
+
+```{r}
+load(url("https://github.com/AlvaroLimber/EST-383/raw/master/data/eh19.RData"))
+x<-na.omit(eh19p$ylab)
+length(x)
+mean(x)
+median(x)
+```
+
+Las medidas más usuales para conocer los niveles de variabilidad son:
+
+  * Rango
+  * Desviación media
+  * Varianza
+  * Desviación estándar
+  * Coeficiente de variación
+  
+### Rango
+
+Es la medida de variabilidad más fácil de calcular e interpretar, esta se obtiene de la diferencia entre el valor más grande y el valor más pequeño de los datos.  
+  
+$$R_x=X_{max}-X_{min}$$
+El rango obtiene la distancia entre el dato más pequeño y el más grande.
+
+Ejemplo, para las 3 poblaciones:
+
+  * P1: 3 3 3 3 3, $R_x=3-3=0$
+  * P2: 3 2 3 4 3, $R_x=4-2=2$
+  * P3: 1 2 3 4 5, $R_x=5-1=4$
+
+### Desviación media ($DM$)
+
+Esta medida y las siguientes tiene como base el principio de desviación o distancia al promedio, esta se desviación se denota por:
+
+$$d_i=x_i-\bar{X}$$
+
+Para el caso de la desviación media, esta se define como:
+
+$$DM(x)=\frac{\sum_{i=1}^N | x_i-\bar{X} | }{N}=\frac{\sum_{i=1}^N | d_i | }{N}$$
+Donde las barras en las desviaciones ($|d_i|$) se conoce como el operador *valor absoluto*, este operador devuelve siempre un número positivo.
+
+  * $|-3|=3$, $|3|=3$, $|-100|=100$
+
+Ejemplo en las 3 poblaciones:
+
+  * P1: $X=\{3, 3, 3, 3, 3\}$, $d_i=\{0,0,0,0,0 \}$
+  * P2: $X=\{3, 2, 3, 4, 3\}$, $d_i=\{3-3,2-3,3-3,4-3,3-3 \}=\{0,-1,0,1,0\}$
+  * P3: $X=\{1, 2, 3, 4, 5\}$, $d_i=\{-2,-1,0,1,2\}$
+  
+Ahora calcular la desviación media para las 3 poblaciones:
+
+$$DM(X_{p1})=\frac{|0|+|0|+|0|+|0|+|0|}{5}=\frac{0+0+0+0+0}{5}=\frac{0}{5}=0$$
+
+$$DM(X_{p2})=\frac{|0|+|-1|+|0|+|1|+|0|}{5}=\frac{0+1+0+1+0}{5}=\frac{2}{5}=0.4$$
+
+$$DM(X_{p3})=\frac{|-2|+|-1|+|0|+|1|+|2|}{5}=\frac{2+1+0+1+2}{5}=\frac{6}{5}=1.2$$
+
+### La Varianza y la desviación estándar
+
+Vamos a denotar a la varianza de la variable $x$ como $V(x)=\sigma^2$, la desviación estándar simplemente es la raíz cuadrada de la varianza $\sigma=\sqrt{\sigma^2}=\sqrt{V(x)}$. La varianza no tiene una interpretación directa, la medida usual en realidad es la desviación estándar que en términos prácticos su valor ronda al rededor de la desviación media. La varianza se define como:
+
+$$V(X)=\sigma^2=\frac{\sum_{i=1}^N (x_i-\bar{x})^2}{N}=\frac{\sum_{i=1}^N d_i^2}{N}$$
+Por lo tanto, para la desviación estándar:
+
+$$\sigma=\sqrt{\frac{\sum_{i=1}^N (x_i-\bar{x})^2}{N}}=\sqrt{\frac{\sum_{i=1}^N d_i^2}{N}}$$
+
+Ejemplo en las 3 poblaciones:
+
+  * P1: $X=\{3, 3, 3, 3, 3\}$, $d_i=\{0,0,0,0,0 \}$
+  * P2: $X=\{3, 2, 3, 4, 3\}$, $d_i=\{0,-1,0,1,0\}$
+  * P3: $X=\{1, 2, 3, 4, 5\}$, $d_i=\{-2,-1,0,1,2\}$
+
+$$\sigma_1^2=\frac{0^2+0^2+0^2+0^2+0^2}{5}=\frac{0}{5}=0$$
+$$\sigma_2^2=\frac{0^2+(-1)^2+0^2+1^2+0^2}{5}=\frac{2}{5}=0.4$$
+
+$$\sigma_3^2=\frac{(-2)^2+(-1)^2+0^2+1^2+2^2}{5}=\frac{4+1+0+1+4}{5}=\frac{10}{5}=2$$
+
+Por lo tanto las desviaciones estándar son:
+
+$$\sigma_1=\sqrt{\sigma_1^2}=\sqrt{0}=0$$
+$$\sigma_2=\sqrt{\sigma_2^2}=\sqrt{0.4}=0.63$$
+$$\sigma_3=\sqrt{\sigma_3^2}=\sqrt{2}=1.41$$
+
+Ejercicio, se recolectó información de 13 estudiantes de la materia de estadística social, respecto la cantidad de horas que pasaron el día de ayer en la computadora o el celular, los datos fueron:
+
+$$20,12,22,15,15,10,18,12,13,21,8,17,20$$
+  * Encontrar la moda, mediana y media
+  * Encontrar el Rango, la desviación media, la varianza y la desviación estándar
+  
+Solución
+
+  * $Mo=12, 15, 20$
+  * $Me=15$
+  * $\bar{x}=15.61$
+  * $R=22-8=14$
+  * $d_i=\{4.39, -3.61,6.39, -0.61, -0.61,-5.61,  2.39, -3.61 ,-2.61,  5.39,-7.61,  1.39,  4.39 \}$
+  * $DM=3.74$
+  * $\sigma^2=18.39$
+  * $\sigma=\sqrt{18.39}=4.29$
+  
+### Formula corta para la varianza
 
 
+$$\sigma^2=\frac{\sum_{i=1}^N (x_i-\bar{x})^2}{N}=\frac{\sum_{i=1}^N (x_i^2 - 2x_i*\bar{x}+\bar{x}^2)}{N}=\frac{\sum_{i=1}^N x_i^2 - 2 \bar{x}\sum_{i=1}^Nx_i+N\bar{x}^2}{N}=$$
+  
+$$=\frac{\sum_{i=1}^N x_i^2 - 2 \bar{x}\frac{N}{N}\sum_{i=1}^Nx_i+N\bar{x}^2}{N}=\frac{\sum_{i=1}^N x_i^2 - 2 N\bar{x}^2+N\bar{x}^2}{N}=\frac{\sum_{i=1}^N x_i^2 - N\bar{x}^2}{N}=$$
+$$=\frac{\sum_{i=1}^N x_i^2}{N} - \bar{x}^2=\sigma^2$$
+Así, la formula alternativa para calcular la varianza es:
+
+$$V(X)=\sigma^2=\frac{\sum_{i=1}^N (x_i-\bar{x})^2}{N}=\frac{\sum_{i=1}^N x_i^2}{N} - \bar{x}^2$$
+### Propiedades de la varianza
+
+Sea $X$ una variable y $a$, $b$ constantes.
+
+  1. $V(a)=0$, la varianza de una constante es 0
+  2. $V(aX)=a^2V(X)$
+  3. $V(X+a)=V(X)$, $V(X-a)=V(X)$
+  4. $V(aX+b)=a^2V(X)$
+
+### Coeficiente de variación
+
+A diferencia de todas las medidas anteriores, esta medida es relativa.
+
+$$cv(x)=\frac{\sigma}{\bar{x}}$$
+
+$$cv(x)\%=\frac{\sigma}{\bar{x}}*100$$
+Para la interpretación, si el coeficiente de variación es cercano a 0 significa que la variabilidad en los datos es baja, si es cercano a **1** la variabilidad es muy alta.
+
+Ejemplo, para la siguiente serie de números calcular el coeficiente de variación: 
+  
+  * 3, 5, 5, 7, 4, 9, 10, 2, 5, 6
+  
+Solución, se debe encontrar la media y la varianza
+
+  * $\bar{x}=\frac{56}{10}=5.6$
+  * Para la varianza se emplea la formula alternativa
+    + $x_i^2=\{9,25,25,49,16,81,100,4,25,36\}$
+    
+    $$\sigma^2=\frac{370}{10}-5.6^2=5.64$$
+Finalmente, 
 
 
+$$cv(x)=\frac{\sigma}{\bar{x}}=\frac{\sqrt{\sigma^2}}{\bar{x}}=\frac{\sqrt{5.64}}{5.6}=\frac{2.374868}{5.6}=0.4241$$  
+  
+  $$cv(x)\%=42.41$$
 
+### Medidas de variabilidad para datos agrupados.
 
+En los datos agrupados tenemos los datos agrupados simples y los datos agrupados por escalas, para los datos en escalas se trabaja con el representante de clase.
 
+  * Rango, para datos agrupados
+  
+    $$R=X_{max}-X_{min}$$
+  * Rango, para datos agrupados por escala
+  
+    $$R=LS_{max}-LI_{min}$$
 
+  * Desviación media
+  
+$$DM(x)=\frac{\sum_{i=1}^k | x_i-\bar{X} |*f_i }{N}=\frac{\sum_{i=1}^k | d_i |*f_i }{N}$$
 
-
-
+  * Varianza
+  
+$$V(X)=\sigma^2=\frac{\sum_{i=1}^k (x_i-\bar{x})^2 f_i}{N}=\frac{\sum_{i=1}^k x_i^2 f_i}{N} - \bar{x}^2$$
 
 
 
