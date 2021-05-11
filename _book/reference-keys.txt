@@ -36,3 +36,8 @@ la-varianza-y-la-desviación-estándar
 formula-corta-para-la-varianza
 coeficiente-de-variación
 medidas-de-variabilidad-para-datos-agrupados.
+medidas-de-forma
+simetría-y-asimetría
+kurtosis-o-medida-de-apuntalamiento
+quantiles
+gráficos
