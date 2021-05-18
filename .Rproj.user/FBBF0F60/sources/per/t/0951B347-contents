@@ -938,37 +938,75 @@ valor (quantil). Los quantiles más comunes son:
 -   Los quantiles que dividen en 100 a la población: Percentiles
     $Q_{1},Q_{2},Q_{3},\ldots,Q_{99}$
 
-Para calcular estos quantiles, se debe contar con una tabla de datos agrupados por escalas, dado que estas medidas son mas usadas cuando tenemos gran cantidad de información. Los pasos para calcular cualquier quantil son:
+Para calcular estos quantiles, se debe contar con una tabla de datos
+agrupados por escalas, dado que estas medidas son mas usadas cuando
+tenemos gran cantidad de información. Los pasos para calcular cualquier
+quantil son:
 
 Imaginemos al quantil $Q_q$, los pasos:
 
-  1. Calcular $N*(q/100)$
-  2. Buscamos en la tabla la clase que contiene al quantil $q$ en base al anterior valor, de tal forma que se cumpla:
-  
+1.  Calcular $N*(q/100)$
+2.  Buscamos en la tabla la clase que contiene al quantil $q$ en base al
+    anterior valor, de tal forma que se cumpla:
+
+<!-- -->
+
     $$N*(q/100)\leq F_i$$
-    
-esa clase $i$ es la clase que contiene al cuantil $q$    
-    
-  3. Calcular el quantil, mediante la formula:
-  
+
+esa clase $i$ es la clase que contiene al cuantil $q$
+
+3.  Calcular el quantil, mediante la formula:
+
 $$Q_{q}=LI_i+\left(\frac{N*(q/100)-F_{i-1}}{f_i} \right)*c_i$$
-Imaginemos que tenemos el dato de edad de un grupo de 250 personas, distribuidas como la muestra el excel.  
+Imaginemos que tenemos el dato de edad de un grupo de 250 personas,
+distribuidas como la muestra el excel.
 
 Para el $Q_{25}$, $q=25$.
 
-  1. 
-  
-  $$N*(q/100)=250*(25/100)=62.5$$
-  2.
-  
-  $$62.5 \leq F_i=70$$
-  3.   
-  
+1.  
+
+$$N*(q/100)=250*(25/100)=62.5$$ 2.
+
+$$62.5 \leq F_i=70$$ 3.
+
 $$Q_{25}=20+\left(\frac{62.5-25}{45} \right)*10=28.33$$
 
-Así, podemos decir que el 25% de esta población tiene una edad de 28.33 años o menos, también, el 75% de esta población tiene una edad mayor a 28.33 años
-
-
-
+Así, podemos decir que el 25% de esta población tiene una edad de 28.33
+años o menos, también, el 75% de esta población tiene una edad mayor a
+28.33 años
 
 ## Gráficos
+
+Los gráficos son una herramienta  estadística visual, muchas veces son una mejor alternativa a las tablas o cuadros, si objetivo es simple; **Resumir la información en forma visual**. En el último tiempo se han popularizado bastaste, principalmente con la denominada *visualización de datos*.
+
+El flujo de trabajo en una investigación normalmente cubre:
+
+  + Pregunta de investigación
+  + Revisión de literatura
+  + Recolección de datos
+  + Procesamiento de la información
+  + Comunicación de los resultados de investigación
+  
+En la última parte de este flujo de trabajo esta presenta la visualización de datos como una herramienta muy importante.
+
+Al momento de realizar un gráfico se debe tener en cuenta las siguientes aspectos:
+
+  + Tener una base de datos y conocer la población objetivo
+  + Variables a utilizar y su escala o tipo
+  + Forma del gráfico (geometría del gráfico)
+  + Colores, formas y tamaños
+  + Anotaciones (texto); título central, nombre de los ejes, la leyenda, la fuente de la información.
+
+### Univariantes (cualitativas)
+
+  - Diagrama de barras
+  - Gráfico de tortas.
+
+### Univariantes (cuantitativas)
+
+### 2 o más variables (ambas cualitativas)
+
+### 2 o más variables (ambas cuantitativas)
+
+### 2 o más variables (mixtas)
+

@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-05-11" />
+<meta name="date" content="2021-05-18" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -195,7 +195,14 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.11.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#kurtosis-o-medida-de-apuntalamiento"><i class="fa fa-check"></i><b>2.11.2</b> Kurtosis o medida de apuntalamiento</a></li>
 <li class="chapter" data-level="2.11.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#quantiles"><i class="fa fa-check"></i><b>2.11.3</b> Quantiles</a></li>
 </ul></li>
-<li class="chapter" data-level="2.12" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#gráficos"><i class="fa fa-check"></i><b>2.12</b> Gráficos</a></li>
+<li class="chapter" data-level="2.12" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#gráficos"><i class="fa fa-check"></i><b>2.12</b> Gráficos</a>
+<ul>
+<li class="chapter" data-level="2.12.1" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#univariantes-cualitativas"><i class="fa fa-check"></i><b>2.12.1</b> Univariantes (cualitativas)</a></li>
+<li class="chapter" data-level="2.12.2" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#univariantes-cuantitativas"><i class="fa fa-check"></i><b>2.12.2</b> Univariantes (cuantitativas)</a></li>
+<li class="chapter" data-level="2.12.3" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#o-más-variables-ambas-cualitativas"><i class="fa fa-check"></i><b>2.12.3</b> 2 o más variables (ambas cualitativas)</a></li>
+<li class="chapter" data-level="2.12.4" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#o-más-variables-ambas-cuantitativas"><i class="fa fa-check"></i><b>2.12.4</b> 2 o más variables (ambas cuantitativas)</a></li>
+<li class="chapter" data-level="2.12.5" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#o-más-variables-mixtas"><i class="fa fa-check"></i><b>2.12.5</b> 2 o más variables (mixtas)</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -750,38 +757,25 @@ estudiantes y docentes pesan lo mismo, es decir <span class="math inline">\(N_e=
 <span id="cb3-2"><a href="estadística-descriptiva.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">999</span>)</span>
 <span id="cb3-3"><a href="estadística-descriptiva.html#cb3-3" aria-hidden="true" tabindex="-1"></a>edad<span class="ot">&lt;-</span><span class="fu">abs</span>(<span class="fu">round</span>(<span class="fu">rnorm</span>(N,<span class="dv">21</span>,<span class="dv">7</span>),<span class="dv">0</span>))</span>
 <span id="cb3-4"><a href="estadística-descriptiva.html#cb3-4" aria-hidden="true" tabindex="-1"></a>edad</span></code></pre></div>
-<pre><code>##   [1] 19 12 27 23 19 17  8 12 14
-##  [10] 13 30 22 28 22 28 11 21 22
-##  [19] 27  6 12 26 18 23 13 25 13
-##  [28] 15 10 20 38 25 22 29 19  6
-##  [37] 18 25 25 11 18 21 12 13 23
-##  [46] 23  7 21 25 21 20 16 33 24
-##  [55] 21 23 25 12 24 17 15 29 28
-##  [64] 29 21 13 11 19 18 28 20 21
-##  [73] 28 18 28 21 25  7 24 20 16
-##  [82] 28 12 22 13 18 31 19 28 24
-##  [91] 33 21 14 30 13 28 17 19 19
-## [100] 23  9 24 15 16 32  3 23 31
-## [109] 10 16 19 10 15 15 19 14 28
-## [118] 29 12 24 18 22  6  9 30 22
-## [127] 23 22 28 23 18 20 23 18 16
-## [136] 25 12 15 15 29 21 31 20 27
-## [145] 25 17 29 22 15 28 28 31 22
-## [154] 26 27 20 20 31 31 17 21 21
-## [163] 14 18 13 28 31 27 16 20 17
-## [172] 19 23 22 21 20 12 24 13 22
-## [181] 16 24 27 26 18 24  8 21 24
-## [190] 19 18 27 20 20 15 24 24 14
-## [199] 15 21</code></pre>
+<pre><code>##   [1] 19 12 27 23 19 17  8 12 14 13 30 22 28 22 28 11 21 22 27
+##  [20]  6 12 26 18 23 13 25 13 15 10 20 38 25 22 29 19  6 18 25
+##  [39] 25 11 18 21 12 13 23 23  7 21 25 21 20 16 33 24 21 23 25
+##  [58] 12 24 17 15 29 28 29 21 13 11 19 18 28 20 21 28 18 28 21
+##  [77] 25  7 24 20 16 28 12 22 13 18 31 19 28 24 33 21 14 30 13
+##  [96] 28 17 19 19 23  9 24 15 16 32  3 23 31 10 16 19 10 15 15
+## [115] 19 14 28 29 12 24 18 22  6  9 30 22 23 22 28 23 18 20 23
+## [134] 18 16 25 12 15 15 29 21 31 20 27 25 17 29 22 15 28 28 31
+## [153] 22 26 27 20 20 31 31 17 21 21 14 18 13 28 31 27 16 20 17
+## [172] 19 23 22 21 20 12 24 13 22 16 24 27 26 18 24  8 21 24 19
+## [191] 18 27 20 20 15 24 24 14 15 21</code></pre>
 <p>Un problema es ordenar estos número de tal forma de calcular las medidas
 de tendencia central, una solución sería ordenar la información en
 grupos o clases.</p>
 <p>Ante de eso, veamos un ejemplo más simple, sean las edades de 20
 personas;</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="estadística-descriptiva.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(edad[<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>])</span></code></pre></div>
-<pre><code>##  [1]  6  8 11 12 12 13 14 17 19
-## [10] 19 21 22 22 22 23 27 27 28
-## [19] 28 30</code></pre>
+<pre><code>##  [1]  6  8 11 12 12 13 14 17 19 19 21 22 22 22 23 27 27 28 28
+## [20] 30</code></pre>
 <ul>
 <li>Moda: El procedimiento es similar a los datos simples, nos apoyamos
 en <span class="math inline">\(f_i\)</span>, en el caso de tablas con intervalos hablamos de un
@@ -1052,33 +1046,75 @@ valor (quantil). Los quantiles más comunes son:</p>
 <li>Los quantiles que dividen en 100 a la población: Percentiles
 <span class="math inline">\(Q_{1},Q_{2},Q_{3},\ldots,Q_{99}\)</span></li>
 </ul>
-<p>Para calcular estos quantiles, se debe contar con una tabla de datos agrupados por escalas, dado que estas medidas son mas usadas cuando tenemos gran cantidad de información. Los pasos para calcular cualquier quantil son:</p>
+<p>Para calcular estos quantiles, se debe contar con una tabla de datos
+agrupados por escalas, dado que estas medidas son mas usadas cuando
+tenemos gran cantidad de información. Los pasos para calcular cualquier
+quantil son:</p>
 <p>Imaginemos al quantil <span class="math inline">\(Q_q\)</span>, los pasos:</p>
 <ol style="list-style-type: decimal">
 <li>Calcular <span class="math inline">\(N*(q/100)\)</span></li>
-<li>Buscamos en la tabla la clase que contiene al quantil <span class="math inline">\(q\)</span> en base al anterior valor, de tal forma que se cumpla:</li>
+<li>Buscamos en la tabla la clase que contiene al quantil <span class="math inline">\(q\)</span> en base al
+anterior valor, de tal forma que se cumpla:</li>
 </ol>
+<!-- -->
 <pre><code>$$N*(q/100)\leq F_i$$</code></pre>
 <p>esa clase <span class="math inline">\(i\)</span> es la clase que contiene al cuantil <span class="math inline">\(q\)</span></p>
 <ol start="3" style="list-style-type: decimal">
 <li>Calcular el quantil, mediante la formula:</li>
 </ol>
 <p><span class="math display">\[Q_{q}=LI_i+\left(\frac{N*(q/100)-F_{i-1}}{f_i} \right)*c_i\]</span>
-Imaginemos que tenemos el dato de edad de un grupo de 250 personas, distribuidas como la muestra el excel.</p>
+Imaginemos que tenemos el dato de edad de un grupo de 250 personas,
+distribuidas como la muestra el excel.</p>
 <p>Para el <span class="math inline">\(Q_{25}\)</span>, <span class="math inline">\(q=25\)</span>.</p>
 <ol style="list-style-type: decimal">
 <li></li>
 </ol>
-<p><span class="math display">\[N*(q/100)=250*(25/100)=62.5\]</span>
-2.</p>
-<p><span class="math display">\[62.5 \leq F_i=70\]</span>
-3.</p>
+<p><span class="math display">\[N*(q/100)=250*(25/100)=62.5\]</span> 2.</p>
+<p><span class="math display">\[62.5 \leq F_i=70\]</span> 3.</p>
 <p><span class="math display">\[Q_{25}=20+\left(\frac{62.5-25}{45} \right)*10=28.33\]</span></p>
-<p>Así, podemos decir que el 25% de esta población tiene una edad de 28.33 años o menos, también, el 75% de esta población tiene una edad mayor a 28.33 años</p>
+<p>Así, podemos decir que el 25% de esta población tiene una edad de 28.33
+años o menos, también, el 75% de esta población tiene una edad mayor a
+28.33 años</p>
 </div>
 </div>
 <div id="gráficos" class="section level2" number="2.12">
 <h2><span class="header-section-number">2.12</span> Gráficos</h2>
+<p>Los gráficos son una herramienta estadística visual, muchas veces son una mejor alternativa a las tablas o cuadros, si objetivo es simple; <strong>Resumir la información en forma visual</strong>. En el último tiempo se han popularizado bastaste, principalmente con la denominada <em>visualización de datos</em>.</p>
+<p>El flujo de trabajo en una investigación normalmente cubre:</p>
+<ul>
+<li>Pregunta de investigación</li>
+<li>Revisión de literatura</li>
+<li>Recolección de datos</li>
+<li>Procesamiento de la información</li>
+<li>Comunicación de los resultados de investigación</li>
+</ul>
+<p>En la última parte de este flujo de trabajo esta presenta la visualización de datos como una herramienta muy importante.</p>
+<p>Al momento de realizar un gráfico se debe tener en cuenta las siguientes aspectos:</p>
+<ul>
+<li>Tener una base de datos y conocer la población objetivo</li>
+<li>Variables a utilizar y su escala o tipo</li>
+<li>Forma del gráfico (geometría del gráfico)</li>
+<li>Colores, formas y tamaños</li>
+<li>Anotaciones (texto); título central, nombre de los ejes, la leyenda, la fuente de la información.</li>
+</ul>
+<div id="univariantes-cualitativas" class="section level3" number="2.12.1">
+<h3><span class="header-section-number">2.12.1</span> Univariantes (cualitativas)</h3>
+<ul>
+<li>Diagrama de barras</li>
+<li>Gráfico de tortas.</li>
+</ul>
+</div>
+<div id="univariantes-cuantitativas" class="section level3" number="2.12.2">
+<h3><span class="header-section-number">2.12.2</span> Univariantes (cuantitativas)</h3>
+</div>
+<div id="o-más-variables-ambas-cualitativas" class="section level3" number="2.12.3">
+<h3><span class="header-section-number">2.12.3</span> 2 o más variables (ambas cualitativas)</h3>
+</div>
+<div id="o-más-variables-ambas-cuantitativas" class="section level3" number="2.12.4">
+<h3><span class="header-section-number">2.12.4</span> 2 o más variables (ambas cuantitativas)</h3>
+</div>
+<div id="o-más-variables-mixtas" class="section level3" number="2.12.5">
+<h3><span class="header-section-number">2.12.5</span> 2 o más variables (mixtas)</h3>
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div id="ref-R-rmarkdown" class="csl-entry">
@@ -1095,6 +1131,7 @@ Xie, Yihui. 2019. <em>Knitr: A General-Purpose Package for Dynamic Report Genera
 </div>
 <div id="ref-Xie2018" class="csl-entry">
 Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. <span>“<span class="nocase">How to Read This Book</span>.”</span> <em>Transforming Climate Finance and Green Investment with Blockchains</em>, 1. <a href="https://doi.org/10.1016/b978-0-12-814447-3.00041-0">https://doi.org/10.1016/b978-0-12-814447-3.00041-0</a>.
+</div>
 </div>
 </div>
 </div>

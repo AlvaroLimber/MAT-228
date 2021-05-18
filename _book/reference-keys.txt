@@ -41,3 +41,8 @@ simetría-y-asimetría
 kurtosis-o-medida-de-apuntalamiento
 quantiles
 gráficos
+univariantes-cualitativas
+univariantes-cuantitativas
+o-más-variables-ambas-cualitativas
+o-más-variables-ambas-cuantitativas
+o-más-variables-mixtas
