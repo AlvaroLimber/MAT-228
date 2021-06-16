@@ -1,0 +1,125 @@
+# Diseño de estudios estadísticos
+El objetivo de este tema es tener el conocimiento de las etapas necesarias para el diseño de un estudio estadístico vinculado con la recolección de información.
+
+Todo estudio estadístico vinculado con recolección de información debe partir de una pregunta de investigación, esta sirve como guía para el diseño estadístico y todas sus etapas; estas etapas son:
+
+  1. **Temática:** Se formaliza y se plantea un marco teórico/conceptual de la pregunta de investigación, en esta etapa se identifican *indicadores*, *variables* y *preguntas*. La finalidad es contar con un cuestionario.
+  2. **Encuesta por muestreo (otra aproximación):** Tiene la finalidad de establecer el mecanismo para acceder a la población de estudio, de tal forma que esta información sea valida (representativa). La salida de esta etapa normalmente es un listado de unidades a entrevistar.  
+  3. **Operativo de campo (paradata):** Se refiere al componente logístico para efectivizar el listado de unidades a entrevistar. La salida de esta etapa son los cuestinarios con información
+  4. **Sistema/procesamiento:** Esta etapa es la responsable de contar con una base de datos a partir del cuestionario y la recolección de operativo de campo. Su salida es la base de datos.
+
+## Pregunta de investigación
+
+  * ¿Cuáles son los ingresos, edades y lugares de trabajo de los niños y niñas trabajadores del municipio de La Paz? (*descriptiva*)
+  * Situación de Madres adolescentes en Bolivia (*descriptiva*)
+  * El nivel de Empoderamiento de las Madres adolescentes en Bolivia (*descriptiva*)
+  * Los migrantes cuando llegan a nuestro país de que viven (*descriptiva*)
+  * ¿la dactilo-pintuta como estrategia permitirá una estimulación favorable para la coordinación oculo-manual en niñas y niños de 5-6 años de edad de la Unidad Educativa Vicente Donoso Torres? (*relación causa/efecto*). $Estimulación->Coordinación$
+  * La falta de desayuno escolar en estudiantes de primaria y secundaria, tendrá algún efecto en la salud. (*relación causa/efecto*)
+  * Conocimientos, prácticas y vivencias de violencias en adolescentes. (*descriptiva*)
+  * ¿Cuáles son las causas principales de los embarazos tempranos de las adolescentes en Bolivia? (*relación causa/efecto*)
+
+Las recomendaciones principales para formular una pregunta de investigación son; (1) establecer claramente la **población de estudio**, (2) establecer la **temática de interés** sobre la población. Las preguntas pueden tener un sentido *descriptivo* o abordar aspectos de *causa/efecto*. 
+
+Después de plantear la pregunta de investigación que responde principalmente a la motivación del investigador, siguen varias etapas tradicionales como; definir objetivos, planteamiento del problema, justificación, hipótesis. 
+
+## Tipos de estudios estadísticos
+
+Están orientados al sentido de la pregunta de investigación, en obtener información descriptiva o información de tipo causa/efecto, incluyendo en lo descriptivo la necesidad o no de obtener información representativa. Estos son tres:
+
+  * *Diseños experimentales:* Por excelencia el método más puro para obtener una relación de causa y efecto. 
+  * *Muestra aleatoria:* Se usa principalmente para preguntas de tipo descriptivo, el censo es un caso particular de una muestra aleatoria. En este tipo de estudios es posible medir una relación de causa/efecto pero con más errores, aproximando con técnicas cuasi-experimentales
+  * *Estudios Observacionales:* No tienen la finalidad de lograr resultados representativos de una población y tampoco permiten tener una medida para relaciones de causa efecto, son estudios del tipo exploratorios (sondeos). Son útiles para problemáticas sociales complejas o cuando es difícil de acceder a la población.
+
+## Tipos de variables
+
+  * *Principales/resultado/predictivas:* Corresponden a las variables asociadas a responder la pregunta de investigación. ($X->Y$)
+  * *Control:* Variables auxiliares que se pueden medir y que ayudan o complementan el conocimiento al rededor de las variables principales.
+  * *Disturbio:* Variables que no se pueden medir y que afectan a las variables principales
+  * *Aleatorias (Ruido blanco):* Son el resto de variables que no afecta a las variables principales 
+
+Ejemplo, se busca entender la relación entre la educación y los ingresos de las personas.
+
+  * *Principales:* Ingreso, educación 
+    + Persona 1, universitaria: 3000 Bs
+    + Persona 2, universitaria: 7000 Bs
+  * *Control:* Lugar de trabajo, puesto, experiencia, edad, sexo, carrera, tiempo de trabajo (medio/completo), tipo de contrato
+  * *Disturbio:* Habilidades, motivación, acuerdo de relación (amigo, partidaria, familia, aval), suerte
+  * *Aleatorias (Ruido blanco):* Color del cabello, nombre de su madre
+
+## Temática y el diseño de cuestionarios
+
+Esta es la primera etapa en un proceso de recolección de datos, busca *traducir la pregunta de investigación* en *indicadores medibles* por medio de *variables* y planteadas en un *cuestionario* para la población objetivo.
+
+  1. Se inicia con un marco conceptual donde se definen los conceptos planteados en la pregunta de investigación. (Rev. de literatura)
+  2. Definir indicadores medibles y sus variables a partir del paso anterior. 
+  3. Convertir las variables en preguntas para el cuestionario
+  4. Identificar variables de control para introducirlas en el cuestionario
+  5. Diseñar el cuestionario
+
+Ejemplo, ¿Los migrantes cuando llegan a nuestro país de que viven?
+
+  1. ¿Qué es un migrante?, 
+  2. 
+  3. 
+  4. 
+  5. 
+
+Tarea, plantear hasta el paso que pueda para los temas de *empoderamiento* o *pobreza*
+
+Ejemplo
+
+Pobreza: 
+  + La ONU ha definido a la pobreza como “la condición caracterizada por una privación severa de necesidades humanas básicas, incluyendo alimentos, agua potable, instalaciones sanitarias, salud, vivienda, educación e información.
+  + El sociólogo George Simmel sostiene que la “pobreza”, en términos sociológicos, refiere no tanto a las personas con bajos ingresos sino a aquellos que son dependientes: “La persona pobre, sociológicamente hablando, es el individuo que recibe asistencia porque carece de medios de subsistencia” (Simmel, 1965: 140).
+  + Baratz y Grigsby hablan de la pobreza como “una privación severa de bienestar físico y bienestar mental, estrechamente asociada con inadecuados recursos económicos y consumos” (1971: 120).
+  + Gary Fields (2001) define la pobreza como la incapacidad de un individuo o una familia para disponer de los recursos suficientes para satisfacer sus necesidades básicas.
+  + Ringen sostiene que la pobreza es un “nivel de consumo que está por debajo de lo que generalmente es considerado el mínimo decente” (1988: 354). El Banco Mundial define a la pobreza como “la incapacidad para alcanzar un nivel de vida mínimo”
+
+Indicador: ¿Cómo se mide la pobreza?. 
+$$FGT_{\alpha}=\frac{1}{N}\sum_{i=1}^{H}({\frac {z-y_{i}}{z}})^{\alpha}$$
+
+Variables:
+
+Donde, $N:$ es el tamaño de la población, $y_i$ es el gasto o *ingreso* per cápita del hogar donde proviene el individuo, $z:$ linea de pobreza y $\alpha:$ es un parámetro de "sensibilidad. $H$ es el número total de personas cuyo ingreso o gasto per cápita está por debajo de la línea de pobreza.
+
+Preguntas: Se debe construir el ingreso de las personas:
+
+  + Ingreso Laboral
+    * Dependientes
+      - ¿Durante el último mes, cuál fue su salario sin contar los descuentos (liquido)?
+    * Independientes
+      - ¿Durante el último mes, cuál fue su ingreso descontando gastos de insumos/producción y servicios de su activad económica?
+  + Ingreso no laboral
+    * ¿Durante el último mes, recibió ingresos por bonos o rentas?
+    * ¿Durante el último mes, recibió ingresos por alquileres?
+    * ¿Durante el último mes, recibió ingresos por remesas del exterior?
+
+### Tipos de preguntas
+
+El tipo de pregunta en un cuestionario depende de establecer la respuesta que se espera.
+
+  + Preguntas cerradas con opciones fijas de selección única 
+    *
+    *
+  + Preguntas cerradas con opciones fijas de selección múltiple
+    *
+    *
+  + Preguntas abiertas; Numéricas, texto 
+    *
+    *
+    *
+    *
+
+Para las preguntas cerradas, es posible volverlas semi abiertas, cuando se incluye opciones como: especificar. 
+
+En el caso de las preguntas cerradas de selección única, son bastante populares las preguntas que incluyen escalas, la escala más popular es la escala de Likert 
+
+
+## Muestreo estadístico
+
+## Recolección de datos y operativo de campo
+
+## Sistemas y procesamiento de la información
+
+## Análisis y exploración de los datos recolectados

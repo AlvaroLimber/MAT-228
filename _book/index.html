@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-05-18" />
+<meta name="date" content="2021-06-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -204,6 +204,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.12.5" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#o-más-variables-mixtas"><i class="fa fa-check"></i><b>2.12.5</b> 2 o más variables (mixtas)</a></li>
 </ul></li>
 </ul></li>
+<li class="chapter" data-level="3" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html"><i class="fa fa-check"></i><b>3</b> Diseño de estudios estadísticos</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#pregunta-de-investigación"><i class="fa fa-check"></i><b>3.1</b> Pregunta de investigación</a></li>
+<li class="chapter" data-level="3.2" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#tipos-de-estudios-estadísticos"><i class="fa fa-check"></i><b>3.2</b> Tipos de estudios estadísticos</a></li>
+<li class="chapter" data-level="3.3" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#tipos-de-variables"><i class="fa fa-check"></i><b>3.3</b> Tipos de variables</a></li>
+<li class="chapter" data-level="3.4" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#temática-y-el-diseño-de-cuestionarios"><i class="fa fa-check"></i><b>3.4</b> Temática y el diseño de cuestionarios</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#tipos-de-preguntas"><i class="fa fa-check"></i><b>3.4.1</b> Tipos de preguntas</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#muestreo-estadístico"><i class="fa fa-check"></i><b>3.5</b> Muestreo estadístico</a></li>
+<li class="chapter" data-level="3.6" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#recolección-de-datos-y-operativo-de-campo"><i class="fa fa-check"></i><b>3.6</b> Recolección de datos y operativo de campo</a></li>
+<li class="chapter" data-level="3.7" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#sistemas-y-procesamiento-de-la-información"><i class="fa fa-check"></i><b>3.7</b> Sistemas y procesamiento de la información</a></li>
+<li class="chapter" data-level="3.8" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#análisis-y-exploración-de-los-datos-recolectados"><i class="fa fa-check"></i><b>3.8</b> Análisis y exploración de los datos recolectados</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -225,7 +239,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <h1 class="title">Estadística Social</h1>
 <h2 class="subtitle"><em>MAT-228</em></h2>
 <p class="author"><em>Alvaro Chirino Gutierrez</em></p>
-<p class="date"><em>2021-05-18</em></p>
+<p class="date"><em>2021-06-15</em></p>
 </div>
 <div id="prefacio" class="section level1 unnumbered">
 <h1>Prefacio</h1>
@@ -250,7 +264,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="index.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sessionInfo</span>()</span></code></pre></div>
 <pre><code>## R version 4.0.5 (2021-03-31)
 ## Platform: x86_64-w64-mingw32/x64 (64-bit)
-## Running under: Windows 10 x64 (build 19042)
+## Running under: Windows 10 x64 (build 19043)
 ## 
 ## Matrix products: default
 ## 
@@ -262,17 +276,32 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 ## [5] LC_TIME=Spanish_Bolivia.1252    
 ## 
 ## attached base packages:
-## [1] stats     graphics  grDevices utils     datasets 
-## [6] methods   base     
+## [1] stats     graphics  grDevices
+## [4] utils     datasets  methods  
+## [7] base     
 ## 
 ## loaded via a namespace (and not attached):
-##  [1] bookdown_0.21     digest_0.6.27     R6_2.5.0         
-##  [4] jsonlite_1.7.2    magrittr_2.0.1    evaluate_0.14    
-##  [7] highr_0.8         stringi_1.5.3     rlang_0.4.10     
-## [10] rstudioapi_0.13   jquerylib_0.1.3   bslib_0.2.4      
-## [13] rmarkdown_2.7     tools_4.0.5       stringr_1.4.0    
-## [16] xfun_0.22         yaml_2.2.1        compiler_4.0.5   
-## [19] htmltools_0.5.1.1 knitr_1.31        sass_0.3.1</code></pre>
+##  [1] bookdown_0.21    
+##  [2] digest_0.6.27    
+##  [3] R6_2.5.0         
+##  [4] jsonlite_1.7.2   
+##  [5] magrittr_2.0.1   
+##  [6] evaluate_0.14    
+##  [7] highr_0.8        
+##  [8] stringi_1.5.3    
+##  [9] rlang_0.4.10     
+## [10] rstudioapi_0.13  
+## [11] jquerylib_0.1.3  
+## [12] bslib_0.2.4      
+## [13] rmarkdown_2.7    
+## [14] tools_4.0.5      
+## [15] stringr_1.4.0    
+## [16] xfun_0.22        
+## [17] yaml_2.2.1       
+## [18] compiler_4.0.5   
+## [19] htmltools_0.5.1.1
+## [20] knitr_1.31       
+## [21] sass_0.3.1</code></pre>
 </div>
 <div id="bases-de-datos" class="section level2 unnumbered">
 <h2>Bases de datos</h2>

@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-05-18" />
+<meta name="date" content="2021-06-15" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -32,7 +32,7 @@
   
   
 <link rel="prev" href="introducción-a-la-estadística-y-la-importancia-para-la-parte-social.html"/>
-
+<link rel="next" href="diseño-de-estudios-estadísticos.html"/>
 <script src="libs/header-attrs-2.7/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
@@ -203,6 +203,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="2.12.4" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#o-más-variables-ambas-cuantitativas"><i class="fa fa-check"></i><b>2.12.4</b> 2 o más variables (ambas cuantitativas)</a></li>
 <li class="chapter" data-level="2.12.5" data-path="estadística-descriptiva.html"><a href="estadística-descriptiva.html#o-más-variables-mixtas"><i class="fa fa-check"></i><b>2.12.5</b> 2 o más variables (mixtas)</a></li>
 </ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html"><i class="fa fa-check"></i><b>3</b> Diseño de estudios estadísticos</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#pregunta-de-investigación"><i class="fa fa-check"></i><b>3.1</b> Pregunta de investigación</a></li>
+<li class="chapter" data-level="3.2" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#tipos-de-estudios-estadísticos"><i class="fa fa-check"></i><b>3.2</b> Tipos de estudios estadísticos</a></li>
+<li class="chapter" data-level="3.3" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#tipos-de-variables"><i class="fa fa-check"></i><b>3.3</b> Tipos de variables</a></li>
+<li class="chapter" data-level="3.4" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#temática-y-el-diseño-de-cuestionarios"><i class="fa fa-check"></i><b>3.4</b> Temática y el diseño de cuestionarios</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#tipos-de-preguntas"><i class="fa fa-check"></i><b>3.4.1</b> Tipos de preguntas</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#muestreo-estadístico"><i class="fa fa-check"></i><b>3.5</b> Muestreo estadístico</a></li>
+<li class="chapter" data-level="3.6" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#recolección-de-datos-y-operativo-de-campo"><i class="fa fa-check"></i><b>3.6</b> Recolección de datos y operativo de campo</a></li>
+<li class="chapter" data-level="3.7" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#sistemas-y-procesamiento-de-la-información"><i class="fa fa-check"></i><b>3.7</b> Sistemas y procesamiento de la información</a></li>
+<li class="chapter" data-level="3.8" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#análisis-y-exploración-de-los-datos-recolectados"><i class="fa fa-check"></i><b>3.8</b> Análisis y exploración de los datos recolectados</a></li>
 </ul></li>
 </ul>
 
@@ -757,25 +771,33 @@ estudiantes y docentes pesan lo mismo, es decir <span class="math inline">\(N_e=
 <span id="cb3-2"><a href="estadística-descriptiva.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">set.seed</span>(<span class="dv">999</span>)</span>
 <span id="cb3-3"><a href="estadística-descriptiva.html#cb3-3" aria-hidden="true" tabindex="-1"></a>edad<span class="ot">&lt;-</span><span class="fu">abs</span>(<span class="fu">round</span>(<span class="fu">rnorm</span>(N,<span class="dv">21</span>,<span class="dv">7</span>),<span class="dv">0</span>))</span>
 <span id="cb3-4"><a href="estadística-descriptiva.html#cb3-4" aria-hidden="true" tabindex="-1"></a>edad</span></code></pre></div>
-<pre><code>##   [1] 19 12 27 23 19 17  8 12 14 13 30 22 28 22 28 11 21 22 27
-##  [20]  6 12 26 18 23 13 25 13 15 10 20 38 25 22 29 19  6 18 25
-##  [39] 25 11 18 21 12 13 23 23  7 21 25 21 20 16 33 24 21 23 25
-##  [58] 12 24 17 15 29 28 29 21 13 11 19 18 28 20 21 28 18 28 21
-##  [77] 25  7 24 20 16 28 12 22 13 18 31 19 28 24 33 21 14 30 13
-##  [96] 28 17 19 19 23  9 24 15 16 32  3 23 31 10 16 19 10 15 15
-## [115] 19 14 28 29 12 24 18 22  6  9 30 22 23 22 28 23 18 20 23
-## [134] 18 16 25 12 15 15 29 21 31 20 27 25 17 29 22 15 28 28 31
-## [153] 22 26 27 20 20 31 31 17 21 21 14 18 13 28 31 27 16 20 17
-## [172] 19 23 22 21 20 12 24 13 22 16 24 27 26 18 24  8 21 24 19
-## [191] 18 27 20 20 15 24 24 14 15 21</code></pre>
+<pre><code>##   [1] 19 12 27 23 19 17  8 12 14 13 30
+##  [12] 22 28 22 28 11 21 22 27  6 12 26
+##  [23] 18 23 13 25 13 15 10 20 38 25 22
+##  [34] 29 19  6 18 25 25 11 18 21 12 13
+##  [45] 23 23  7 21 25 21 20 16 33 24 21
+##  [56] 23 25 12 24 17 15 29 28 29 21 13
+##  [67] 11 19 18 28 20 21 28 18 28 21 25
+##  [78]  7 24 20 16 28 12 22 13 18 31 19
+##  [89] 28 24 33 21 14 30 13 28 17 19 19
+## [100] 23  9 24 15 16 32  3 23 31 10 16
+## [111] 19 10 15 15 19 14 28 29 12 24 18
+## [122] 22  6  9 30 22 23 22 28 23 18 20
+## [133] 23 18 16 25 12 15 15 29 21 31 20
+## [144] 27 25 17 29 22 15 28 28 31 22 26
+## [155] 27 20 20 31 31 17 21 21 14 18 13
+## [166] 28 31 27 16 20 17 19 23 22 21 20
+## [177] 12 24 13 22 16 24 27 26 18 24  8
+## [188] 21 24 19 18 27 20 20 15 24 24 14
+## [199] 15 21</code></pre>
 <p>Un problema es ordenar estos número de tal forma de calcular las medidas
 de tendencia central, una solución sería ordenar la información en
 grupos o clases.</p>
 <p>Ante de eso, veamos un ejemplo más simple, sean las edades de 20
 personas;</p>
 <div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="estadística-descriptiva.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">sort</span>(edad[<span class="dv">1</span><span class="sc">:</span><span class="dv">20</span>])</span></code></pre></div>
-<pre><code>##  [1]  6  8 11 12 12 13 14 17 19 19 21 22 22 22 23 27 27 28 28
-## [20] 30</code></pre>
+<pre><code>##  [1]  6  8 11 12 12 13 14 17 19 19 21
+## [12] 22 22 22 23 27 27 28 28 30</code></pre>
 <ul>
 <li>Moda: El procedimiento es similar a los datos simples, nos apoyamos
 en <span class="math inline">\(f_i\)</span>, en el caso de tablas con intervalos hablamos de un
@@ -1116,23 +1138,6 @@ años o menos, también, el 75% de esta población tiene una edad mayor a
 <div id="o-más-variables-mixtas" class="section level3" number="2.12.5">
 <h3><span class="header-section-number">2.12.5</span> 2 o más variables (mixtas)</h3>
 
-<div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-R-rmarkdown" class="csl-entry">
-Allaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, Winston Chang, and Richard Iannone. 2020. <em>Rmarkdown: Dynamic Documents for r</em>. <a href="https://CRAN.R-project.org/package=rmarkdown">https://CRAN.R-project.org/package=rmarkdown</a>.
-</div>
-<div id="ref-R-base" class="csl-entry">
-R Core Team. 2019. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
-</div>
-<div id="ref-R-knitr" class="csl-entry">
-Xie, Yihui. 2019. <em>Knitr: A General-Purpose Package for Dynamic Report Generation in r</em>. <a href="https://CRAN.R-project.org/package=knitr">https://CRAN.R-project.org/package=knitr</a>.
-</div>
-<div id="ref-R-bookdown" class="csl-entry">
-———. 2020. <em>Bookdown: Authoring Books and Technical Documents with r Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.
-</div>
-<div id="ref-Xie2018" class="csl-entry">
-Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. <span>“<span class="nocase">How to Read This Book</span>.”</span> <em>Transforming Climate Finance and Green Investment with Blockchains</em>, 1. <a href="https://doi.org/10.1016/b978-0-12-814447-3.00041-0">https://doi.org/10.1016/b978-0-12-814447-3.00041-0</a>.
-</div>
-</div>
 </div>
 </div>
 </div>
@@ -1141,8 +1146,8 @@ Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. <span>“<span class="no
           </div>
         </div>
       </div>
-<a href="introducción-a-la-estadística-y-la-importancia-para-la-parte-social.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
-
+<a href="introducción-a-la-estadística-y-la-importancia-para-la-parte-social.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="diseño-de-estudios-estadísticos.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
     </div>
   </div>
 <script src="libs/gitbook-2.6.7/js/app.min.js"></script>
