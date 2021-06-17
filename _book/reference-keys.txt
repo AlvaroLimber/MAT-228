@@ -52,6 +52,8 @@ tipos-de-estudios-estadísticos
 tipos-de-variables
 temática-y-el-diseño-de-cuestionarios
 tipos-de-preguntas
+formas-para-diseñar-un-cuestionario
+documentacion-al-respecto-los-cuestionarios
 muestreo-estadístico
 recolección-de-datos-y-operativo-de-campo
 sistemas-y-procesamiento-de-la-información

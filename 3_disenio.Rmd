@@ -100,21 +100,69 @@ Preguntas: Se debe construir el ingreso de las personas:
 El tipo de pregunta en un cuestionario depende de establecer la respuesta que se espera.
 
   + Preguntas cerradas con opciones fijas de selección única 
-    *
-    *
+    * ¿Es hombre o mujer
+      - 1. Hombre
+      - 2. Mujer
+    * ¿Qué relación o parentesco tiene  (...)  con el jefe o jefa del hogar?
+      - 1. JEFE O JEFA DEL HOGAR
+      - 2. ESPOSA/O O CONVIVIENTE
+      - 3. HIJO/A O ENTENADO/A
+      - 4. YERNO O NUERA
+      - 5. HERMANO/A O CUÑADO/A
+      - 6. PADRES
+      - 7. SUEGROS
+      - 8. NIETO/NIETA
+      - 9. OTRO PARIENTE
+      - 10. OTRO QUE NO ES PARIENTE
+      - 11. EMPLEADA/O DEL HOGAR CAMA ADENTRO
+      - 12. PARIENTE DE LA EMPLEADA/O DEL HOGAR
   + Preguntas cerradas con opciones fijas de selección múltiple
-    *
-    *
-  + Preguntas abiertas; Numéricas, texto 
-    *
-    *
-    *
-    *
+    * ¿Qué deportes usted practica?
+      - Natación
+      - Futbol
+      - Volley
+      - Basketball
+      - Wally
+      - Raquet 
+      - Ninguno
+      - Otros
+  + Preguntas abiertas; Texto 
+    * ¿Cuál es el nombre y apellido de cada una de las personas que viven habitualmente en este hogar (empezando por el/la Jefe/a del Hogar)?
+    * ¿Cuál es el idioma o lengua en el que aprendió a hablar en su niñez?
+  + Preguntas Numéricas: 
+    * ¿Cuántos años cumplidos tiene?
+    * ¿Cuántos hijos tiene?}
+    * ¿Número de miembros del hogar?
+  + Preguntas de tipo Fecha
+    * ¿Cuál es la fecha de su nacimiento?
 
 Para las preguntas cerradas, es posible volverlas semi abiertas, cuando se incluye opciones como: especificar. 
 
 En el caso de las preguntas cerradas de selección única, son bastante populares las preguntas que incluyen escalas, la escala más popular es la escala de Likert 
 
+Nota. Para las categorías de las respuestas cerradas es una buena práctica codificar las categorías, esto permite mejorar la captura de la información.
+
+### Formas para diseñar un cuestionario
+
+Se refiere a crear y diseñar el cuestionario, las dos opciones que existen son:
+
+  + Para impresión en papel; Cara a cara, Autollenado
+    * Excel
+    * Word
+    * Otras
+  + Encuestas digitales; cara a cara, autollenado web
+    * Google forms
+    * Survey monkey
+    * Kobo Collect
+    * CsPro
+  
+### Documentacion al respecto los cuestionarios
+Hay varios documentos que se generan para el uso correcto de los cuestionarios, entre ellos:
+
+  + Glosario de términos
+  + Diccionario de preguntas
+  + Diagramas de flujo; siempre y cuando existan flujos/saltos en el cuestionario
+  + Matriz de indicadores/preguntas
 
 ## Muestreo estadístico
 
