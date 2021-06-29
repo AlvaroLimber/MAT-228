@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-06-17" />
+<meta name="date" content="2021-06-29" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -215,7 +215,12 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <li class="chapter" data-level="3.4.2" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#formas-para-diseñar-un-cuestionario"><i class="fa fa-check"></i><b>3.4.2</b> Formas para diseñar un cuestionario</a></li>
 <li class="chapter" data-level="3.4.3" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#documentacion-al-respecto-los-cuestionarios"><i class="fa fa-check"></i><b>3.4.3</b> Documentacion al respecto los cuestionarios</a></li>
 </ul></li>
-<li class="chapter" data-level="3.5" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#muestreo-estadístico"><i class="fa fa-check"></i><b>3.5</b> Muestreo estadístico</a></li>
+<li class="chapter" data-level="3.5" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#muestreo-estadístico"><i class="fa fa-check"></i><b>3.5</b> Muestreo estadístico</a>
+<ul>
+<li class="chapter" data-level="3.5.1" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#marco-muestral"><i class="fa fa-check"></i><b>3.5.1</b> Marco Muestral</a></li>
+<li class="chapter" data-level="3.5.2" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#técnicas-de-muestreo"><i class="fa fa-check"></i><b>3.5.2</b> Técnicas de muestreo</a></li>
+<li class="chapter" data-level="3.5.3" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#tamaño-de-muestra"><i class="fa fa-check"></i><b>3.5.3</b> Tamaño de muestra</a></li>
+</ul></li>
 <li class="chapter" data-level="3.6" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#recolección-de-datos-y-operativo-de-campo"><i class="fa fa-check"></i><b>3.6</b> Recolección de datos y operativo de campo</a></li>
 <li class="chapter" data-level="3.7" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#sistemas-y-procesamiento-de-la-información"><i class="fa fa-check"></i><b>3.7</b> Sistemas y procesamiento de la información</a></li>
 <li class="chapter" data-level="3.8" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#análisis-y-exploración-de-los-datos-recolectados"><i class="fa fa-check"></i><b>3.8</b> Análisis y exploración de los datos recolectados</a></li>
@@ -463,6 +468,63 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 <div id="muestreo-estadístico" class="section level2" number="3.5">
 <h2><span class="header-section-number">3.5</span> Muestreo estadístico</h2>
+<p>El muestreo estadístico se refiere a obtener una <em>muestra representativa</em> de la población de interés, este método se aplica cuando no es posible realizar una recolección completa de la población (censo).</p>
+<p>Algunos conceptos relevantes:</p>
+<ul>
+<li><strong>Muestra</strong>: un subconjunto de la población</li>
+<li><strong>Población objetivo</strong>: Colección de todas las unidades de análisis</li>
+<li><strong>Unidad de análisis</strong>: Elemento del cual se busca conocer la información para analizarla</li>
+<li><strong>Variabilidad de una variable</strong>: Se refiere a cuan parecida o no es la información de una determinada variable</li>
+<li><strong>Tamaño de la población</strong>: Es el número de elementos que tiene la población objetivo, denotado por <span class="math inline">\(N\)</span></li>
+<li><strong>Tamaño de la muestra</strong>: Es el número de elementos que tiene la muestra, denotado por <span class="math inline">\(n\)</span></li>
+<li><strong>Aleatoriedad</strong>: Es un proceso cuyo resultado no se puede predecir</li>
+<li><strong>Muestras aleatorias</strong>: Son muestras obtenidas de una población, siguiendo un mecanismo aleatorio (al azar)</li>
+</ul>
+<p>Un ejemplo, se quiere realizar un estudio sobre las condiciones de los/las estudiantes de trabajo social de la UMSA respecto las clases virtuales.</p>
+<p>Solución,</p>
+<ul>
+<li>Conseguir una lista de los/las estudiantes de trabajo social (matriculados), sobre la lista realizar un sorteo para seleccionar a la muestra. (<span class="math inline">\(N=1200\)</span>, <span class="math inline">\(n=50\)</span>) Una vez seleccionada la muestra se debe buscar a la muestra seleccionada y hacer la encuesta. (Muestreo aleatorio simple)</li>
+<li>Conseguir una lista de los/las estudiantes de trabajo social (matriculados) que incluya el año de ingreso, sobre la lista realizar un sorteo para seleccionar a la muestra, garantizando que cada año de ingreso tenga muestra. (<span class="math inline">\(N=1200\)</span>, <span class="math inline">\(n=50=\{2,2,2,...,5,5,5,5\}\)</span>) Una vez seleccionada la muestra se debe buscar a la muestra seleccionada y hacer la encuesta. (Muestreo aleatorio estratificado simple)</li>
+<li>Conseguir una lista de las materias dadas esta gestión (paralelos) y sobre esa lista de materias realizar el sorteo de materias. (<span class="math inline">\(N_M=60\)</span>, <span class="math inline">\(n_m=10\)</span>). Una vez seleccionadas las materias, nos dirigimos a esas materias y realizamos la encuesta a todos los estudiantes de la materia durante una clase. (Muestreo por conglomerados)</li>
+</ul>
+<p>Un ejemplo, se quiere conocer la situación económica de las familias del barrio de Munaypata del municipio de La Paz.</p>
+<ul>
+<li>Conseguir una lista de los/las familias, sobre la lista realizar un sorteo para seleccionar a la muestra. (<span class="math inline">\(N=2800\)</span>, <span class="math inline">\(n=50\)</span>) Una vez seleccionada la muestra se debe buscar a la muestra seleccionada y hacer la encuesta. (Muestreo aleatorio simple)</li>
+<li>Conseguir una lista de los/las familias que incluya el número de miembros, sobre la lista realizar un sorteo para seleccionar a la muestra garantizando que cada tamaño de familia tenga muestra. (<span class="math inline">\(N=2800\)</span>, <span class="math inline">\(n=50=\{3,6,6,... \}\)</span>) Una vez seleccionada la muestra se debe buscar a la muestra seleccionada y hacer la encuesta. (Muestreo aleatorio estratificado simple)</li>
+<li>Conseguir una lista de los manzanos en el barrio y sobre esa lista de manzanos realizar el sorteo de familias. (<span class="math inline">\(N_M=80\)</span>, <span class="math inline">\(n_m=10\)</span>). Una vez seleccionadas los manzanos, nos dirigimos a esas manzanos y realizamos la encuesta a todas las familias del manzano. (Muestreo por conglomerados)</li>
+</ul>
+<p>Un ejemplo, se quiere conocer el estado nutricional de niños y niñas de un hogar de acogida del municipio de El Alto que tiene en total 60 niños/as.</p>
+<p>La representatividad de la muestra depende del alcance y calidad de la lista que se consiga. Esta lista de unidades de interés (simples/agregadas) se conoce en estadística como el Marco Muestral.</p>
+<div id="marco-muestral" class="section level3" number="3.5.1">
+<h3><span class="header-section-number">3.5.1</span> Marco Muestral</h3>
+<p>Es un listado de las unidades simples o g de la población objetivo, el marco muestral perfecto es el que contiene a toda la población objetivo. Mientras más parecido sea el marco muestra a la población objetivo la representatividad será mejor.</p>
+</div>
+<div id="técnicas-de-muestreo" class="section level3" number="3.5.2">
+<h3><span class="header-section-number">3.5.2</span> Técnicas de muestreo</h3>
+<ul>
+<li>Aleatorias/probabilísticas (representatividad, validez externa)
+<ul>
+<li>Muestreo aleatorio simple</li>
+<li>Muestreo estratificado</li>
+<li>Muestreo sistemático</li>
+<li>Muestreo por conglomerados</li>
+<li>Muestreo por etapas</li>
+<li>Muestreo proporcional al tamaño</li>
+<li>Muestreo por fases</li>
+<li>Muestreo complejo</li>
+</ul></li>
+<li>No aleatorios/ no probabilísticos (estudios de caso/poblaciones complejas)
+<ul>
+<li>Muestreo Bola de nieve</li>
+<li>Muestreo intencionado</li>
+<li>Muestreo por cuotas</li>
+</ul></li>
+</ul>
+<p>Tarea: Buscar la definición y ejemplos de las técnicas de muestreo</p>
+</div>
+<div id="tamaño-de-muestra" class="section level3" number="3.5.3">
+<h3><span class="header-section-number">3.5.3</span> Tamaño de muestra</h3>
+</div>
 </div>
 <div id="recolección-de-datos-y-operativo-de-campo" class="section level2" number="3.6">
 <h2><span class="header-section-number">3.6</span> Recolección de datos y operativo de campo</h2>

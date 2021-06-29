@@ -166,6 +166,61 @@ Hay varios documentos que se generan para el uso correcto de los cuestionarios, 
 
 ## Muestreo estadístico
 
+El muestreo estadístico se refiere a obtener una *muestra representativa* de la población de interés, este método se aplica cuando no es posible realizar una recolección completa de la población (censo).
+
+Algunos conceptos relevantes:
+
+  + **Muestra**: un subconjunto de la población
+  + **Población objetivo**: Colección de todas las unidades de análisis
+  + **Unidad de análisis**: Elemento del cual se busca conocer la información para analizarla
+  + **Variabilidad de una variable**: Se refiere a cuan parecida o no es la información de una determinada variable 
+  + **Tamaño de la población**: Es el número de elementos que tiene la población objetivo, denotado por $N$
+  + **Tamaño de la muestra**: Es el número de elementos que tiene la muestra, denotado por $n$
+  + **Aleatoriedad**: Es un proceso cuyo resultado no se puede predecir
+  + **Muestras aleatorias**: Son muestras obtenidas de una población, siguiendo un mecanismo aleatorio (al azar)
+
+Un ejemplo, se quiere realizar un estudio sobre las condiciones de los/las estudiantes de trabajo social de la UMSA respecto las clases virtuales.
+
+Solución, 
+
+  * Conseguir una lista de los/las estudiantes de trabajo social (matriculados), sobre la lista realizar un sorteo para seleccionar a la muestra. ($N=1200$, $n=50$) Una vez seleccionada la muestra se debe buscar a la muestra seleccionada y hacer la encuesta. (Muestreo aleatorio simple) 
+  * Conseguir una lista de los/las estudiantes de trabajo social (matriculados) que incluya el año de ingreso, sobre la lista realizar un sorteo para seleccionar a la muestra, garantizando que cada año de ingreso tenga muestra. ($N=1200$, $n=50=\{2,2,2,...,5,5,5,5\}$) Una vez seleccionada la muestra se debe buscar a la muestra seleccionada y hacer la encuesta. (Muestreo aleatorio estratificado simple)
+  * Conseguir una lista de las materias dadas esta gestión (paralelos) y sobre esa lista de materias realizar el sorteo de materias. ($N_M=60$, $n_m=10$). Una vez seleccionadas las materias, nos dirigimos a esas materias y realizamos la encuesta a todos los estudiantes de la materia durante una clase. (Muestreo por conglomerados)
+
+Un ejemplo, se quiere conocer la situación económica de las familias del barrio de Munaypata del municipio de La Paz.
+
+  * Conseguir una lista de los/las familias, sobre la lista realizar un sorteo para seleccionar a la muestra. ($N=2800$, $n=50$) Una vez seleccionada la muestra se debe buscar a la muestra seleccionada y hacer la encuesta. (Muestreo aleatorio simple) 
+  * Conseguir una lista de los/las familias que incluya el número de miembros, sobre la lista realizar un sorteo para seleccionar a la muestra garantizando que cada tamaño de familia tenga muestra. ($N=2800$, $n=50=\{3,6,6,... \}$) Una vez seleccionada la muestra se debe buscar a la muestra seleccionada y hacer la encuesta. (Muestreo aleatorio estratificado simple) 
+  * Conseguir una lista de los manzanos en el barrio y sobre esa lista de manzanos realizar el sorteo de familias. ($N_M=80$, $n_m=10$). Una vez seleccionadas los manzanos, nos dirigimos a esas manzanos y realizamos la encuesta a todas las familias del manzano. (Muestreo por conglomerados)
+
+Un ejemplo, se quiere conocer el estado nutricional de niños y niñas de un hogar de acogida del municipio de El Alto que tiene en total 60 niños/as.
+
+La representatividad de la muestra depende del alcance y calidad de la lista que se consiga. Esta lista de unidades de interés (simples/agregadas) se conoce en estadística como el Marco Muestral.
+
+### Marco Muestral
+Es un listado de las unidades simples o g de la población objetivo, el marco muestral perfecto es el que contiene a toda la población objetivo. Mientras más parecido sea el marco muestra a la población objetivo la representatividad será mejor.
+
+### Técnicas de muestreo
+
+  * Aleatorias/probabilísticas (representatividad, validez externa)
+    + Muestreo aleatorio simple
+    + Muestreo estratificado
+    + Muestreo sistemático
+    + Muestreo por conglomerados
+    + Muestreo por etapas
+    + Muestreo proporcional al tamaño
+    + Muestreo por fases
+    + Muestreo complejo
+  * No aleatorios/ no probabilísticos (estudios de caso/poblaciones complejas)
+    + Muestreo Bola de nieve
+    + Muestreo intencionado
+    + Muestreo por cuotas
+  
+Tarea: Buscar la definición y ejemplos de las técnicas de muestreo
+
+### Tamaño de muestra
+
+
 ## Recolección de datos y operativo de campo
 
 ## Sistemas y procesamiento de la información
