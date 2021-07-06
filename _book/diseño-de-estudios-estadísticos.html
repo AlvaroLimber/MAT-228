@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-07-05" />
+<meta name="date" content="2021-07-06" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -219,7 +219,8 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <ul>
 <li class="chapter" data-level="3.5.1" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#marco-muestral"><i class="fa fa-check"></i><b>3.5.1</b> Marco Muestral</a></li>
 <li class="chapter" data-level="3.5.2" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#técnicas-de-muestreo"><i class="fa fa-check"></i><b>3.5.2</b> Técnicas de muestreo</a></li>
-<li class="chapter" data-level="3.5.3" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#tamaño-de-muestra"><i class="fa fa-check"></i><b>3.5.3</b> Tamaño de muestra</a></li>
+<li class="chapter" data-level="3.5.3" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#técnicas-no-aleatorios-no-probabilísticos"><i class="fa fa-check"></i><b>3.5.3</b> Técnicas No aleatorios / no probabilísticos</a></li>
+<li class="chapter" data-level="3.5.4" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#tamaño-de-muestra-n"><i class="fa fa-check"></i><b>3.5.4</b> Tamaño de muestra (n)</a></li>
 </ul></li>
 <li class="chapter" data-level="3.6" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#recolección-de-datos-y-operativo-de-campo"><i class="fa fa-check"></i><b>3.6</b> Recolección de datos y operativo de campo</a></li>
 <li class="chapter" data-level="3.7" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#sistemas-y-procesamiento-de-la-información"><i class="fa fa-check"></i><b>3.7</b> Sistemas y procesamiento de la información</a></li>
@@ -523,22 +524,88 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </ul>
 <p><img src="https://cdn.goconqr.com/uploads/media/image/12013887/18bb2456-8228-4261-bbda-93e71e070f7f.jpg" /></p>
 <ul>
-<li>Muestreo por etapas</li>
-<li>Muestreo proporcional al tamaño</li>
-<li>Muestreo por fases</li>
-<li>Muestreo complejo</li>
-<li>No aleatorios/ no probabilísticos (estudios de caso/poblaciones complejas)
+<li><p><em>Muestreo por etapas:</em> Es un muestreo donde existen selecciones por etapas, donde se cuenta con marcos muestrales en cada etapa y una selección de muestra en cada etapa, son selecciones de muestra sucesivas. Un ejemplo particular funciona cuando se busca una muestra de estudiantes de colegio, las etapas puedes ser:</p></li>
+<li><p>Distritos escolares</p></li>
+<li><p>Unidades educativas</p></li>
+<li><p>Curso</p></li>
+<li><p>Paralelo</p></li>
+<li><p>Estudiantes</p></li>
+</ul>
+<p><img src="https://slidetodoc.com/presentation_image_h/fd58c431e50d93e7e0dad4f06e3960aa/image-29.jpg" /></p>
+<ul>
+<li><p><em>Muestreo por fases:</em> Este muestreo es parecido al muestreo por etapas, la diferencia radica en que se planifica una recolección de información en la las fases iniciales con la finalidad de profundizar la entrevista en las fases finales. Normalmente la primera fase tiene un gran número de muestra y la última fase menos. Un muestreo de 2 fases es lo más común.</p></li>
+<li><p><em>Muestreo proporcional al tamaño:</em> Es un muestreo con un esquema de selección que otorga diferentes probabilidades de selección, es decir no todas las unidades de la población tienen la misma oportunidad de pertenecer a la muestra.</p></li>
+</ul>
+<p>Como ejemplo, imaginemos que tenemos que seleccionar 2 comunidades de un grupo de 6 comunidades; el tamaño de estas 6 comunidades es:</p>
+<ul>
+<li><p>C1: 30</p></li>
+<li><p>C2: 5</p></li>
+<li><p>C3: 5</p></li>
+<li><p>C4: 100</p></li>
+<li><p>C5: 10</p></li>
+<li><p>C6: 15</p></li>
+<li><p><em>Muestreo complejo:</em> Es la combinación de las distintas técnicas de muestreo</p></li>
+</ul>
+</div>
+</div>
+<div id="técnicas-no-aleatorios-no-probabilísticos" class="section level3" number="3.5.3">
+<h3><span class="header-section-number">3.5.3</span> Técnicas No aleatorios / no probabilísticos</h3>
+<p>Están orientadas principalmente a estudios de caso o estudios en poblaciones complejas/vulnerables, la mayor dificultad de estas técnicas es que no son representativas</p>
 <ul>
 <li>Muestreo Bola de nieve</li>
 <li>Muestreo intencionado</li>
 <li>Muestreo por cuotas</li>
+<li>Muestreo voluntario</li>
+</ul>
+</div>
+<div id="tamaño-de-muestra-n" class="section level3" number="3.5.4">
+<h3><span class="header-section-number">3.5.4</span> Tamaño de muestra (n)</h3>
+<p><span class="math display">\[
+n_{final}=\frac{n_{1}*(Deff)}{(1-\hat{TNR})}
+\]</span>
+Con:
+* <span class="math inline">\(n_{final}:\)</span> Tamaño de muestra final (En unidades elementales)
+* <span class="math inline">\(Deff:\)</span> Efecto de Diseño (Se recomienda un <span class="math inline">\(Deff=2\)</span> si no se lo puede calcular. Si se realiza un muestreo aleatorio simple su valor es 1).
+* <span class="math inline">\(\hat{TNR}:\)</span> Tasa de No Respuesta Esperada, es la proporción que se estima perder por no respuesta o boletas mal llenadas.
+* <span class="math inline">\(n_1:\)</span> Tamaño de muestra para un muestreo de tipo aleatoria simple para una población finita.</p>
+<p><span class="math display">\[
+n_{1}=\frac{n_0}{1-\frac{n_0}{N}}
+\]</span>
+Con:</p>
+<ul>
+<li><p><span class="math inline">\(N:\)</span> Tamaño de la Población (En unidades elementales)</p></li>
+<li><p><span class="math inline">\(n_0:\)</span> Tamaño de muestra para un muestreo de tipo aleatorio simple para poblaciones infinitas</p></li>
+<li><p>Error Absoluto</p>
+<ul>
+<li>Indicadores de tipo promedio (<span class="math inline">\(\bar{Y}\)</span>)
+<span class="math display">\[
+n_0=\frac{k^2*S^2_y}{e^2}
+\]</span></li>
+<li>Indicadores de tipo proporción (<span class="math inline">\(P\)</span>)
+<span class="math display">\[
+n_0=\frac{k^2*N*P*Q}{e^2*(N-1)}
+\]</span></li>
+</ul></li>
+<li><p>Error Relativo</p>
+<ul>
+<li>Indicadores de tipo promedio (<span class="math inline">\(\bar{Y}\)</span>)
+<span class="math display">\[
+n_0=\frac{k^2*CV^2_y}{e^2_r}
+\]</span></li>
+<li>Indicadores de tipo proporción (<span class="math inline">\(P\)</span>)
+<span class="math display">\[
+n_0=\frac{k^2*Q*N}{e^2_r*(N-1)*P}
+\]</span></li>
 </ul></li>
 </ul>
-<p>Tarea: Buscar la definición y ejemplos de las técnicas de muestreo</p>
-</div>
-</div>
-<div id="tamaño-de-muestra" class="section level3" number="3.5.3">
-<h3><span class="header-section-number">3.5.3</span> Tamaño de muestra</h3>
+<p>Con:
+* <span class="math inline">\(k:\)</span> Coeficiente de confiabilidad (al 95% de confiabilidad <span class="math inline">\(k=1.96\)</span>)
+* <span class="math inline">\(S_y:\)</span> Desviación estandar de la variable <span class="math inline">\(Y\)</span> (Buscar en alguna fuente similar)
+* <span class="math inline">\(e:\)</span> Margen de error permisible Absoluto (Definir en base a cuanto se quiere alejar en términos absolutos del verdadero parámetro)
+* <span class="math inline">\(e_r:\)</span> Margen de error permisible Relativo (Ideal <span class="math inline">\(e_r==0.05\)</span>, mayor a 0.15 es cuestionable)
+* <span class="math inline">\(P:\)</span> Proporción de una categoría de interés (Para una muestra con error relativo, mientras mas extraña es la categoria a explorar mas grande es la muestra requerida. Para muestras con error absoluto el máximo se alcanza en <span class="math inline">\(P=0.5\)</span>)
+* <span class="math inline">\(Q=1-P\)</span>
+* <span class="math inline">\(CV_y:\)</span> Es el Coeficiente de Variación de la variable de <span class="math inline">\(Y\)</span> (Buscar en algún estudio similar o suponer un valor de <span class="math inline">\(CV_y=1\)</span>)</p>
 </div>
 </div>
 <div id="recolección-de-datos-y-operativo-de-campo" class="section level2" number="3.6">

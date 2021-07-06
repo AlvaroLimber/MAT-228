@@ -58,7 +58,8 @@ muestreo-estadístico
 marco-muestral
 técnicas-de-muestreo
 técnicas-probabilísticas
-tamaño-de-muestra
+técnicas-no-aleatorios-no-probabilísticos
+tamaño-de-muestra-n
 recolección-de-datos-y-operativo-de-campo
 sistemas-y-procesamiento-de-la-información
 análisis-y-exploración-de-los-datos-recolectados

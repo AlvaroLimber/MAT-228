@@ -226,19 +226,86 @@ $$k=\frac{N}{n}=\frac{50}{5}=10$$
   
 ![](https://cdn.goconqr.com/uploads/media/image/12013887/18bb2456-8228-4261-bbda-93e71e070f7f.jpg)
 
-  * Muestreo por etapas
-  * Muestreo proporcional al tamaño
-  * Muestreo por fases
-  * Muestreo complejo
-  * No aleatorios/ no probabilísticos (estudios de caso/poblaciones complejas)
-    + Muestreo Bola de nieve
-    + Muestreo intencionado
-    + Muestreo por cuotas
+  * *Muestreo por etapas:* Es un muestreo donde existen selecciones por etapas, donde se cuenta con marcos muestrales en cada etapa y una selección de muestra en cada etapa, son selecciones de muestra sucesivas. Un ejemplo particular funciona cuando se busca una muestra de estudiantes de colegio, las etapas puedes ser:
   
-Tarea: Buscar la definición y ejemplos de las técnicas de muestreo
+  + Distritos escolares
+  + Unidades educativas 
+  + Curso
+  + Paralelo
+  + Estudiantes
+  
+![](https://slidetodoc.com/presentation_image_h/fd58c431e50d93e7e0dad4f06e3960aa/image-29.jpg)
 
-### Tamaño de muestra
+  * *Muestreo por fases:* Este muestreo es parecido al muestreo por etapas, la diferencia radica en que se planifica una recolección de información en la las fases iniciales con la finalidad de profundizar la entrevista en las fases finales. Normalmente la primera fase tiene un gran número de muestra y la última fase menos. Un muestreo de 2 fases es lo más común.
+  
+  * *Muestreo proporcional al tamaño:*  Es un muestreo con un esquema de selección que otorga diferentes probabilidades de selección, es decir no todas las unidades de la población tienen la misma oportunidad de pertenecer a la muestra. 
+  
+Como ejemplo, imaginemos que tenemos que seleccionar 2 comunidades de un grupo de 6 comunidades; el tamaño de estas 6 comunidades es:
 
+  + C1: 30
+  + C2: 5
+  + C3: 5
+  + C4: 100
+  + C5: 10
+  + C6: 15
+
+  * *Muestreo complejo:* Es la combinación de las distintas técnicas de muestreo
+  
+### Técnicas No aleatorios / no probabilísticos 
+
+Están orientadas principalmente a estudios de caso o estudios en poblaciones complejas/vulnerables, la mayor dificultad de estas técnicas es que no son representativas
+
+  + Muestreo Bola de nieve
+  + Muestreo intencionado
+  + Muestreo por cuotas
+  + Muestreo voluntario
+
+### Tamaño de muestra (n)
+
+$$
+n_{final}=\frac{n_{1}*(Deff)}{(1-\hat{TNR})}
+$$
+Con:
+  * $n_{final}:$ Tamaño de muestra final (En unidades elementales)
+  * $Deff:$ Efecto de Diseño (Se recomienda un $Deff=2$ si no se lo puede calcular. Si se realiza un muestreo aleatorio simple su valor es 1).
+  * $\hat{TNR}:$ Tasa de No Respuesta Esperada, es la proporción que se estima perder por no respuesta o boletas mal llenadas.
+  * $n_1:$ Tamaño de muestra para un muestreo de tipo aleatoria simple para una población finita.
+
+$$
+n_{1}=\frac{n_0}{1-\frac{n_0}{N}}
+$$
+Con:
+
+  * $N:$ Tamaño de la Población (En unidades elementales)
+  * $n_0:$ Tamaño de muestra para un muestreo de tipo aleatorio simple para poblaciones infinitas
+
+  * Error Absoluto
+    + Indicadores de tipo promedio ($\bar{Y}$)
+$$
+n_0=\frac{k^2*S^2_y}{e^2}
+$$
+    + Indicadores de tipo proporción ($P$)
+$$
+n_0=\frac{k^2*N*P*Q}{e^2*(N-1)}
+$$
+  * Error Relativo
+    + Indicadores de tipo promedio ($\bar{Y}$)
+$$
+n_0=\frac{k^2*CV^2_y}{e^2_r}
+$$
+    + Indicadores de tipo proporción ($P$)
+$$
+n_0=\frac{k^2*Q*N}{e^2_r*(N-1)*P}
+$$
+
+Con:
+  * $k:$ Coeficiente de confiabilidad (al 95\% de confiabilidad $k=1.96$)
+  * $S_y:$ Desviación estandar de la variable $Y$ (Buscar en alguna fuente similar)
+  * $e:$ Margen de error permisible Absoluto (Definir en base a cuanto se quiere alejar en términos absolutos del verdadero parámetro)
+  * $e_r:$ Margen de error permisible Relativo (Ideal $e_r==0.05$, mayor a 0.15 es cuestionable)
+  * $P:$ Proporción de una categoría de interés (Para una muestra con error relativo, mientras mas extraña es la categoria a explorar mas grande es la muestra requerida. Para muestras con error absoluto el máximo se alcanza en $P=0.5$)
+  * $Q=1-P$
+  * $CV_y:$ Es el Coeficiente de Variación de la variable de $Y$ (Buscar en algún estudio similar o suponer un valor de $CV_y=1$)
 
 ## Recolección de datos y operativo de campo
 

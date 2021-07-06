@@ -1,0 +1,108 @@
+\documentclass[11pt,openbib, letter]{article}
+
+\oddsidemargin=1cm
+
+% Incluir los paquetes necesarios 
+\usepackage[latin1]{inputenc}%paquete principal2
+\usepackage{latexsym} % Simbolos 
+\usepackage{graphicx} % Inclusion de graficos. Soporte para figura 
+\usepackage{hyperref} % Soporte hipertexto
+\usepackage[spanish,es-noquoting]{babel}
+\usepackage{subfigure}
+\usepackage{epsfig}
+\usepackage{graphicx}
+\usepackage{rotating}
+\usepackage{epstopdf}
+\usepackage{ctable}
+\usepackage{longtable}
+\usepackage{tabularx,colortbl}
+\usepackage{setspace}
+\usepackage{threeparttable}
+\usepackage{multirow}
+\usepackage{pdflscape}
+\usepackage{anysize}
+%\usepackage[authoryear]{natbib}
+\usepackage{breakurl}
+\usepackage{url}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage[centertags]{amsmath}
+\usepackage{amsthm}
+\usepackage{array}
+\usepackage{times}
+\usepackage[left=0.7in, right=0.7in, top=0.7in, bottom=0.7in]{geometry}
+\usepackage{rotating}
+\usepackage{amstext}
+\usepackage{pdfpages}
+\usepackage{amsbsy}
+\usepackage{amsopn}
+\usepackage{eucal}
+\usepackage{sectsty}
+\usepackage{titlesec}
+\usepackage[capposition=top]{floatrow}
+\usepackage{pdfpages}
+\usepackage{apacite}
+\usepackage{tabularx,colortbl}
+%\usepackage[singlespacing]{setspace}
+%\usepackage[longnamesfirst,comma]{natbib}
+%\usepackage{iadb}
+\usepackage{authblk}
+\title{{\Large \textbf{Consideraciones para el Tamaño de Muestra\\ Trabajo Social}}}
+\author{Docente: Alvaro Limber Chirino Gutierrez}
+
+\date{Mayo, 2019}
+\begin{document}
+%\maketitle
+\begin{flushright}
+\textbf{Docente: Alvaro Chirino Gutierrez, Estadística Social. I-2021}
+\end{flushright}
+\section{Formula General para el tamaño de  muestra}
+\begin{equation}
+n_{final}=\frac{n_{1}*(Deff)}{(1-\hat{TNR})}
+\end{equation}
+Con:\\
+$n_{final}:$ Tamaño de muestra final (En unidades elementales)\\
+$Deff:$ Efecto de Diseño (Se recomienda un $Deff=2$ si no se lo puede calcular. Si se realiza un muestreo aleatorio simple su valor es 1).\\
+$\hat{TNR}:$ Tasa de No Respuesta Esperada, es la proporción que se estima perder por no respuesta o boletas mal llenadas.\\
+$n_1:$ Tamaño de muestra para un muestreo de tipo aleatoria simple para una población finita.
+
+\begin{equation}
+n_{1}=\frac{n_0}{1-\frac{n_0}{N}}
+\end{equation}
+Con:\\
+$N:$ Tamaño de la Población (En unidades elementales)\\
+$n_0:$ Tamaño de muestra para un muestreo de tipo aleatorio simple para poblaciones infinitas\\
+
+\subsection{Error Absoluto}
+\begin{itemize}
+\item Indicadores de tipo promedio ($\bar{Y}$)
+\begin{equation}
+n_0=\frac{k^2*S^2_y}{e^2}
+\end{equation}
+\item Indicadores de tipo proporción ($P$)
+\begin{equation}
+n_0=\frac{k^2*N*P*Q}{e^2*(N-1)}
+\end{equation}
+\end{itemize}
+
+\subsection{Error Relativo}
+\begin{itemize}
+\item Indicadores de tipo promedio ($\bar{Y}$)
+\begin{equation}
+n_0=\frac{k^2*CV^2_y}{e^2_r}
+\end{equation}
+\item Indicadores de tipo proporción ($P$)
+\begin{equation}
+n_0=\frac{k^2*Q*N}{e^2_r*(N-1)*P}
+\end{equation}
+\end{itemize}
+
+Con:\\
+$k:$ Coeficiente de confiabilidad (al 95\% de confiabilidad $k=1.96$)\\
+$S_y:$ Desviación estandar de la variable $Y$ (Buscar en alguna fuente similar)\\
+$e:$ Margen de error permisible Absoluto (Definir en base a cuanto se quiere alejar en términos absolutos del verdadero parámetro)\\
+$e_r:$ Margen de error permisible Relativo (Ideal $e_r==0.05$, mayor a 0.15 es cuestionable)\\
+$P:$ Proporción de una categoría de interés (Para una muestra con error relativo, mientras mas extraña es la categoria a explorar mas grande es la muestra requerida. Para muestras con error absoluto el máximo se alcanza en $P=0.5$)\\
+$Q=1-P$\\
+$CV_y:$ Es el Coeficiente de Variación de la variable de $Y$ (Buscar en algún estudio similar o suponer un valor de $CV_y=1$)\\
+\end{document}
