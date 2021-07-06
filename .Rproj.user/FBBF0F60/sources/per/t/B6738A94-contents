@@ -202,15 +202,34 @@ Es un listado de las unidades simples o g de la población objetivo, el marco mu
 
 ### Técnicas de muestreo
 
-  * Aleatorias/probabilísticas (representatividad, validez externa)
-    + Muestreo aleatorio simple
-    + Muestreo estratificado
-    + Muestreo sistemático
-    + Muestreo por conglomerados
-    + Muestreo por etapas
-    + Muestreo proporcional al tamaño
-    + Muestreo por fases
-    + Muestreo complejo
+Las técnicas de muestreo son mecanismos que permiten seleccionar la muestra de una población siguiendo diferentes estrategias y criterios, depende en gran medida del tipo de marco muestral con el que se cuente. Podemos definir 2 tipos de técnicas; las probabilísticas y las no probabilísticas. 
+
+Las técnicas probabilísticas nos permiten hacer inferencia, es decir podemos utilizar la muestra como una muestra representativa de la población objetivo, siempre y cuando se respete la selección aleatoria de la muestra. Por otro lado, las técnicas no probabilísticas carecen de representatividad, son más útiles cuando la población objetivo es difícil de acceder y no es posible construir un marco muestral. 
+
+#### Técnicas probabilísticas
+
+  * *Muestreo aleatorio simple:* Parte de la selección de la muestra otorgando la misma oportunidad (probabilidad) de selección a todos los miembros de la población objetivo mediante un mecanismo de selección completamente aleatoria de un marco muestral.
+  
+![](https://enciclopediaeconomica.com/wp-content/uploads/2019/03/Muestreo-aleatorio-simple.jpg)
+  
+  * *Muestreo estratificado:* Parte de una clasificación de la población es sub grupos (estratos), una vez clasificada se toma muestras de cada estrato. La variable de clasificación debe tener alguna relación a la variable de estudio, cuando esto se cumple el error de muestreo se reduce, para determinar la cantidad de muestra que se obtiene de cada estrato existen diferentes mecanismos de asignación; uniforme, proporcional, Neyman, Potencia, etc.
+  
+![](https://docplayer.es/docs-images/59/44083201/images/41-0.png)  
+  
+  * *Muestreo sistemático:* Es un tipo de muestreo probabilístico donde se hace una selección aleatoria del primer elemento para la muestra, y luego se seleccionan los elementos posteriores utilizando intervalos fijos o sistemáticos hasta alcanzar el tamaño de la muestra deseado. El tamaño del salto y para elegir el arranque aleatorio, esta dado por:
+  
+$$k=\frac{N}{n}=\frac{50}{5}=10$$  
+  
+![](https://www.netquest.com/hubfs/Blog%20images/netquest-esquema-muestreo-sistematico.jpg)
+
+  * *Muestreo por conglomerados:* La población está dividida en áreas lo más heterogéneas posibles internamente y lo más homogéneas posibles entre sí. Selecciona al azar un conglomerado que será el que formará la muestra. Los conglomerados incrementan el error muestral
+  
+![](https://cdn.goconqr.com/uploads/media/image/12013887/18bb2456-8228-4261-bbda-93e71e070f7f.jpg)
+
+  * Muestreo por etapas
+  * Muestreo proporcional al tamaño
+  * Muestreo por fases
+  * Muestreo complejo
   * No aleatorios/ no probabilísticos (estudios de caso/poblaciones complejas)
     + Muestreo Bola de nieve
     + Muestreo intencionado

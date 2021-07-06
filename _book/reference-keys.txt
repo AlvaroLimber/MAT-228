@@ -57,6 +57,7 @@ documentacion-al-respecto-los-cuestionarios
 muestreo-estadístico
 marco-muestral
 técnicas-de-muestreo
+técnicas-probabilísticas
 tamaño-de-muestra
 recolección-de-datos-y-operativo-de-campo
 sistemas-y-procesamiento-de-la-información
