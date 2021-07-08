@@ -299,13 +299,41 @@ n_0=\frac{k^2*Q*N}{e^2_r*(N-1)*P}
 $$
 
 Con:
+
   * $k:$ Coeficiente de confiabilidad (al 95\% de confiabilidad $k=1.96$)
   * $S_y:$ Desviación estandar de la variable $Y$ (Buscar en alguna fuente similar)
   * $e:$ Margen de error permisible Absoluto (Definir en base a cuanto se quiere alejar en términos absolutos del verdadero parámetro)
-  * $e_r:$ Margen de error permisible Relativo (Ideal $e_r==0.05$, mayor a 0.15 es cuestionable)
+  * $e_r:$ Margen de error permisible Relativo (Ideal $e_r=0.05$, mayor a 0.15 es cuestionable)
   * $P:$ Proporción de una categoría de interés (Para una muestra con error relativo, mientras mas extraña es la categoria a explorar mas grande es la muestra requerida. Para muestras con error absoluto el máximo se alcanza en $P=0.5$)
   * $Q=1-P$
   * $CV_y:$ Es el Coeficiente de Variación de la variable de $Y$ (Buscar en algún estudio similar o suponer un valor de $CV_y=1$)
+
+$$|\theta - \hat{\theta}|=error_{absoluto}$$
+
+$$S^2_y=\frac{\sum_{i=1}^N (y_i-\bar{y})^2}{N-1}$$
+
+Ejemplo, en el curso de estadística social se va a tomar una muestra de estudiantes presentes en la clase, para estimar el promedio de horas de estudio a la semana. Se plantea lograr un 95% de confiabilidad y tener un error de muestreo de máximo 3 horas, se espera que el 5% de estudiantes que estén en la muestra no responda a la encuesta. Calcular el tamaño de muestra.
+
+Solución, 
+
+$$n_0=\frac{k^2*S^2_y}{e^2}=\frac{1.96^2*157}{3^2}$$
+Así tenemos $k=1.96$, $e=3$, $S^2_y=157$ $n_0=67.02$, $N=49$ 
+
+$$n_{1}=\frac{n_0}{1+\frac{n_0}{N}}=\frac{67.02}{1+\frac{67.02}{49}}=28.30$$
+Finalmente, $Deff=1$ ya que es una selección sobre una lista de las unidades elementales
+
+$$n_{final}=\frac{n_{1}*(Deff)}{(1-\hat{TNR})}=\frac{28.3*1}{(1-0.05)}=29.799\approx 30$$
+
+Ejemplo 2, se busca realizar una encuesta a todos los estudiantes de trabajo social para estimar el porcentaje de apoyo al candidato $X$ para las próximas elecciones de director de carrera. Se desea tener un error de muestreo que no supere el 2% del porcentaje de apoyo, se estima que el 10% de los estudiantes no colaborara con la encuesta, también, no es posible acceder al listado de todos de la carrera en kardex, por lo tanto el muestreo que armara sera usando conglomerado, etapas, etc. (Garantizar un 95% de confiabilidad)
+
+Solución, como dato tenemos $k=1.96$, $e=0.02$, $P=0.5$, $Q=0.5$
+
+$$n_0=\frac{k^2*N*P*Q}{e^2*(N-1)}\approx \frac{k^2*P*Q}{e^2}=\frac{1.96^2*0.5*0.5}{0.02^2}=2401$$
+Ahora, no conocemos a $N$, vamos asumir que $n_1=n_0$, finalmente $Deff=2$
+
+$$n_{final}=\frac{2401*2}{(1-0.1)}=5335.56\approx 5336$$
+El número obtenido es imposible de cumplir, por lo tanto se sube el error muestral al 8%. Calcular el tamaño de muestra asociado a este nuevo valor.
+
 
 ## Recolección de datos y operativo de campo
 

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <title>3 Diseño de estudios estadísticos | Estadística Social</title>
   <meta name="description" content="Este libro esta destinado a la materia de Estadística Social de la carrera de Trabajo Social de la Universidad Mayor de San Andres." />
-  <meta name="generator" content="bookdown 0.21 and GitBook 2.6.7" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
 
   <meta property="og:title" content="3 Diseño de estudios estadísticos | Estadística Social" />
   <meta property="og:type" content="book" />
@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-07-06" />
+<meta name="date" content="2021-07-08" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -33,7 +33,7 @@
   
 <link rel="prev" href="estadística-descriptiva.html"/>
 
-<script src="libs/header-attrs-2.7/header-attrs.js"></script>
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
 <script src="libs/jquery-2.2.3/jquery.min.js"></script>
 <link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
 <link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
@@ -51,6 +51,8 @@
 
 
 
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
 
 
 <style type="text/css">
@@ -116,6 +118,29 @@ code span.st { color: #4070a0; } /* String */
 code span.va { color: #19177c; } /* Variable */
 code span.vs { color: #4070a0; } /* VerbatimString */
 code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+<style type="text/css">
+/* Used with Pandoc 2.11+ new --citeproc when CSL is used */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
 </style>
 
 </head>
@@ -598,14 +623,31 @@ n_0=\frac{k^2*Q*N}{e^2_r*(N-1)*P}
 \]</span></li>
 </ul></li>
 </ul>
-<p>Con:
-* <span class="math inline">\(k:\)</span> Coeficiente de confiabilidad (al 95% de confiabilidad <span class="math inline">\(k=1.96\)</span>)
-* <span class="math inline">\(S_y:\)</span> Desviación estandar de la variable <span class="math inline">\(Y\)</span> (Buscar en alguna fuente similar)
-* <span class="math inline">\(e:\)</span> Margen de error permisible Absoluto (Definir en base a cuanto se quiere alejar en términos absolutos del verdadero parámetro)
-* <span class="math inline">\(e_r:\)</span> Margen de error permisible Relativo (Ideal <span class="math inline">\(e_r==0.05\)</span>, mayor a 0.15 es cuestionable)
-* <span class="math inline">\(P:\)</span> Proporción de una categoría de interés (Para una muestra con error relativo, mientras mas extraña es la categoria a explorar mas grande es la muestra requerida. Para muestras con error absoluto el máximo se alcanza en <span class="math inline">\(P=0.5\)</span>)
-* <span class="math inline">\(Q=1-P\)</span>
-* <span class="math inline">\(CV_y:\)</span> Es el Coeficiente de Variación de la variable de <span class="math inline">\(Y\)</span> (Buscar en algún estudio similar o suponer un valor de <span class="math inline">\(CV_y=1\)</span>)</p>
+<p>Con:</p>
+<ul>
+<li><span class="math inline">\(k:\)</span> Coeficiente de confiabilidad (al 95% de confiabilidad <span class="math inline">\(k=1.96\)</span>)</li>
+<li><span class="math inline">\(S_y:\)</span> Desviación estandar de la variable <span class="math inline">\(Y\)</span> (Buscar en alguna fuente similar)</li>
+<li><span class="math inline">\(e:\)</span> Margen de error permisible Absoluto (Definir en base a cuanto se quiere alejar en términos absolutos del verdadero parámetro)</li>
+<li><span class="math inline">\(e_r:\)</span> Margen de error permisible Relativo (Ideal <span class="math inline">\(e_r=0.05\)</span>, mayor a 0.15 es cuestionable)</li>
+<li><span class="math inline">\(P:\)</span> Proporción de una categoría de interés (Para una muestra con error relativo, mientras mas extraña es la categoria a explorar mas grande es la muestra requerida. Para muestras con error absoluto el máximo se alcanza en <span class="math inline">\(P=0.5\)</span>)</li>
+<li><span class="math inline">\(Q=1-P\)</span></li>
+<li><span class="math inline">\(CV_y:\)</span> Es el Coeficiente de Variación de la variable de <span class="math inline">\(Y\)</span> (Buscar en algún estudio similar o suponer un valor de <span class="math inline">\(CV_y=1\)</span>)</li>
+</ul>
+<p><span class="math display">\[|\theta - \hat{\theta}|=error_{absoluto}\]</span></p>
+<p><span class="math display">\[S^2_y=\frac{\sum_{i=1}^N (y_i-\bar{y})^2}{N-1}\]</span></p>
+<p>Ejemplo, en el curso de estadística social se va a tomar una muestra de estudiantes presentes en la clase, para estimar el promedio de horas de estudio a la semana. Se plantea lograr un 95% de confiabilidad y tener un error de muestreo de máximo 3 horas, se espera que el 5% de estudiantes que estén en la muestra no responda a la encuesta. Calcular el tamaño de muestra.</p>
+<p>Solución,</p>
+<p><span class="math display">\[n_0=\frac{k^2*S^2_y}{e^2}=\frac{1.96^2*157}{3^2}\]</span>
+Así tenemos <span class="math inline">\(k=1.96\)</span>, <span class="math inline">\(e=3\)</span>, <span class="math inline">\(S^2_y=157\)</span> <span class="math inline">\(n_0=67.02\)</span>, <span class="math inline">\(N=49\)</span></p>
+<p><span class="math display">\[n_{1}=\frac{n_0}{1+\frac{n_0}{N}}=\frac{67.02}{1+\frac{67.02}{49}}=28.30\]</span>
+Finalmente, <span class="math inline">\(Deff=1\)</span> ya que es una selección sobre una lista de las unidades elementales</p>
+<p><span class="math display">\[n_{final}=\frac{n_{1}*(Deff)}{(1-\hat{TNR})}=\frac{28.3*1}{(1-0.05)}=29.799\approx 30\]</span></p>
+<p>Ejemplo 2, se busca realizar una encuesta a todos los estudiantes de trabajo social para estimar el porcentaje de apoyo al candidato <span class="math inline">\(X\)</span> para las próximas elecciones de director de carrera. Se desea tener un error de muestreo que no supere el 2% del porcentaje de apoyo, se estima que el 10% de los estudiantes no colaborara con la encuesta, también, no es posible acceder al listado de todos de la carrera en kardex, por lo tanto el muestreo que armara sera usando conglomerado, etapas, etc. (Garantizar un 95% de confiabilidad)</p>
+<p>Solución, como dato tenemos <span class="math inline">\(k=1.96\)</span>, <span class="math inline">\(e=0.02\)</span>, <span class="math inline">\(P=0.5\)</span>, <span class="math inline">\(Q=0.5\)</span></p>
+<p><span class="math display">\[n_0=\frac{k^2*N*P*Q}{e^2*(N-1)}\approx \frac{k^2*P*Q}{e^2}=\frac{1.96^2*0.5*0.5}{0.02^2}=2401\]</span>
+Ahora, no conocemos a <span class="math inline">\(N\)</span>, vamos asumir que <span class="math inline">\(n_1=n_0\)</span>, finalmente <span class="math inline">\(Deff=2\)</span></p>
+<p><span class="math display">\[n_{final}=\frac{2401*2}{(1-0.1)}=5335.56\approx 5336\]</span>
+El número obtenido es imposible de cumplir, por lo tanto se sube el error muestral al 8%. Calcular el tamaño de muestra asociado a este nuevo valor.</p>
 </div>
 </div>
 <div id="recolección-de-datos-y-operativo-de-campo" class="section level2" number="3.6">
@@ -618,19 +660,19 @@ n_0=\frac{k^2*Q*N}{e^2_r*(N-1)*P}
 <h2><span class="header-section-number">3.8</span> Análisis y exploración de los datos recolectados</h2>
 
 <div id="refs" class="references csl-bib-body hanging-indent">
-<div id="ref-R-rmarkdown" class="csl-entry">
+<div class="csl-entry">
 Allaire, JJ, Yihui Xie, Jonathan McPherson, Javier Luraschi, Kevin Ushey, Aron Atkins, Hadley Wickham, Joe Cheng, Winston Chang, and Richard Iannone. 2020. <em>Rmarkdown: Dynamic Documents for r</em>. <a href="https://CRAN.R-project.org/package=rmarkdown">https://CRAN.R-project.org/package=rmarkdown</a>.
 </div>
-<div id="ref-R-base" class="csl-entry">
+<div class="csl-entry">
 R Core Team. 2019. <em>R: A Language and Environment for Statistical Computing</em>. Vienna, Austria: R Foundation for Statistical Computing. <a href="https://www.R-project.org/">https://www.R-project.org/</a>.
 </div>
-<div id="ref-R-knitr" class="csl-entry">
+<div class="csl-entry">
 Xie, Yihui. 2019. <em>Knitr: A General-Purpose Package for Dynamic Report Generation in r</em>. <a href="https://CRAN.R-project.org/package=knitr">https://CRAN.R-project.org/package=knitr</a>.
 </div>
-<div id="ref-R-bookdown" class="csl-entry">
+<div class="csl-entry">
 ———. 2020. <em>Bookdown: Authoring Books and Technical Documents with r Markdown</em>. <a href="https://CRAN.R-project.org/package=bookdown">https://CRAN.R-project.org/package=bookdown</a>.
 </div>
-<div id="ref-Xie2018" class="csl-entry">
+<div class="csl-entry">
 Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. <span>“<span class="nocase">How to Read This Book</span>.”</span> <em>Transforming Climate Finance and Green Investment with Blockchains</em>, 1. <a href="https://doi.org/10.1016/b978-0-12-814447-3.00041-0">https://doi.org/10.1016/b978-0-12-814447-3.00041-0</a>.
 </div>
 </div>
@@ -665,6 +707,7 @@ gitbook.start({
 "weibo": false,
 "instapaper": false,
 "vk": false,
+"whatsapp": false,
 "all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
 },
 "fontsettings": {
