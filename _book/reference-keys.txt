@@ -61,5 +61,12 @@ técnicas-probabilísticas
 técnicas-no-aleatorios-no-probabilísticos
 tamaño-de-muestra-n
 recolección-de-datos-y-operativo-de-campo
+prueba-piloto
+sensibilización
+reclutamiento-del-personal
+capacitación
+recolección-de-la-información-operativo-principal
+control-de-calidad-supervisión
+presupuesto-del-operativo-de-campo
 sistemas-y-procesamiento-de-la-información
 análisis-y-exploración-de-los-datos-recolectados

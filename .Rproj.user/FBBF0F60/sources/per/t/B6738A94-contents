@@ -334,9 +334,92 @@ Ahora, no conocemos a $N$, vamos asumir que $n_1=n_0$, finalmente $Deff=2$
 $$n_{final}=\frac{2401*2}{(1-0.1)}=5335.56\approx 5336$$
 El número obtenido es imposible de cumplir, por lo tanto se sube el error muestral al 8%. Calcular el tamaño de muestra asociado a este nuevo valor.
 
-
 ## Recolección de datos y operativo de campo
 
-## Sistemas y procesamiento de la información
+Se refiere a la parte logística del estudio, en este punto tenemos como insumos el cuestionario de la encuesta y también la selección de la muestra, esta parte contiene diferentes actividades:
 
+  * Prueba piloto
+  * Sensibilización
+  * Reclutamiento del personal
+  * Capacitación
+  * Recolección de la información (operativo principal)
+  * Control de calidad / supervisión
+  * Presupuesto del operativo de campo
+  
+### Prueba piloto
+
+Es un ensayo inicial que tiene por objetivo calibrar/ajustar las herramientas de la recolección, los tiempos de entrevista y desplazamiento, no existe un tamaño de muestra definido para esta actividad, sin embargo, se sugiere que imite lo que sería una jornada o dos del operativo de campo principal.
+
+Se recomienda simular eventos bajo presión, con cierto grado de dificultad, con la finalidad de estar preparados para cualquier contingencia.
+
+### Sensibilización
+Busca facilitar realizar las encuestas, este proceso puede estar vinculado con:
+
+  * Acuerdos locales
+  * Política de incentivos
+  * Propaganda
+  * Distintivos del personal de campo
+
+El objetivo principal es ganar la confianza del informante.  
+
+### Reclutamiento del personal
+Se refiere al proceso para buscar a los encuestadores y supervisores de la encuesta, en esta actividad se pueden definir filtros para seleccionar al personal adecuado:
+
+  * Educación
+  * Experiencia
+  * Idioma
+  * Lugar de residencia 
+
+### Capacitación
+En esta actividad se capacita al personal de campo en el uso de las herramientas de recolección, formularios, identificación de las unidades a entrevistar, desplazamiento en terreno, técnicas de entrevista, control de riesgos, etc.
+
+### Recolección de la información (operativo principal)
+Es el operativo central donde se recolecta la información, se recomienda para esta actividad organizar al personal en brigadas para mejorar el desplazamiento. Una brigada esta conformada por un grupo de encuestadores y un supervisor.
+
+### Control de calidad / supervisión
+Son actividades que buscan garantizar un  desempeño óptimo y principalmente esta orienta al cuestionario, esta pueden ser:
+
+  * Revisión al azar de los cuestionarios
+  * Acompañar una entrevista
+  * Llamar a un informante al azar al concluir la jornada de trabajo
+
+Muchos de los controles de calidad sobre el cuestionario pueden estar en el mismo cuestionario o en el sistema de recolección de la encuesta.
+
+### Presupuesto del operativo de campo
+
+Este proceso tienen la finalidad de establecer el presupuesto global del operativo, las partidas usuales son:
+
+  + Salarios
+  + Viáticos
+  + Transporte
+  + Comunicación
+  + Material
+  + Incentivos
+
+La definición de la cantidad de encuestadores que se requiere se la obtiene tomando en cuenta los días de trabajo, la carga de trabajo (encuestas por día) y la muestra total.
+
+Por ejemplo, se requiere hacer 1000 encuestas, en un operativo de 7 días, sabiendo que un encuestador realiza en promedio 8 encuestas diarias. ¿Cuántos encuestadores se requiere?. Si por la jornada de trabajo se paga al encuestador 110 Bs. ¿Cuál es el presupuesto global de salarios para los encuestadores?
+
+  * $(1000/7)/8=17.8 \approx 18$
+  * $18*110*7=13860 Bs.$
+
+## Sistemas y procesamiento de la información
+Se refiere a definir donde se vacía la información recolectada, las sistemas más usuales son:
+
+  * Excel
+  * SPSS
+  * CsPro
+
+A este proceso se lo conoce como transcripción, ya no es tan usual, normalmente se crean cuestionarios digitales que almacenan la información de manera directa, para la creación de formularios digitales existen las  opciones:
+
+  + google forms
+  + CsPro
+  + Kobo / ODK
+
+Estas herramientas dependen de la técnica de recolección. Tarea, encontrar las definiciones de:
+
+  + CAPI:  
+  + CATI: 
+  + CAWI: 
+  
 ## Análisis y exploración de los datos recolectados
