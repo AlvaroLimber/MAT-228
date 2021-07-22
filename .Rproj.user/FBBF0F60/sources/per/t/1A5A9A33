@@ -1,27 +1,27 @@
 {
-    "id": "B6738A94",
-    "path": "~/GitHub/MAT-228/3_disenio.Rmd",
-    "project_path": "3_disenio.Rmd",
+    "id": "1A5A9A33",
+    "path": "~/GitHub/MAT-228/4_probabilidad.Rmd",
+    "project_path": "4_probabilidad.Rmd",
     "type": "r_markdown",
-    "hash": "984949797",
+    "hash": "1999414624",
     "contents": "",
     "dirty": false,
-    "created": 1621944535351.0,
+    "created": 1626957259763.0,
     "source_on_save": false,
     "relative_order": 3,
     "properties": {
-        "tempName": "Untitled1",
+        "tempName": "Untitled2",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "432,26",
-        "scrollLine": "413"
+        "cursorPosition": "7,0",
+        "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1626955552,
+    "lastKnownWriteTime": 1626965881,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1626955552897,
+    "last_content_update": 1626965881179,
     "read_only": false,
     "read_only_alternatives": []
 }

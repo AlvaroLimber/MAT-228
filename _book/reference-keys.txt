@@ -70,3 +70,4 @@ control-de-calidad-supervisión
 presupuesto-del-operativo-de-campo
 sistemas-y-procesamiento-de-la-información
 análisis-y-exploración-de-los-datos-recolectados
+probabilidades

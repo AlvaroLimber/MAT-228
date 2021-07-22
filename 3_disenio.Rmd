@@ -418,8 +418,16 @@ A este proceso se lo conoce como transcripción, ya no es tan usual, normalmente
 
 Estas herramientas dependen de la técnica de recolección. Tarea, encontrar las definiciones de:
 
-  + CAPI:  
-  + CATI: 
-  + CAWI: 
+  + CAPI: (Computer-Assisted Personal Interviewing) Entrevista asistida por el ordenador, para entrevistas cara a cara
+  + CATI: (Computer-Assisted Telephones Interviewing) Entrevista asistida por el ordenador, para entrevistas telefónicas/celulares
+  + CAWI: (Computer Aided Web Interviewing) Entrevistas web asistidas por el ordenador
   
 ## Análisis y exploración de los datos recolectados
+
+Esta fase de análisis y exploración inicia cuando se logra recolectar la información, en particular tiene distintas etapas que varían según la necesidad del investigador.
+
+  + Importación de datos
+  + Depuración de la base de datos
+  + Exploración descriptiva
+  + Modelado estadístico
+  + Resultados / análisis 
