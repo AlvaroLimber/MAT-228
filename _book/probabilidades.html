@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-07-22" />
+<meta name="date" content="2021-07-27" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -260,7 +260,17 @@ div.csl-indent {
 <li class="chapter" data-level="3.7" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#sistemas-y-procesamiento-de-la-información"><i class="fa fa-check"></i><b>3.7</b> Sistemas y procesamiento de la información</a></li>
 <li class="chapter" data-level="3.8" data-path="diseño-de-estudios-estadísticos.html"><a href="diseño-de-estudios-estadísticos.html#análisis-y-exploración-de-los-datos-recolectados"><i class="fa fa-check"></i><b>3.8</b> Análisis y exploración de los datos recolectados</a></li>
 </ul></li>
-<li class="chapter" data-level="4" data-path="probabilidades.html"><a href="probabilidades.html"><i class="fa fa-check"></i><b>4</b> Probabilidades</a></li>
+<li class="chapter" data-level="4" data-path="probabilidades.html"><a href="probabilidades.html"><i class="fa fa-check"></i><b>4</b> Probabilidades</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="probabilidades.html"><a href="probabilidades.html#probabilidad-e-inferencia-estadística"><i class="fa fa-check"></i><b>4.1</b> Probabilidad e Inferencia estadística</a>
+<ul>
+<li class="chapter" data-level="4.1.1" data-path="probabilidades.html"><a href="probabilidades.html#probabilidad"><i class="fa fa-check"></i><b>4.1.1</b> Probabilidad</a></li>
+</ul></li>
+<li class="chapter" data-level="4.2" data-path="probabilidades.html"><a href="probabilidades.html#distribución-normal"><i class="fa fa-check"></i><b>4.2</b> Distribución Normal</a></li>
+<li class="chapter" data-level="4.3" data-path="probabilidades.html"><a href="probabilidades.html#estimación-puntual"><i class="fa fa-check"></i><b>4.3</b> Estimación puntual</a></li>
+<li class="chapter" data-level="4.4" data-path="probabilidades.html"><a href="probabilidades.html#intervalos-de-confianza"><i class="fa fa-check"></i><b>4.4</b> Intervalos de confianza</a></li>
+<li class="chapter" data-level="4.5" data-path="probabilidades.html"><a href="probabilidades.html#usos-de-la-distribución-chi-cuadrado"><i class="fa fa-check"></i><b>4.5</b> Usos de la distribución Chi-cuadrado</a></li>
+</ul></li>
 </ul>
 
       </nav>
@@ -286,7 +296,7 @@ div.csl-indent {
 </ol>
 <p>Resp. (2,3,4,5,6,7,8,9,11,12); 9 (4,5),(5,4),(6,3),(3,6)</p>
 <ol start="2" style="list-style-type: decimal">
-<li>Un estudiante va a dar su primer parcial sobre 30 puntos, el examen es de tipo falso/verdadero. El estudiante no se preparo y respondera al azar el examen, ¿cuáles son los posibles resultados del examen?</li>
+<li>Un estudiante va a dar su primer parcial sobre 30 puntos, el examen es de tipo falso/verdadero. El estudiante no se preparo y responderá al azar el examen, ¿cuáles son los posibles resultados del examen?</li>
 </ol>
 <p>Resp. La nota del estudiante puede estar entre 0 al 30</p>
 <ol start="3" style="list-style-type: decimal">
@@ -298,6 +308,62 @@ div.csl-indent {
 3 dados (1,1,1), (1,1,2), …. (6,6,6)
 4 dados (1,1,1,1), (1,1,1,2)…. (6,6,6,6)
 5 dados</p>
+<div id="probabilidad-e-inferencia-estadística" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Probabilidad e Inferencia estadística</h2>
+<ul>
+<li><p>Experimento: Proceso mediante el cual se obtiene un resultado de una observación.</p></li>
+<li><p>Experimento aleatorio: Cuando los resultados de la observación no se puede predecir con exactitud antes de realizar el experimento.</p></li>
+<li><p>Espacio Muestral: Es la colección (conjunto) de todos los resultados posibles de un experimento aleatorio. Denotado por</p></li>
+</ul>
+<p><span class="math display">\[\Omega\]</span></p>
+<p>Ejemplo, el juego del cacho es un juego donde se lanzan 5 dados. ¿Cuántos resultados posibles existen al lanzar 5 dados?</p>
+<p>Respuesta, iniciemos observando los resultados de un dado, luego de 2, hasta llegar a 5 dados.</p>
+<ul>
+<li><p>1 dado: (1,2,3,4,5,6). <span class="math inline">\(\#\Omega=6\)</span></p></li>
+<li><p>2 dados: <span class="math inline">\(\#\Omega=36=6*6\)</span></p></li>
+<li><p>3 dados: <span class="math inline">\(\#\Omega=216\)</span></p></li>
+<li><p>4 dados: <span class="math inline">\(\#\Omega=1296\)</span></p></li>
+<li><p>5 dados: <span class="math inline">\(\#\Omega=7776\)</span></p></li>
+<li><p>Evento: Un subconjunto del espacio muestral</p></li>
+</ul>
+<div id="probabilidad" class="section level3" number="4.1.1">
+<h3><span class="header-section-number">4.1.1</span> Probabilidad</h3>
+<p>Es una <em>medida</em> de incertidumbre al rededor de un <em>experimento aleatorio</em>, esta medida se calcula en base a <em>eventos</em> de interés y toma valores entre 0 y 1.</p>
+<p>Una definición formal de probabilidad es:</p>
+<p><span class="math display">\[P(A)= \frac{\text{Casos posibles}}{\text{Casos totales}}=\frac{\#A}{\# \Omega}\]</span>
+Ejemplos,</p>
+<ul>
+<li>En el lanzamiento de una moneda, ¿cuál es la probabilidad de obtener cara?</li>
+</ul>
+<p><span class="math display">\[P(cara)=\frac{1}{2}=0.5\]</span></p>
+<ul>
+<li>En el lanzamiento de un dado, ¿cuál es la probabilidad de obtener un número par?</li>
+</ul>
+<p><span class="math display">\[P(par)=\frac{3}{6}=0.5\]</span></p>
+<ul>
+<li>En el lanzamiento de dos dados, ¿cuál es la probabilidad de obtener 7?</li>
+</ul>
+<p><span class="math display">\[P(7)=\frac{6}{36}\]</span></p>
+<ul>
+<li>En el juego del cacho, ¿cuál es la probabilidad de obtener dormida (todos las caras de los dados iguales)?</li>
+</ul>
+<p><span class="math display">\[P(Dormida)=\frac{6}{7776}=0.0007716\]</span>
+* ¿Cuál es la probabilidad de aprobar la materia de Estadística I para cualquier estudiante al inicio del semestre?</p>
+<p><span class="math display">\[P(aprobar)=\frac{\geq 51}{NotasPosibles}=\frac{50}{101}=0.495\]</span>
+## Distribuciones muestrales</p>
+</div>
+</div>
+<div id="distribución-normal" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Distribución Normal</h2>
+</div>
+<div id="estimación-puntual" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Estimación puntual</h2>
+</div>
+<div id="intervalos-de-confianza" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Intervalos de confianza</h2>
+</div>
+<div id="usos-de-la-distribución-chi-cuadrado" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Usos de la distribución Chi-cuadrado</h2>
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div class="csl-entry">
@@ -314,6 +380,7 @@ Xie, Yihui. 2019. <em>Knitr: A General-Purpose Package for Dynamic Report Genera
 </div>
 <div class="csl-entry">
 Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. <span>“<span class="nocase">How to Read This Book</span>.”</span> <em>Transforming Climate Finance and Green Investment with Blockchains</em>, 1. <a href="https://doi.org/10.1016/b978-0-12-814447-3.00041-0">https://doi.org/10.1016/b978-0-12-814447-3.00041-0</a>.
+</div>
 </div>
 </div>
 </div>

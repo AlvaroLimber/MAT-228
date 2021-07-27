@@ -13,9 +13,68 @@ Resp.  La nota del estudiante puede estar entre 0 al 30
 3. El juego del cacho es un juego donde se lanzan 5 dados.
 
 Tarea. ¿Cuántos resultados posibles existen al lanzar 5 dados?
-20000000
+
 1 dado (6)
 2 dados (1,1), (1,2), (1,3).  ... (6,6)
 3 dados (1,1,1), (1,1,2), .... (6,6,6)
 4 dados (1,1,1,1), (1,1,1,2).... (6,6,6,6)
-5 dados 
+5 dados  
+
+
+## Probabilidad e Inferencia estadística
+
+  * Experimento: Proceso mediante el cual se obtiene un resultado de una observación.
+
+  * Experimento aleatorio: Cuando los resultados de la observación no se puede predecir con exactitud antes de realizar el experimento.
+  
+  * Espacio Muestral: Es la colección (conjunto) de todos los resultados posibles de un experimento aleatorio. Denotado por
+  
+$$\Omega$$
+
+Ejemplo, el juego del cacho es un juego donde se lanzan 5 dados. ¿Cuántos resultados posibles existen al lanzar 5 dados?
+
+Respuesta, iniciemos observando los resultados de un dado, luego de 2, hasta llegar a 5 dados.
+
+  + 1 dado: (1,2,3,4,5,6). $\#\Omega=6$
+  + 2 dados: $\#\Omega=36=6*6$
+  + 3 dados: $\#\Omega=216$
+  + 4 dados: $\#\Omega=1296$
+  + 5 dados: $\#\Omega=7776$
+  
+  * Evento: Un subconjunto del espacio muestral 
+  
+### Probabilidad   
+
+Es una *medida* de incertidumbre al rededor de un *experimento aleatorio*, esta medida se calcula en base a *eventos* de interés y toma valores entre 0 y 1.
+
+Una definición formal de probabilidad es:
+
+$$P(A)= \frac{\text{Casos posibles}}{\text{Casos totales}}=\frac{\#A}{\# \Omega}$$
+Ejemplos, 
+
+  * En el lanzamiento de una moneda, ¿cuál es la probabilidad de obtener cara? 
+  
+$$P(cara)=\frac{1}{2}=0.5$$  
+  
+  * En el lanzamiento de un dado, ¿cuál es la probabilidad de obtener un número par?
+  
+$$P(par)=\frac{3}{6}=0.5$$  
+  
+  * En el lanzamiento de dos dados, ¿cuál es la probabilidad de obtener 7?
+  
+$$P(7)=\frac{6}{36}$$  
+  
+  * En el juego del cacho, ¿cuál es la probabilidad de obtener dormida (todos las caras de los dados iguales)?
+
+$$P(Dormida)=\frac{6}{7776}=0.0007716$$
+  * ¿Cuál es la probabilidad de aprobar la materia de Estadística I para cualquier estudiante al inicio del semestre?
+  
+$$P(aprobar)=\frac{\geq 51}{NotasPosibles}=\frac{50}{101}=0.495$$
+## Distribuciones muestrales
+
+
+
+## Distribución Normal
+## Estimación puntual
+## Intervalos de confianza
+## Usos de la distribución Chi-cuadrado

@@ -71,3 +71,9 @@ presupuesto-del-operativo-de-campo
 sistemas-y-procesamiento-de-la-información
 análisis-y-exploración-de-los-datos-recolectados
 probabilidades
+probabilidad-e-inferencia-estadística
+probabilidad
+distribución-normal
+estimación-puntual
+intervalos-de-confianza
+usos-de-la-distribución-chi-cuadrado
