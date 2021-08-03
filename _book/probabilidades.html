@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-07-27" />
+<meta name="date" content="2021-08-03" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -351,6 +351,48 @@ Ejemplos,</p>
 * ¿Cuál es la probabilidad de aprobar la materia de Estadística I para cualquier estudiante al inicio del semestre?</p>
 <p><span class="math display">\[P(aprobar)=\frac{\geq 51}{NotasPosibles}=\frac{50}{101}=0.495\]</span>
 ## Distribuciones muestrales</p>
+<blockquote>
+<p>Variable aleatoria: Es una función que asigna a los eventos un número.</p>
+</blockquote>
+<p>La idea de las distribuciones muestrales es estudiar el comportamiento de todas las muestras posibles a partir de una estadística.</p>
+<blockquote>
+<p>Estadística: Un valor calculado a partir de la muestra</p>
+</blockquote>
+<p>Ejemplo, imaginemos que tenemos un grupo/población de 5 estudiantes con el tiempo que normalmente demoran en llegar a la universidad desde sus casas.</p>
+<ul>
+<li>PO: (A,B,C,D,E)</li>
+<li>Y: Tiempo en minutos en llegar desde sus casas a la U</li>
+</ul>
+<p><span class="math display">\[Y=\{Y_A=20,Y_B=30,Y_C=35,Y_D=60,Y_E=20\}=\{20,30,35,60,20\}\]</span>
+¿Cuál es el promedio del tiempo que demoran en llegar los estudiantes a la Universidad?</p>
+<p><span class="math display">\[\bar{Y}=\frac{\sum_U y_i}{N}=\frac{165}{5}=33\]</span></p>
+<p>Imaginemos que definimos un tamaño de muestra de <span class="math inline">\(n=2\)</span>, ¿Cuántas muestras posibles existen?, cuáles son los valores de las medias en cada muestra para la variable <span class="math inline">\(Y\)</span>.</p>
+<ul>
+<li>(A,B), (A,C), (A,D), (A,E), (B,C), (B,D), (B,E), (C,D), (C,E), (D,E)</li>
+<li>(20,30), (20,35), (20,60), (20,20), (30,35), (30,60), (30,20), (35,60), (35,20), (60,20)</li>
+</ul>
+<p><span class="math display">\[\hat{\theta}=\{\bar{y}_1=25 ,\bar{y}_2=27.5,\bar{y}_3=40,\bar{y}_4=20,\bar{y}_5=32.5,\bar{y}_6=45,\bar{y}_7=25,\bar{y}_8=47.5,\bar{y}_9=27.5,\bar{y}_{10}=40\}\]</span>
+¿Cuál sera la media de las medias muestrales?</p>
+<p><span class="math display">\[\bar{\bar{Y}}=\frac{\sum_{i=1}^{10}\bar{y}_i}{10}=33\]</span></p>
+<p>Veamos el ejemplo ampliado, con una población de 20 estudiantes y una muestra de 4, para la misma variable.</p>
+<ul>
+<li>(E1,E2,E3,E4,E5,E6,…,E20)</li>
+</ul>
+<p><span class="math display">\[Y=\{20,25,40,60,70,10,35,45,40,20,33,50,55,50,20,25,55,65,30,35\}\]</span>
+* Las muestras posibles son de 4845
+* ¿Cuál es el promedio de la población?</p>
+<p><span class="math display">\[\bar{Y}=\frac{783}{20}=39.15\]</span></p>
+<div class="sourceCode" id="cb16"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb16-1"><a href="probabilidades.html#cb16-1" aria-hidden="true" tabindex="-1"></a>y<span class="ot">&lt;-</span><span class="fu">c</span>(<span class="dv">20</span>,<span class="dv">25</span>,<span class="dv">40</span>,<span class="dv">60</span>,<span class="dv">70</span>,<span class="dv">10</span>,<span class="dv">35</span>,<span class="dv">45</span>,<span class="dv">40</span>,<span class="dv">20</span>,<span class="dv">33</span>,<span class="dv">50</span>,<span class="dv">55</span>,<span class="dv">50</span>,<span class="dv">20</span>,<span class="dv">25</span>,<span class="dv">55</span>,<span class="dv">65</span>,<span class="dv">30</span>,<span class="dv">35</span>)</span>
+<span id="cb16-2"><a href="probabilidades.html#cb16-2" aria-hidden="true" tabindex="-1"></a>ym<span class="ot">&lt;-</span><span class="fu">combn</span>(y,<span class="dv">4</span>)</span>
+<span id="cb16-3"><a href="probabilidades.html#cb16-3" aria-hidden="true" tabindex="-1"></a>yy<span class="ot">&lt;-</span><span class="fu">apply</span>(ym,<span class="dv">2</span>,mean)</span>
+<span id="cb16-4"><a href="probabilidades.html#cb16-4" aria-hidden="true" tabindex="-1"></a><span class="fu">sum</span>(yy)<span class="sc">/</span><span class="dv">4845</span></span></code></pre></div>
+<pre><code>## [1] 39.15</code></pre>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb18-1"><a href="probabilidades.html#cb18-1" aria-hidden="true" tabindex="-1"></a><span class="fu">hist</span>(yy)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-11-1.png" width="672" /></p>
+<div class="sourceCode" id="cb19"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb19-1"><a href="probabilidades.html#cb19-1" aria-hidden="true" tabindex="-1"></a><span class="fu">plot</span>(<span class="fu">density</span>(yy))</span>
+<span id="cb19-2"><a href="probabilidades.html#cb19-2" aria-hidden="true" tabindex="-1"></a><span class="fu">abline</span>(<span class="at">v=</span><span class="fl">39.15</span>,<span class="at">col=</span><span class="st">&quot;red&quot;</span>)</span></code></pre></div>
+<p><img src="_main_files/figure-html/unnamed-chunk-11-2.png" width="672" /></p>
+<p>Tarea: Como se obtuvo el valor de 4845. De un población de 30, se obtiene muestras de tamaño 6. ¿Cuántas muestras posibles se pueden obtener?.</p>
 </div>
 </div>
 <div id="distribución-normal" class="section level2" number="4.2">

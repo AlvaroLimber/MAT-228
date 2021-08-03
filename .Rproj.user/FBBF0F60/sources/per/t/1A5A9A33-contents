@@ -1,3 +1,8 @@
+---
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
 # Probabilidades
 
 Ejercicios
@@ -72,9 +77,56 @@ $$P(Dormida)=\frac{6}{7776}=0.0007716$$
 $$P(aprobar)=\frac{\geq 51}{NotasPosibles}=\frac{50}{101}=0.495$$
 ## Distribuciones muestrales
 
+> Variable aleatoria: Es una función que asigna a los eventos un número.
 
+La idea de las distribuciones muestrales es estudiar el comportamiento de todas las muestras posibles a partir de una estadística.
 
+> Estadística: Un valor calculado a partir de la muestra
+
+Ejemplo, imaginemos que tenemos un grupo/población de 5 estudiantes con el tiempo que normalmente demoran en llegar a la universidad desde sus casas. 
+
+  * PO: (A,B,C,D,E)
+  * Y: Tiempo en minutos en llegar desde sus casas a la U
+  
+$$Y=\{Y_A=20,Y_B=30,Y_C=35,Y_D=60,Y_E=20\}=\{20,30,35,60,20\}$$
+¿Cuál es el promedio del tiempo que demoran en llegar los estudiantes a la Universidad?
+
+$$\bar{Y}=\frac{\sum_U y_i}{N}=\frac{165}{5}=33$$
+
+Imaginemos que definimos un tamaño de muestra de $n=2$, ¿Cuántas muestras posibles existen?, cuáles son los valores de las medias en cada muestra para la variable $Y$.
+  
+  * (A,B), (A,C), (A,D), (A,E), (B,C), (B,D), (B,E), (C,D), (C,E), (D,E)
+  * (20,30), (20,35), (20,60), (20,20), (30,35), (30,60), (30,20), (35,60), (35,20), (60,20)
+  
+$$\hat{\theta}=\{\bar{y}_1=25 ,\bar{y}_2=27.5,\bar{y}_3=40,\bar{y}_4=20,\bar{y}_5=32.5,\bar{y}_6=45,\bar{y}_7=25,\bar{y}_8=47.5,\bar{y}_9=27.5,\bar{y}_{10}=40\}$$
+¿Cuál sera la media de las medias muestrales?
+
+$$\bar{\bar{Y}}=\frac{\sum_{i=1}^{10}\bar{y}_i}{10}=33$$
+
+Veamos el ejemplo ampliado, con una población de 20 estudiantes y una muestra de 4, para la misma variable.
+
+  * (E1,E2,E3,E4,E5,E6,...,E20)
+
+$$Y=\{20,25,40,60,70,10,35,45,40,20,33,50,55,50,20,25,55,65,30,35\}$$
+  * Las muestras posibles son de 4845 
+  * ¿Cuál es el promedio de la población?
+  
+$$\bar{Y}=\frac{783}{20}=39.15$$
+
+```{r}
+y<-c(20,25,40,60,70,10,35,45,40,20,33,50,55,50,20,25,55,65,30,35)
+ym<-combn(y,4)
+yy<-apply(ym,2,mean)
+sum(yy)/4845
+hist(yy)
+plot(density(yy))
+abline(v=39.15,col="red")
+```
+  
+Tarea: Como se obtuvo el valor de 4845. De un población de 30, se obtiene muestras de tamaño 6. ¿Cuántas muestras posibles se pueden obtener?.
+  
 ## Distribución Normal
+
 ## Estimación puntual
 ## Intervalos de confianza
 ## Usos de la distribución Chi-cuadrado
