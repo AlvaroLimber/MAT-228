@@ -121,11 +121,80 @@ sum(yy)/4845
 hist(yy)
 plot(density(yy))
 abline(v=39.15,col="red")
+
+for(i in 1:20){
+muestra<-sample(y,4)
+muestra
+mean(muestra)
+abline(v=mean(muestra),col="blue")
+}
 ```
   
 Tarea: Como se obtuvo el valor de 4845. De un población de 30, se obtiene muestras de tamaño 6. ¿Cuántas muestras posibles se pueden obtener?.
   
 ## Distribución Normal
+
+Es una distribución de probabilidad que tiene un uso muy importante en diferentes áreas de la estadística y tiene algunas características relevantes:
+
+  * Su centro es el promedio de los datos
+  * Su desviación estándar define la forma de la campana, mientras más pequeña la curva se cierre al rededor del promedio y mientras más grande la curva se abre.
+  * Es simétrica al rededor del promedio
+  
+Para obtener las probabilidades de una distribución normal, se recurre a tablas de la distribución normal o aplicaciones, software estadístico. En general para calcular las probabilidades se trabaja con la distribución normal estándar
+
+Al trabajar con datos de una normal, para obtener las probabilidades se debe estandarizar los datos:
+
+Suponer que: 
+$$X\sim N(\mu=39.15,\sigma=7.5)$$
+Para estandarizar X, se sigue:
+
+$$Z=\frac{x-\mu}{\sigma}$$
+Así, 
+
+$$Z\sim N(\mu=0,\sigma=1)$$
+```{r}
+z<-(yy-mean(yy))/sd(yy)
+plot(density(z))
+```
+
+Ejemplo, la estatura de un grupo de personas se distribuye normal con media de 165 cm y un desviación estándar de 10 cm.
+
+¿Cuál sera la probabilidad de que una persona elegida al azar de esta población mida:
+
+  * más de 180
+  * menos de 150
+  * entre 160 y 170
+
+Solución, sea $X$ la estatura, esta 
+
+$$X\sim N(\mu=165,\sigma=10)$$
+$$P(X>180)=P\left(\frac{X-\mu}{\sigma}>\frac{180-165}{10}\right)=P(Z>1.5)=1-P(Z<1.5)=$$
+
+$$=1-0.9332=0.0668$$
+
+b)
+
+$$P(X<150)=P(Z<-1.5)=0.0668$$
+c) entre 160 y 170
+
+$$P(160<X<170)=P(-0.5<Z<0.5)=P(Z<0.5)-P(Z<-0.5)=$$
+$$=0.6915-0.3085=0.383$$
+
+La tabla calcula las probabilidades del tipo 
+
+$$P(Z<z_0)=\phi(z_0)$$
+$$P(Z>z_0)=1-\phi(z_0)$$
+$$P(z_0<Z<z_1)=\phi(z_1)-\phi(z_0)$$
+Ejercicio, de una población de estudiantes de la materia de estadística, donde el promedio de notas final es de 55 puntos con una desviación de 15 puntos. Se toma a un estudiante al azar, cuál es la probabilidad:
+
+  * que el estudiante pase la materia (>50)
+  * que el estudiante no pase la materia (<50)
+  * que el estudiante tenga una nota superior a 80 puntos
+  * que el estudiante tenga una nota menor a 40
+  * que el estudiante tenga una nota entre 45 y 50
+  * Si el curso tiene 110 estudiantes, ¿cuántos estudiantes se estima que pasaron la materia?
+  
+Segundo Parcial: 19 de Agosto.
 
 ## Estimación puntual
 ## Intervalos de confianza
