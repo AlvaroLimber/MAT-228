@@ -75,5 +75,6 @@ probabilidad-e-inferencia-estadística
 probabilidad
 distribución-normal
 estimación-puntual
+promedio
+proporción
 intervalos-de-confianza
-usos-de-la-distribución-chi-cuadrado

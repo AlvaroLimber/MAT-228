@@ -197,5 +197,86 @@ Ejercicio, de una población de estudiantes de la materia de estadística, donde
 Segundo Parcial: 19 de Agosto.
 
 ## Estimación puntual
+Cuando hablamos de estimación, nos referimos a una estadística en particular, (no necesariamente al comportamiento de los datos), en todo caso nos interesa el comportamiento de una *estadística*. Recordar que una estadística es una medida obtenida a partir de una muestra. Las estadísticas que usaremos son:
+
+  * Media o promedio
+  * Proporción
+
+En la población de interés la media es:
+
+$$\mu_x=\frac{\sum_{i=1}^N x_i}{N}$$
+
+En la muestra la estimación de este valor es:
+
+$$\bar{X}=\frac{\sum_{i=1}^n x_i}{n}$$
+
+La distribución de la media muestral es de tipo Normal cuando el tamaño de muestra es grande (n>30). Si esto se cumple, podemos afirmar lo siguiente:
+
+$$\bar{X}\sim N\left(\mu=\mu_x,\sigma^2=\frac{\sigma_x^2}{n}\right)$$
+$$\bar{X}\sim N\left(\mu=\mu_x,\sigma=\frac{\sigma_x}{\sqrt{n}}\right)$$
+
+Donde:
+
+  * $\mu_x$ es la media poblacional de $x$
+  * $\sigma_x^2$ es la varianza poblacional de $x$
+  * $\sigma_x$ la desviación estandar $x$
+  * $n$ es el tamaño de la muestra
+
+Ejemplo. Se tiene recolectado la media de una muestra de 50 estudiantes de una población, respecto su estatura, el valor es de 164 cm. Se sabe que la varianza de la población es de 81 para la estatura. Calcule:
+
+  * La probabilidad que el promedio de estatura sea mayor a 165
+  * La probabilidad que el promedio de estatura sea menor a 160
+  * La probabilidad que el promedio de estatura se encuentre entre 162 y 168
+
+Solución, tenemos como información: 
+$$\bar{X}=164$$
+$$n=50$$
+$$\sigma_x^2=81$$
+Ahora, nosotros podemos suponer que:
+
+$$\bar{X}\sim N\left(\mu=164,\sigma=\frac{9}{\sqrt{50}} \right)=N(164,1.27)$$
+
+  * La probabilidad que el promedio de estatura sea mayor a 165
+  
+$$P(\bar{X}>165)=P\left(Z>\frac{165-164}{1.27}\right)=P(Z>0.79)=1-\phi(0.79)=$$
+
+$$=1-0.7852=0.2148$$  
+  
+  * La probabilidad que el promedio de estatura sea menor a 160
+  
+$$P(\bar{X}<160)=P(Z<-3.15)=\phi(-3.15)=0.0008$$  
+  * La probabilidad que el promedio de estatura se encuentre entre 162 y 168
+
+$$P(162<\bar{X}<168)=P(-1.57<Z<3.15)=\phi(3.15)-\phi(-1.57)=$$
+
+$$=0.9992-0.0582=0.941$$
+Un estimador puntual es un único valor obtenido en la muestra. Para las dos estadísticas de interés:
+
+### Promedio
+
+Su parámetro
+  
+$$\mu_x=\frac{\sum_{i=1}^N x_i}{N}$$
+
+Su estimador
+
+$$\bar{X}=\frac{\sum_{i=1}^n x_i}{n}$$
+
+Donde $\bar{X}$ es el estimador puntual de $\mu_x$
+
+### Proporción
+
+El parámetro
+
+$$P_A=\frac{\#A}{N}$$
+El estimador
+
+$$\hat{P}_a=\frac{\#a}{n}$$
+Ejemplo, se toma una muestra de 40 personas de una población. En la muestra se identifica a 15 personas que utilizan lentes. ¿Cuál es la estimación de la proporción de personas que usan lentes?
+
+Solución, $n=40$, $\#a=15$
+
+$$\hat{P}_{lentes}=\frac{15}{40}=0.375$$
+
 ## Intervalos de confianza
-## Usos de la distribución Chi-cuadrado
+

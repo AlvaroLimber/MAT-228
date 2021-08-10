@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-08-05" />
+<meta name="date" content="2021-08-10" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -267,9 +267,12 @@ div.csl-indent {
 <li class="chapter" data-level="4.1.1" data-path="probabilidades.html"><a href="probabilidades.html#probabilidad"><i class="fa fa-check"></i><b>4.1.1</b> Probabilidad</a></li>
 </ul></li>
 <li class="chapter" data-level="4.2" data-path="probabilidades.html"><a href="probabilidades.html#distribución-normal"><i class="fa fa-check"></i><b>4.2</b> Distribución Normal</a></li>
-<li class="chapter" data-level="4.3" data-path="probabilidades.html"><a href="probabilidades.html#estimación-puntual"><i class="fa fa-check"></i><b>4.3</b> Estimación puntual</a></li>
+<li class="chapter" data-level="4.3" data-path="probabilidades.html"><a href="probabilidades.html#estimación-puntual"><i class="fa fa-check"></i><b>4.3</b> Estimación puntual</a>
+<ul>
+<li class="chapter" data-level="4.3.1" data-path="probabilidades.html"><a href="probabilidades.html#promedio"><i class="fa fa-check"></i><b>4.3.1</b> Promedio</a></li>
+<li class="chapter" data-level="4.3.2" data-path="probabilidades.html"><a href="probabilidades.html#proporción"><i class="fa fa-check"></i><b>4.3.2</b> Proporción</a></li>
+</ul></li>
 <li class="chapter" data-level="4.4" data-path="probabilidades.html"><a href="probabilidades.html#intervalos-de-confianza"><i class="fa fa-check"></i><b>4.4</b> Intervalos de confianza</a></li>
-<li class="chapter" data-level="4.5" data-path="probabilidades.html"><a href="probabilidades.html#usos-de-la-distribución-chi-cuadrado"><i class="fa fa-check"></i><b>4.5</b> Usos de la distribución Chi-cuadrado</a></li>
 </ul></li>
 </ul>
 
@@ -443,7 +446,7 @@ c) entre 160 y 170</p>
 <p><span class="math display">\[P(Z&lt;z_0)=\phi(z_0)\]</span>
 <span class="math display">\[P(Z&gt;z_0)=1-\phi(z_0)\]</span>
 <span class="math display">\[P(z_0&lt;Z&lt;z_1)=\phi(z_1)-\phi(z_0)\]</span>
-Ejercicio, se una población de estudiantes de la materia de estadística, donde el promedio de notas final es de 55 puntos con una desviación de 15 puntos. Se toma a un estudiante al azar, cuál es la probabilidad:</p>
+Ejercicio, de una población de estudiantes de la materia de estadística, donde el promedio de notas final es de 55 puntos con una desviación de 15 puntos. Se toma a un estudiante al azar, cuál es la probabilidad:</p>
 <ul>
 <li>que el estudiante pase la materia (&gt;50)</li>
 <li>que el estudiante no pase la materia (&lt;50)</li>
@@ -456,12 +459,71 @@ Ejercicio, se una población de estudiantes de la materia de estadística, donde
 </div>
 <div id="estimación-puntual" class="section level2" number="4.3">
 <h2><span class="header-section-number">4.3</span> Estimación puntual</h2>
+<p>Cuando hablamos de estimación, nos referimos a una estadística en particular, (no necesariamente al comportamiento de los datos), en todo caso nos interesa el comportamiento de una <em>estadística</em>. Recordar que una estadística es una medida obtenida a partir de una muestra. Las estadísticas que usaremos son:</p>
+<ul>
+<li>Media o promedio</li>
+<li>Proporción</li>
+</ul>
+<p>En la población de interés la media es:</p>
+<p><span class="math display">\[\mu_x=\frac{\sum_{i=1}^N x_i}{N}\]</span></p>
+<p>En la muestra la estimación de este valor es:</p>
+<p><span class="math display">\[\bar{X}=\frac{\sum_{i=1}^n x_i}{n}\]</span></p>
+<p>La distribución de la media muestral es de tipo Normal cuando el tamaño de muestra es grande (n&gt;30). Si esto se cumple, podemos afirmar lo siguiente:</p>
+<p><span class="math display">\[\bar{X}\sim N\left(\mu=\mu_x,\sigma^2=\frac{\sigma_x^2}{n}\right)\]</span>
+<span class="math display">\[\bar{X}\sim N\left(\mu=\mu_x,\sigma=\frac{\sigma_x}{\sqrt{n}}\right)\]</span></p>
+<p>Donde:</p>
+<ul>
+<li><span class="math inline">\(\mu_x\)</span> es la media poblacional de <span class="math inline">\(x\)</span></li>
+<li><span class="math inline">\(\sigma_x^2\)</span> es la varianza poblacional de <span class="math inline">\(x\)</span></li>
+<li><span class="math inline">\(\sigma_x\)</span> la desviación estandar <span class="math inline">\(x\)</span></li>
+<li><span class="math inline">\(n\)</span> es el tamaño de la muestra</li>
+</ul>
+<p>Ejemplo. Se tiene recolectado la media de una muestra de 50 estudiantes de una población, respecto su estatura, el valor es de 164 cm. Se sabe que la varianza de la población es de 81 para la estatura. Calcule:</p>
+<ul>
+<li>La probabilidad que el promedio de estatura sea mayor a 165</li>
+<li>La probabilidad que el promedio de estatura sea menor a 160</li>
+<li>La probabilidad que el promedio de estatura se encuentre entre 162 y 168</li>
+</ul>
+<p>Solución, tenemos como información:
+<span class="math display">\[\bar{X}=164\]</span>
+<span class="math display">\[n=50\]</span>
+<span class="math display">\[\sigma_x^2=81\]</span>
+Ahora, nosotros podemos suponer que:</p>
+<p><span class="math display">\[\bar{X}\sim N\left(\mu=164,\sigma=\frac{9}{\sqrt{50}} \right)=N(164,1.27)\]</span></p>
+<ul>
+<li>La probabilidad que el promedio de estatura sea mayor a 165</li>
+</ul>
+<p><span class="math display">\[P(\bar{X}&gt;165)=P\left(Z&gt;\frac{165-164}{1.27}\right)=P(Z&gt;0.79)=1-\phi(0.79)=\]</span></p>
+<p><span class="math display">\[=1-0.7852=0.2148\]</span></p>
+<ul>
+<li>La probabilidad que el promedio de estatura sea menor a 160</li>
+</ul>
+<p><span class="math display">\[P(\bar{X}&lt;160)=P(Z&lt;-3.15)=\phi(-3.15)=0.0008\]</span><br />
+* La probabilidad que el promedio de estatura se encuentre entre 162 y 168</p>
+<p><span class="math display">\[P(162&lt;\bar{X}&lt;168)=P(-1.57&lt;Z&lt;3.15)=\phi(3.15)-\phi(-1.57)=\]</span></p>
+<p><span class="math display">\[=0.9992-0.0582=0.941\]</span>
+Un estimador puntual es un único valor obtenido en la muestra. Para las dos estadísticas de interés:</p>
+<div id="promedio" class="section level3" number="4.3.1">
+<h3><span class="header-section-number">4.3.1</span> Promedio</h3>
+<p>Su parámetro</p>
+<p><span class="math display">\[\mu_x=\frac{\sum_{i=1}^N x_i}{N}\]</span></p>
+<p>Su estimador</p>
+<p><span class="math display">\[\bar{X}=\frac{\sum_{i=1}^n x_i}{n}\]</span></p>
+<p>Donde <span class="math inline">\(\bar{X}\)</span> es el estimador puntual de <span class="math inline">\(\mu_x\)</span></p>
+</div>
+<div id="proporción" class="section level3" number="4.3.2">
+<h3><span class="header-section-number">4.3.2</span> Proporción</h3>
+<p>El parámetro</p>
+<p><span class="math display">\[P_A=\frac{\#A}{N}\]</span>
+El estimador</p>
+<p><span class="math display">\[\hat{P}_a=\frac{\#a}{n}\]</span>
+Ejemplo, se toma una muestra de 40 personas de una población. En la muestra se identifica a 15 personas que utilizan lentes. ¿Cuál es la estimación de la proporción de personas que usan lentes?</p>
+<p>Solución, <span class="math inline">\(n=40\)</span>, <span class="math inline">\(\#a=15\)</span></p>
+<p><span class="math display">\[\hat{P}_{lentes}=\frac{15}{40}=0.375\]</span></p>
+</div>
 </div>
 <div id="intervalos-de-confianza" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Intervalos de confianza</h2>
-</div>
-<div id="usos-de-la-distribución-chi-cuadrado" class="section level2" number="4.5">
-<h2><span class="header-section-number">4.5</span> Usos de la distribución Chi-cuadrado</h2>
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div class="csl-entry">
