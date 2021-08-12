@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-08-10" />
+<meta name="date" content="2021-08-12" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -272,7 +272,11 @@ div.csl-indent {
 <li class="chapter" data-level="4.3.1" data-path="probabilidades.html"><a href="probabilidades.html#promedio"><i class="fa fa-check"></i><b>4.3.1</b> Promedio</a></li>
 <li class="chapter" data-level="4.3.2" data-path="probabilidades.html"><a href="probabilidades.html#proporción"><i class="fa fa-check"></i><b>4.3.2</b> Proporción</a></li>
 </ul></li>
-<li class="chapter" data-level="4.4" data-path="probabilidades.html"><a href="probabilidades.html#intervalos-de-confianza"><i class="fa fa-check"></i><b>4.4</b> Intervalos de confianza</a></li>
+<li class="chapter" data-level="4.4" data-path="probabilidades.html"><a href="probabilidades.html#intervalos-de-confianza"><i class="fa fa-check"></i><b>4.4</b> Intervalos de confianza</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="probabilidades.html"><a href="probabilidades.html#promedio-1"><i class="fa fa-check"></i><b>4.4.1</b> Promedio</a></li>
+<li class="chapter" data-level="4.4.2" data-path="probabilidades.html"><a href="probabilidades.html#porcentaje"><i class="fa fa-check"></i><b>4.4.2</b> Porcentaje</a></li>
+</ul></li>
 </ul></li>
 </ul>
 
@@ -524,6 +528,41 @@ Ejemplo, se toma una muestra de 40 personas de una población. En la muestra se 
 </div>
 <div id="intervalos-de-confianza" class="section level2" number="4.4">
 <h2><span class="header-section-number">4.4</span> Intervalos de confianza</h2>
+<p>Son estimaciones basadas en intervalos, que además ofrecen un grado de confiabilidad y su ancho depende del error muestral (variabilidad). Los elementos a tener presente al momento de calcular un intervalo de confianza son:</p>
+<ul>
+<li>Estimador de interés</li>
+<li>Confiabilidad; usualmente se usa el 95%. Mientras la confiabilidad sea más alta el intervalo de confianza será más amplio</li>
+<li>El error muestral se lo estima usando la información de la muestra.</li>
+</ul>
+<div id="promedio-1" class="section level3" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> Promedio</h3>
+<p><span class="math inline">\(\mu_x\)</span></p>
+<p><span class="math display">\[LI: \bar{X}-Z_{1-\alpha/2}*\frac{\hat{S}_x}{\sqrt{n}}\]</span>
+<span class="math display">\[LS: \bar{X}+Z_{1-\alpha/2}*\frac{\hat{S}_x}{\sqrt{n}}\]</span>
+Donde <span class="math inline">\(Z_{1-\alpha/2}\)</span> toma los siguientes valores según el nivel de confiabilidad:</p>
+<ul>
+<li>99% de confiabilidad, <span class="math inline">\(Z=2.56\)</span></li>
+<li>95% de confiabilidad, <span class="math inline">\(Z=1.96\)</span></li>
+<li>90% de confiabilidad, <span class="math inline">\(Z=1.64\)</span></li>
+</ul>
+<p><span class="math display">\[\hat{S}_x=\sqrt{\hat{S}^2_x}\]</span></p>
+<p><span class="math display">\[\hat{S}^2_x=\frac{\sum_{i=1}^n (X_i-\bar{X})^2}{n-1}\]</span></p>
+<p><span class="math display">\[\hat{S}^2_x=\frac{\sum_{i=1}^n X_i^2}{n-1}-\frac{n\bar{X}^2}{n-1}\]</span>
+<span class="math display">\[\hat{S}^2_x=\frac{\sum_{i=1}^n X_i^2-n\bar{X}^2 }{n-1}\]</span>
+Ejercicio, Se tiene una muestra de 20 estudiantes respecto su edad, los datos son: 24, 19, 22, 25, 17, 18, 25, 18, 22, 18, 21, 19, 17, 21, 18, 20, 25, 23, 17, 22.</p>
+<p>Se pide calcular el intervalo de confianza al 90%, 95% y 99% de confiabilidad</p>
+<p><span class="math display">\[\bar{X}=\frac{\sum_{i=1}^{20}X_i}{20}=\frac{411}{20}=20.55\]</span>
+<span class="math display">\[\hat{S}^2_x=8.05\]</span>
+### Proporción</p>
+<p><span class="math inline">\(P_A:\)</span></p>
+<p><span class="math display">\[LI: \hat{P}_a-Z_{1-\alpha/2}*\sqrt{\frac{\hat{P}_a(1-\hat{P}_a)}{n}}\]</span></p>
+<p><span class="math display">\[LS: \hat{P}_a+Z_{1-\alpha/2}*\sqrt{\frac{\hat{P}_a(1-\hat{P}_a)}{n}}\]</span></p>
+</div>
+<div id="porcentaje" class="section level3" number="4.4.2">
+<h3><span class="header-section-number">4.4.2</span> Porcentaje</h3>
+<p><span class="math display">\[\hat{P}_a*100=\hat{P}_a\%\]</span></p>
+<p><span class="math display">\[LI: \hat{P}_a\%-Z_{1-\alpha/2}*\sqrt{\frac{\hat{P}_a\%(1-\hat{P}_a\%)}{n}}\]</span></p>
+<p><span class="math display">\[LS: \hat{P}_a\%+Z_{1-\alpha/2}*\sqrt{\frac{\hat{P}_a\%(1-\hat{P}_a\%)}{n}}\]</span></p>
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div class="csl-entry">
@@ -540,6 +579,7 @@ Xie, Yihui. 2019. <em>Knitr: A General-Purpose Package for Dynamic Report Genera
 </div>
 <div class="csl-entry">
 Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. <span>“<span class="nocase">How to Read This Book</span>.”</span> <em>Transforming Climate Finance and Green Investment with Blockchains</em>, 1. <a href="https://doi.org/10.1016/b978-0-12-814447-3.00041-0">https://doi.org/10.1016/b978-0-12-814447-3.00041-0</a>.
+</div>
 </div>
 </div>
 </div>
