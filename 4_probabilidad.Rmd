@@ -310,6 +310,25 @@ Se pide calcular el intervalo de confianza al 90%, 95% y 99% de confiabilidad
 
 $$\bar{X}=\frac{\sum_{i=1}^{20}X_i}{20}=\frac{411}{20}=20.55$$
 $$\hat{S}^2_x=8.05$$
+
+$$\hat{S}_x=\sqrt{8.05}=2.84$$
+
+Al 90%
+
+$$LI:20.55-1.64*\frac{2.84}{\sqrt{20}}=20.55-1.04=19.51$$
+
+$$LS:20.55+1.64*\frac{2.84}{\sqrt{20}}=20.55+1.04=21.59$$
+
+De esta forma el intervalo al 90% es 
+$$[19.51 \quad 21.59]$$
+
+Para el 95%
+
+$$LI:20.55-1.96*\frac{2.84}{\sqrt{20}}=20.55-1.24=19.31$$
+
+$$LS:20.55+1.96*\frac{2.84}{\sqrt{20}}=20.55+1.24=21.79$$
+
+$$[19.31 \quad 21.79]$$
 ### Proporción
 
 $P_A:$
@@ -317,6 +336,22 @@ $P_A:$
 $$LI: \hat{P}_a-Z_{1-\alpha/2}*\sqrt{\frac{\hat{P}_a(1-\hat{P}_a)}{n}}$$
 
 $$LS: \hat{P}_a+Z_{1-\alpha/2}*\sqrt{\frac{\hat{P}_a(1-\hat{P}_a)}{n}}$$
+
+Ejercicio, 
+Se toma una muestra aleatoria de 350 personas de una población. De estas se conoce que 275 personas estudian. Encontrar los intervalos de confianza al 95% y 99% para estimar la proporción de personas que **no estudian**.
+
+$$\hat{P}_{a}=\frac{\#a}{n}=\frac{75}{350}=0.21$$
+
+Al 95%
+
+$$LI: 0.21-1.96*\sqrt{\frac{0.21(1-0.21)}{350}}=0.21-0.04=0.17$$
+
+$$LS: 0.21+1.96*\sqrt{\frac{0.21(1-0.21)}{350}}=0.21+0.04=0.25$$
+
+$$[0.17 \quad 0.25]$$
+En porcentaje
+
+$$[17\% \quad 25\%]$$
 
 ### Porcentaje
 
@@ -326,3 +361,32 @@ $$\hat{P}_a*100=\hat{P}_a\%$$
 $$LI: \hat{P}_a\%-Z_{1-\alpha/2}*\sqrt{\frac{\hat{P}_a\%(1-\hat{P}_a\%)}{n}}$$
 
 $$LS: \hat{P}_a\%+Z_{1-\alpha/2}*\sqrt{\frac{\hat{P}_a\%(1-\hat{P}_a\%)}{n}}$$  
+
+
+## Ejercicios
+
+De una población de estudiantes de la materia de estadística, donde el promedio de notas final es de 55 puntos con una desviación de 15 puntos. Se toma a un estudiante al azar, cuál es la probabilidad:
+
+  * que el estudiante tenga una nota entre 45 y 50
+  * Si el curso tiene 110 estudiantes, ¿cuántos estudiantes se estima que pasaron la materia?
+
+Solución, 
+
+Como información, sea $X$ la nota de los estudiantes.
+
+$$X\sim N(\mu=55,\sigma=15)$$
+$$P(45<X<50)=P\left(\frac{45-55}{15}<Z<\frac{50-55}{15}\right)=$$
+
+$$=P(-0.67<Z<-0.33)=\phi(-0.33)-\phi(-0.67)=0.3707-0.2514=0.1193$$
+
+Si el curso tiene 110 estudiantes, ¿cuántos estudiantes se estima que pasaron la materia?
+
+Se debe calcular la probabilidad de pasar la materia
+$$P(X>50)=P\left(Z>\frac{50-55}{15}\right)=P(Z>-0.33)=1-\phi(-0.33)=$$
+
+$$=1-0.3707=0.63$$
+
+Si el curso tiene 110 estudiantes y la probabilidad de pasar es de $0.63$, se espera que:
+
+$$110*P(X>50)=110*0.63=69.3\approx 69$$
+

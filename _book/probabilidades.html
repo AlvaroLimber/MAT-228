@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-08-12" />
+<meta name="date" content="2021-08-17" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -277,6 +277,7 @@ div.csl-indent {
 <li class="chapter" data-level="4.4.1" data-path="probabilidades.html"><a href="probabilidades.html#promedio-1"><i class="fa fa-check"></i><b>4.4.1</b> Promedio</a></li>
 <li class="chapter" data-level="4.4.2" data-path="probabilidades.html"><a href="probabilidades.html#porcentaje"><i class="fa fa-check"></i><b>4.4.2</b> Porcentaje</a></li>
 </ul></li>
+<li class="chapter" data-level="4.5" data-path="probabilidades.html"><a href="probabilidades.html#ejercicios"><i class="fa fa-check"></i><b>4.5</b> Ejercicios</a></li>
 </ul></li>
 </ul>
 
@@ -552,17 +553,56 @@ Donde <span class="math inline">\(Z_{1-\alpha/2}\)</span> toma los siguientes va
 Ejercicio, Se tiene una muestra de 20 estudiantes respecto su edad, los datos son: 24, 19, 22, 25, 17, 18, 25, 18, 22, 18, 21, 19, 17, 21, 18, 20, 25, 23, 17, 22.</p>
 <p>Se pide calcular el intervalo de confianza al 90%, 95% y 99% de confiabilidad</p>
 <p><span class="math display">\[\bar{X}=\frac{\sum_{i=1}^{20}X_i}{20}=\frac{411}{20}=20.55\]</span>
-<span class="math display">\[\hat{S}^2_x=8.05\]</span>
+<span class="math display">\[\hat{S}^2_x=8.05\]</span></p>
+<p><span class="math display">\[\hat{S}_x=\sqrt{8.05}=2.84\]</span></p>
+<p>Al 90%</p>
+<p><span class="math display">\[LI:20.55-1.64*\frac{2.84}{\sqrt{20}}=20.55-1.04=19.51\]</span></p>
+<p><span class="math display">\[LS:20.55+1.64*\frac{2.84}{\sqrt{20}}=20.55+1.04=21.59\]</span></p>
+<p>De esta forma el intervalo al 90% es
+<span class="math display">\[[19.51 \quad 21.59]\]</span></p>
+<p>Para el 95%</p>
+<p><span class="math display">\[LI:20.55-1.96*\frac{2.84}{\sqrt{20}}=20.55-1.24=19.31\]</span></p>
+<p><span class="math display">\[LS:20.55+1.96*\frac{2.84}{\sqrt{20}}=20.55+1.24=21.79\]</span></p>
+<p><span class="math display">\[[19.31 \quad 21.79]\]</span>
 ### Proporción</p>
 <p><span class="math inline">\(P_A:\)</span></p>
 <p><span class="math display">\[LI: \hat{P}_a-Z_{1-\alpha/2}*\sqrt{\frac{\hat{P}_a(1-\hat{P}_a)}{n}}\]</span></p>
 <p><span class="math display">\[LS: \hat{P}_a+Z_{1-\alpha/2}*\sqrt{\frac{\hat{P}_a(1-\hat{P}_a)}{n}}\]</span></p>
+<p>Ejercicio,
+Se toma una muestra aleatoria de 350 personas de una población. De estas se conoce que 275 personas estudian. Encontrar los intervalos de confianza al 95% y 99% para estimar la proporción de personas que <strong>no estudian</strong>.</p>
+<p><span class="math display">\[\hat{P}_{a}=\frac{\#a}{n}=\frac{75}{350}=0.21\]</span></p>
+<p>Al 95%</p>
+<p><span class="math display">\[LI: 0.21-1.96*\sqrt{\frac{0.21(1-0.21)}{350}}=0.21-0.04=0.17\]</span></p>
+<p><span class="math display">\[LS: 0.21+1.96*\sqrt{\frac{0.21(1-0.21)}{350}}=0.21+0.04=0.25\]</span></p>
+<p><span class="math display">\[[0.17 \quad 0.25]\]</span>
+En porcentaje</p>
+<p><span class="math display">\[[17\% \quad 25\%]\]</span></p>
 </div>
 <div id="porcentaje" class="section level3" number="4.4.2">
 <h3><span class="header-section-number">4.4.2</span> Porcentaje</h3>
 <p><span class="math display">\[\hat{P}_a*100=\hat{P}_a\%\]</span></p>
 <p><span class="math display">\[LI: \hat{P}_a\%-Z_{1-\alpha/2}*\sqrt{\frac{\hat{P}_a\%(1-\hat{P}_a\%)}{n}}\]</span></p>
 <p><span class="math display">\[LS: \hat{P}_a\%+Z_{1-\alpha/2}*\sqrt{\frac{\hat{P}_a\%(1-\hat{P}_a\%)}{n}}\]</span></p>
+</div>
+</div>
+<div id="ejercicios" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Ejercicios</h2>
+<p>De una población de estudiantes de la materia de estadística, donde el promedio de notas final es de 55 puntos con una desviación de 15 puntos. Se toma a un estudiante al azar, cuál es la probabilidad:</p>
+<ul>
+<li>que el estudiante tenga una nota entre 45 y 50</li>
+<li>Si el curso tiene 110 estudiantes, ¿cuántos estudiantes se estima que pasaron la materia?</li>
+</ul>
+<p>Solución,</p>
+<p>Como información, sea <span class="math inline">\(X\)</span> la nota de los estudiantes.</p>
+<p><span class="math display">\[X\sim N(\mu=55,\sigma=15)\]</span>
+<span class="math display">\[P(45&lt;X&lt;50)=P\left(\frac{45-55}{15}&lt;Z&lt;\frac{50-55}{15}\right)=\]</span></p>
+<p><span class="math display">\[=P(-0.67&lt;Z&lt;-0.33)=\phi(-0.33)-\phi(-0.67)=0.3707-0.2514=0.1193\]</span></p>
+<p>Si el curso tiene 110 estudiantes, ¿cuántos estudiantes se estima que pasaron la materia?</p>
+<p>Se debe calcular la probabilidad de pasar la materia
+<span class="math display">\[P(X&gt;50)=P\left(Z&gt;\frac{50-55}{15}\right)=P(Z&gt;-0.33)=1-\phi(-0.33)=\]</span></p>
+<p><span class="math display">\[=1-0.3707=0.63\]</span></p>
+<p>Si el curso tiene 110 estudiantes y la probabilidad de pasar es de <span class="math inline">\(0.63\)</span>, se espera que:</p>
+<p><span class="math display">\[110*P(X&gt;50)=110*0.63=69.3\approx 69\]</span></p>
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div class="csl-entry">
@@ -579,7 +619,6 @@ Xie, Yihui. 2019. <em>Knitr: A General-Purpose Package for Dynamic Report Genera
 </div>
 <div class="csl-entry">
 Xie, Yihui, J. J. Allaire, and Garrett Grolemund. 2018. <span>“<span class="nocase">How to Read This Book</span>.”</span> <em>Transforming Climate Finance and Green Investment with Blockchains</em>, 1. <a href="https://doi.org/10.1016/b978-0-12-814447-3.00041-0">https://doi.org/10.1016/b978-0-12-814447-3.00041-0</a>.
-</div>
 </div>
 </div>
 </div>
