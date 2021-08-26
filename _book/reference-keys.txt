@@ -81,3 +81,4 @@ intervalos-de-confianza
 promedio-1
 porcentaje
 ejercicios
+segundo-parcial

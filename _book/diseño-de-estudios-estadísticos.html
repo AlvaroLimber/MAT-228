@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-08-17" />
+<meta name="date" content="2021-08-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -278,6 +278,7 @@ div.csl-indent {
 <li class="chapter" data-level="4.4.2" data-path="probabilidades.html"><a href="probabilidades.html#porcentaje"><i class="fa fa-check"></i><b>4.4.2</b> Porcentaje</a></li>
 </ul></li>
 <li class="chapter" data-level="4.5" data-path="probabilidades.html"><a href="probabilidades.html#ejercicios"><i class="fa fa-check"></i><b>4.5</b> Ejercicios</a></li>
+<li class="chapter" data-level="4.6" data-path="probabilidades.html"><a href="probabilidades.html#segundo-parcial"><i class="fa fa-check"></i><b>4.6</b> Segundo Parcial</a></li>
 </ul></li>
 </ul>
 
@@ -551,7 +552,7 @@ div.csl-indent {
 <p>La representatividad de la muestra depende del alcance y calidad de la lista que se consiga. Esta lista de unidades de interés (simples/agregadas) se conoce en estadística como el Marco Muestral.</p>
 <div id="marco-muestral" class="section level3" number="3.5.1">
 <h3><span class="header-section-number">3.5.1</span> Marco Muestral</h3>
-<p>Es un listado de las unidades simples o g de la población objetivo, el marco muestral perfecto es el que contiene a toda la población objetivo. Mientras más parecido sea el marco muestra a la población objetivo la representatividad será mejor.</p>
+<p>Es un listado de las unidades simples de la población objetivo, el marco muestral perfecto es el que contiene a toda la población objetivo. Mientras más parecido sea el marco muestral a la población objetivo la representatividad será mejor.</p>
 </div>
 <div id="técnicas-de-muestreo" class="section level3" number="3.5.2">
 <h3><span class="header-section-number">3.5.2</span> Técnicas de muestreo</h3>
@@ -564,7 +565,7 @@ div.csl-indent {
 </ul>
 <p><img src="https://enciclopediaeconomica.com/wp-content/uploads/2019/03/Muestreo-aleatorio-simple.jpg" /></p>
 <ul>
-<li><em>Muestreo estratificado:</em> Parte de una clasificación de la población es sub grupos (estratos), una vez clasificada se toma muestras de cada estrato. La variable de clasificación debe tener alguna relación a la variable de estudio, cuando esto se cumple el error de muestreo se reduce, para determinar la cantidad de muestra que se obtiene de cada estrato existen diferentes mecanismos de asignación; uniforme, proporcional, Neyman, Potencia, etc.</li>
+<li><em>Muestreo estratificado:</em> Parte de una clasificación de la población es sub grupos (estratos), una vez clasificada se toma muestras de cada estrato. La variable de clasificación debe tener alguna relación a la variable de estudio, cuando esto se cumple el error de muestreo se reduce, para determinar la cantidad de muestra que se obtiene de cada estrato existen diferentes mecanismos de asignación; uniforme, proporcional, Neyman, Potencia, etc. Este muestreo reduce el error muestral si se clasifica correctamente.</li>
 </ul>
 <p><img src="https://docplayer.es/docs-images/59/44083201/images/41-0.png" /></p>
 <ul>
@@ -630,34 +631,36 @@ Con:</p>
 <li><p><span class="math inline">\(n_0:\)</span> Tamaño de muestra para un muestreo de tipo aleatorio simple para poblaciones infinitas</p></li>
 <li><p>Error Absoluto</p>
 <ul>
-<li>Indicadores de tipo promedio (<span class="math inline">\(\bar{Y}\)</span>)
-<span class="math display">\[
-n_0=\frac{k^2*S^2_y}{e^2}
-\]</span></li>
-<li>Indicadores de tipo proporción (<span class="math inline">\(P\)</span>)
-<span class="math display">\[
-n_0=\frac{k^2*N*P*Q}{e^2*(N-1)}
-\]</span></li>
-</ul></li>
-<li><p>Error Relativo</p>
-<ul>
-<li>Indicadores de tipo promedio (<span class="math inline">\(\bar{Y}\)</span>)
-<span class="math display">\[
-n_0=\frac{k^2*CV^2_y}{e^2_r}
-\]</span></li>
-<li>Indicadores de tipo proporción (<span class="math inline">\(P\)</span>)
-<span class="math display">\[
-n_0=\frac{k^2*Q*N}{e^2_r*(N-1)*P}
-\]</span></li>
+<li>Indicadores de tipo promedio (<span class="math inline">\(\bar{Y}\)</span>)</li>
 </ul></li>
 </ul>
+<p><span class="math display">\[
+n_0=\frac{k^2*S^2_y}{e^2}
+\]</span>
++ Indicadores de tipo proporción (<span class="math inline">\(P\)</span>)</p>
+<p><span class="math display">\[
+n_0=\frac{k^2*N*P*Q}{e^2*(N-1)}
+\]</span></p>
+<ul>
+<li>Error Relativo
+<ul>
+<li>Indicadores de tipo promedio (<span class="math inline">\(\bar{Y}\)</span>)</li>
+</ul></li>
+</ul>
+<p><span class="math display">\[
+n_0=\frac{k^2*CV^2_y}{e^2_r}
+\]</span>
++ Indicadores de tipo proporción (<span class="math inline">\(P\)</span>)</p>
+<p><span class="math display">\[
+n_0=\frac{k^2*Q*N}{e^2_r*(N-1)*P}
+\]</span></p>
 <p>Con:</p>
 <ul>
 <li><span class="math inline">\(k:\)</span> Coeficiente de confiabilidad (al 95% de confiabilidad <span class="math inline">\(k=1.96\)</span>)</li>
-<li><span class="math inline">\(S_y:\)</span> Desviación estandar de la variable <span class="math inline">\(Y\)</span> (Buscar en alguna fuente similar)</li>
+<li><span class="math inline">\(S_y:\)</span> Desviación estándar de la variable <span class="math inline">\(Y\)</span> (Buscar en alguna fuente similar)</li>
 <li><span class="math inline">\(e:\)</span> Margen de error permisible Absoluto (Definir en base a cuanto se quiere alejar en términos absolutos del verdadero parámetro)</li>
 <li><span class="math inline">\(e_r:\)</span> Margen de error permisible Relativo (Ideal <span class="math inline">\(e_r=0.05\)</span>, mayor a 0.15 es cuestionable)</li>
-<li><span class="math inline">\(P:\)</span> Proporción de una categoría de interés (Para una muestra con error relativo, mientras mas extraña es la categoria a explorar mas grande es la muestra requerida. Para muestras con error absoluto el máximo se alcanza en <span class="math inline">\(P=0.5\)</span>)</li>
+<li><span class="math inline">\(P:\)</span> Proporción de una categoría de interés (Para una muestra con error relativo, mientras mas extraña es la categoría a explorar mas grande es la muestra requerida. Para muestras con error absoluto el máximo se alcanza en <span class="math inline">\(P=0.5\)</span>)</li>
 <li><span class="math inline">\(Q=1-P\)</span></li>
 <li><span class="math inline">\(CV_y:\)</span> Es el Coeficiente de Variación de la variable de <span class="math inline">\(Y\)</span> (Buscar en algún estudio similar o suponer un valor de <span class="math inline">\(CV_y=1\)</span>)</li>
 </ul>

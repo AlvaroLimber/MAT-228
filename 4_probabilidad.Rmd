@@ -390,3 +390,99 @@ Si el curso tiene 110 estudiantes y la probabilidad de pasar es de $0.63$, se es
 
 $$110*P(X>50)=110*0.63=69.3\approx 69$$
 
+## Segundo Parcial
+
+> Pregunta 1: El área que se encarga de definir el cuestionario a ser usado en un diseño estadístico de recolección es:
+
+Respuesta, es temática
+
+> Pregunta 2: Se trata de un tipo de estudio que busca obtener la relación causal entre dos variables:
+
+Respuesta, son los diseños experimentales 
+
+> Pregunta 3: Son variables que complementan los hallazgos sobre las variables principales:
+
+Respuesta, son las variables de control 
+
+> Pregunta 4: La pregunta: ¿Cuál es su estado civil? a) Casado/a b) Soltero/a c) Separado/a d) otro, es una pregunta de:
+
+Respuesta, selección única
+
+> Pregunta 5: El marco muestral es un listado de la muestra seleccionada
+
+Respuesta, falso ya que el marco muestral es un listado de la población objetivo y este es utilizado para obtener la muestra.
+
+> Pregunta 6: Esta técnica de muestreo crea grupos similares al interior con la finalidad de reducir el error muestral
+
+Respuesta, muestreo estratificado
+
+> Pregunta 7: Es un muestreo no probabilístico que inicia con una unidad de análisis encontrada y a partir de ella va vinculando las demás unidades de análisis
+
+Respuesta, bola de nieve
+
+> Pregunta 8: Se busca definir el tamaño de muestra para hacer una encuesta de intensión de voto para las elecciones de director/a de la carrera de Trabajo Social, se plantea un nivel de confianza del 95%, para un margen de error absoluto del 5%, Definiendo un P máximo, suponiendo que en la carrera existen 2000 estudiantes, se estima que el 10% no responderá la encuesta. Toma DEFF=1. 
+
+Respuesta, 
+
+$$
+n_0=\frac{k^2*N*P*Q}{e^2*(N-1)}=\frac{1.96^2*2000*0.5*0.5}{0.05^2*(2000-1)}=384.3522
+$$
+$$
+n_0=\frac{k^2*N*P*Q}{e^2*(N-1)}=\frac{1.96^2*0.5*0.5}{0.05^2}=384.16
+$$
+
+$$
+n_{1}=\frac{n_0}{1-\frac{n_0}{N}}=\frac{384.3522}{1-\frac{384.3522}{2000}}=475.7871
+$$
+$$
+n_{1}=\frac{n_0}{1-\frac{n_0}{N}}=\frac{384.16}{1-\frac{384.16}{2000}}=475.4926
+$$
+
+$$
+n_{final}=\frac{n_{1}*(Deff)}{(1-\hat{TNR})}=\frac{475.7871*1}{1-0.1}=528.65\approx 529
+$$
+$$
+n_{final}=\frac{n_{1}*(Deff)}{(1-\hat{TNR})}=\frac{475.4926*1}{1-0.1}=528.3251\approx 529
+$$
+Suponiendo que no se conoce $N$
+
+$$
+n_{final}=\frac{n_{0}*(Deff)}{(1-\hat{TNR})}=\frac{384.16*1}{1-0.1}=426.84 \approx 427
+$$
+
+> Pregunta 9: Se requiere hacer un estudio con una muestra de 770 encuestas en un municipio de Bolivia, se tiene 5 días para el operativo y se sabe que un encuestador puede hacer 6 encuestas diarias. ¿Cuántos encuestadores mínimamente se requieren para cubrir la muestra?
+
+Respuesta, 26 
+
+$$\frac{\frac{770}{5}}{6}=25.67\approx 26$$
+> pregunta 10: Se sabe que la estatura de una población de 500 personas se distribuye de forma normal con media 162 cm y desviación estándar de 9 cm. ¿Cuántas personas se estima que tengan una estatura entre 155 y 165?  
+
+Respuesta,
+
+$$P(155<X<165)=P(-0.78<Z<0.33)=\phi(0.33)-\phi(-0.78)=$$
+
+$$=0.6293-0.2177=0.4116$$
+Finalmente ($500*0.4116=205.8 \approx 206$), se espera que 206 personas tenga estaturas entre 155 y 165 en esta población.
+
+> Pregunta 11: Se toma una muestra aleatoria de 200 personas de una población. De estas se conoce que 65 personas usan lentes. Encontrar el intervalo de confianza al 95% para estimar la proporción de personas que usan lentes
+
+Respuesta, 
+
+$$\hat{P}_{lentes}=\frac{65}{200}=0.325$$
+
+$$LI: 0.325-1.96*\sqrt{\frac{0.325(1-0.325)}{200}}=0.325-0.065=0.26$$
+$$LS: 0.325+1.96*\sqrt{\frac{0.325(1-0.325)}{200}}=0.325+0.065=0.39$$
+> Pregunta 12: Se toma una muestra de 15 estudiantes sobre las horas de estudio al día, los datos:  8,  9,  7, 11,  5,  5,  3,  7,  6,  5,  1,  4,  7,  6,  6. Encontrar el intervalo de confianza para el promedio a un nivel de 90% de confiabilidad.
+
+$$\bar{X}=6$$
+
+$$\hat{S}^2_x=\frac{\sum_{i=1}^n X_i^2-n\bar{X}^2 }{n-1}=\frac{622-15*6^2 }{15-1}$$
+
+$$\hat{S}^2_x=5.86$$
+$$\hat{S}_x=2.42$$
+
+$$LI: 6-1.64*\frac{2.42}{\sqrt{15}}=6-1.025=4.975$$
+
+$$LS: 6+1.64*\frac{2.42}{\sqrt{15}}=6+1.025=7.025$$
+
+

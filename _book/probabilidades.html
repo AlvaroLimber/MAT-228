@@ -24,7 +24,7 @@
 <meta name="author" content="Alvaro Chirino Gutierrez" />
 
 
-<meta name="date" content="2021-08-17" />
+<meta name="date" content="2021-08-26" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
@@ -278,6 +278,7 @@ div.csl-indent {
 <li class="chapter" data-level="4.4.2" data-path="probabilidades.html"><a href="probabilidades.html#porcentaje"><i class="fa fa-check"></i><b>4.4.2</b> Porcentaje</a></li>
 </ul></li>
 <li class="chapter" data-level="4.5" data-path="probabilidades.html"><a href="probabilidades.html#ejercicios"><i class="fa fa-check"></i><b>4.5</b> Ejercicios</a></li>
+<li class="chapter" data-level="4.6" data-path="probabilidades.html"><a href="probabilidades.html#segundo-parcial"><i class="fa fa-check"></i><b>4.6</b> Segundo Parcial</a></li>
 </ul></li>
 </ul>
 
@@ -603,6 +604,87 @@ En porcentaje</p>
 <p><span class="math display">\[=1-0.3707=0.63\]</span></p>
 <p>Si el curso tiene 110 estudiantes y la probabilidad de pasar es de <span class="math inline">\(0.63\)</span>, se espera que:</p>
 <p><span class="math display">\[110*P(X&gt;50)=110*0.63=69.3\approx 69\]</span></p>
+</div>
+<div id="segundo-parcial" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> Segundo Parcial</h2>
+<blockquote>
+<p>Pregunta 1: El área que se encarga de definir el cuestionario a ser usado en un diseño estadístico de recolección es:</p>
+</blockquote>
+<p>Respuesta, es temática</p>
+<blockquote>
+<p>Pregunta 2: Se trata de un tipo de estudio que busca obtener la relación causal entre dos variables:</p>
+</blockquote>
+<p>Respuesta, son los diseños experimentales</p>
+<blockquote>
+<p>Pregunta 3: Son variables que complementan los hallazgos sobre las variables principales:</p>
+</blockquote>
+<p>Respuesta, son las variables de control</p>
+<blockquote>
+<p>Pregunta 4: La pregunta: ¿Cuál es su estado civil? a) Casado/a b) Soltero/a c) Separado/a d) otro, es una pregunta de:</p>
+</blockquote>
+<p>Respuesta, selección única</p>
+<blockquote>
+<p>Pregunta 5: El marco muestral es un listado de la muestra seleccionada</p>
+</blockquote>
+<p>Respuesta, falso ya que el marco muestral es un listado de la población objetivo y este es utilizado para obtener la muestra.</p>
+<blockquote>
+<p>Pregunta 6: Esta técnica de muestreo crea grupos similares al interior con la finalidad de reducir el error muestral</p>
+</blockquote>
+<p>Respuesta, muestreo estratificado</p>
+<blockquote>
+<p>Pregunta 7: Es un muestreo no probabilístico que inicia con una unidad de análisis encontrada y a partir de ella va vinculando las demás unidades de análisis</p>
+</blockquote>
+<p>Respuesta, bola de nieve</p>
+<blockquote>
+<p>Pregunta 8: Se busca definir el tamaño de muestra para hacer una encuesta de intensión de voto para las elecciones de director/a de la carrera de Trabajo Social, se plantea un nivel de confianza del 95%, para un margen de error absoluto del 5%, Definiendo un P máximo, suponiendo que en la carrera existen 2000 estudiantes, se estima que el 10% no responderá la encuesta. Toma DEFF=1.</p>
+</blockquote>
+<p>Respuesta,</p>
+<p><span class="math display">\[
+n_0=\frac{k^2*N*P*Q}{e^2*(N-1)}=\frac{1.96^2*2000*0.5*0.5}{0.05^2*(2000-1)}=384.3522
+\]</span>
+<span class="math display">\[
+n_0=\frac{k^2*N*P*Q}{e^2*(N-1)}=\frac{1.96^2*0.5*0.5}{0.05^2}=384.16
+\]</span></p>
+<p><span class="math display">\[
+n_{1}=\frac{n_0}{1-\frac{n_0}{N}}=\frac{384.3522}{1-\frac{384.3522}{2000}}=475.7871
+\]</span>
+<span class="math display">\[
+n_{1}=\frac{n_0}{1-\frac{n_0}{N}}=\frac{384.16}{1-\frac{384.16}{2000}}=475.4926
+\]</span></p>
+<p><span class="math display">\[
+n_{final}=\frac{n_{1}*(Deff)}{(1-\hat{TNR})}=\frac{475.7871*1}{1-0.1}=528.65\approx 529
+\]</span>
+<span class="math display">\[
+n_{final}=\frac{n_{1}*(Deff)}{(1-\hat{TNR})}=\frac{475.4926*1}{1-0.1}=528.3251\approx 529
+\]</span>
+Suponiendo que no se conoce <span class="math inline">\(N\)</span></p>
+<p><span class="math display">\[
+n_{final}=\frac{n_{0}*(Deff)}{(1-\hat{TNR})}=\frac{384.16*1}{1-0.1}=426.84 \approx 427
+\]</span></p>
+<blockquote>
+<p>Pregunta 9: Se requiere hacer un estudio con una muestra de 770 encuestas en un municipio de Bolivia, se tiene 5 días para el operativo y se sabe que un encuestador puede hacer 6 encuestas diarias. ¿Cuántos encuestadores mínimamente se requieren para cubrir la muestra?</p>
+</blockquote>
+<p>Respuesta, 26</p>
+<p><span class="math display">\[\frac{\frac{770}{5}}{6}=25.67\approx 26\]</span>
+&gt; pregunta 10: Se sabe que la estatura de una población de 500 personas se distribuye de forma normal con media 162 cm y desviación estándar de 9 cm. ¿Cuántas personas se estima que tengan una estatura entre 155 y 165?</p>
+<p>Respuesta,</p>
+<p><span class="math display">\[P(155&lt;X&lt;165)=P(-0.78&lt;Z&lt;0.33)=\phi(0.33)-\phi(-0.78)=\]</span></p>
+<p><span class="math display">\[=0.6293-0.2177=0.4116\]</span>
+Finalmente (<span class="math inline">\(500*0.4116=205.8 \approx 206\)</span>), se espera que 206 personas tenga estaturas entre 155 y 165 en esta población.</p>
+<blockquote>
+<p>Pregunta 11: Se toma una muestra aleatoria de 200 personas de una población. De estas se conoce que 65 personas usan lentes. Encontrar el intervalo de confianza al 95% para estimar la proporción de personas que usan lentes</p>
+</blockquote>
+<p>Respuesta,</p>
+<p><span class="math display">\[\hat{P}_{lentes}=\frac{65}{200}=0.325\]</span></p>
+<p><span class="math display">\[LI: 0.325-1.96*\sqrt{\frac{0.325(1-0.325)}{200}}=0.325-0.065=0.26\]</span>
+<span class="math display">\[LS: 0.325+1.96*\sqrt{\frac{0.325(1-0.325)}{200}}=0.325+0.065=0.39\]</span>
+&gt; Pregunta 12: Se toma una muestra de 15 estudiantes sobre las horas de estudio al día, los datos: 8, 9, 7, 11, 5, 5, 3, 7, 6, 5, 1, 4, 7, 6, 6. Encontrar el intervalo de confianza para el promedio a un nivel de 90% de confiabilidad.</p>
+<p><span class="math display">\[\bar{X}=6\]</span></p>
+<p><span class="math display">\[\hat{S}^2_x=\frac{\sum_{i=1}^n X_i^2-n\bar{X}^2 }{n-1}=\frac{622-15*6^2 }{15-1}\]</span></p>
+<p><span class="math display">\[\hat{S}^2_x=5.86\]</span>
+<span class="math display">\[\hat{S}_x=2.42\]</span></p>
+<p><span class="math display">\[LI: 6-1.64*\frac{2.42}{\sqrt{15}}=6-1.025=4.975\]</span></p>
+<p><span class="math display">\[LS: 6+1.64*\frac{2.42}{\sqrt{15}}=6+1.025=7.025\]</span></p>
 
 <div id="refs" class="references csl-bib-body hanging-indent">
 <div class="csl-entry">

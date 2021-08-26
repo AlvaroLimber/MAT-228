@@ -198,7 +198,8 @@ Un ejemplo, se quiere conocer el estado nutricional de niños y niñas de un hog
 La representatividad de la muestra depende del alcance y calidad de la lista que se consiga. Esta lista de unidades de interés (simples/agregadas) se conoce en estadística como el Marco Muestral.
 
 ### Marco Muestral
-Es un listado de las unidades simples o g de la población objetivo, el marco muestral perfecto es el que contiene a toda la población objetivo. Mientras más parecido sea el marco muestra a la población objetivo la representatividad será mejor.
+
+Es un listado de las unidades simples de la población objetivo, el marco muestral perfecto es el que contiene a toda la población objetivo. Mientras más parecido sea el marco muestral a la población objetivo la representatividad será mejor.
 
 ### Técnicas de muestreo
 
@@ -212,7 +213,7 @@ Las técnicas probabilísticas nos permiten hacer inferencia, es decir podemos u
   
 ![](https://enciclopediaeconomica.com/wp-content/uploads/2019/03/Muestreo-aleatorio-simple.jpg)
   
-  * *Muestreo estratificado:* Parte de una clasificación de la población es sub grupos (estratos), una vez clasificada se toma muestras de cada estrato. La variable de clasificación debe tener alguna relación a la variable de estudio, cuando esto se cumple el error de muestreo se reduce, para determinar la cantidad de muestra que se obtiene de cada estrato existen diferentes mecanismos de asignación; uniforme, proporcional, Neyman, Potencia, etc.
+  * *Muestreo estratificado:* Parte de una clasificación de la población es sub grupos (estratos), una vez clasificada se toma muestras de cada estrato. La variable de clasificación debe tener alguna relación a la variable de estudio, cuando esto se cumple el error de muestreo se reduce, para determinar la cantidad de muestra que se obtiene de cada estrato existen diferentes mecanismos de asignación; uniforme, proporcional, Neyman, Potencia, etc. Este muestreo reduce el error muestral si se clasifica correctamente.
   
 ![](https://docplayer.es/docs-images/59/44083201/images/41-0.png)  
   
@@ -281,19 +282,24 @@ Con:
 
   * Error Absoluto
     + Indicadores de tipo promedio ($\bar{Y}$)
+    
 $$
 n_0=\frac{k^2*S^2_y}{e^2}
 $$
     + Indicadores de tipo proporción ($P$)
+
 $$
 n_0=\frac{k^2*N*P*Q}{e^2*(N-1)}
 $$
+
   * Error Relativo
     + Indicadores de tipo promedio ($\bar{Y}$)
+
 $$
 n_0=\frac{k^2*CV^2_y}{e^2_r}
 $$
     + Indicadores de tipo proporción ($P$)
+
 $$
 n_0=\frac{k^2*Q*N}{e^2_r*(N-1)*P}
 $$
@@ -301,10 +307,10 @@ $$
 Con:
 
   * $k:$ Coeficiente de confiabilidad (al 95\% de confiabilidad $k=1.96$)
-  * $S_y:$ Desviación estandar de la variable $Y$ (Buscar en alguna fuente similar)
+  * $S_y:$ Desviación estándar de la variable $Y$ (Buscar en alguna fuente similar)
   * $e:$ Margen de error permisible Absoluto (Definir en base a cuanto se quiere alejar en términos absolutos del verdadero parámetro)
   * $e_r:$ Margen de error permisible Relativo (Ideal $e_r=0.05$, mayor a 0.15 es cuestionable)
-  * $P:$ Proporción de una categoría de interés (Para una muestra con error relativo, mientras mas extraña es la categoria a explorar mas grande es la muestra requerida. Para muestras con error absoluto el máximo se alcanza en $P=0.5$)
+  * $P:$ Proporción de una categoría de interés (Para una muestra con error relativo, mientras mas extraña es la categoría a explorar mas grande es la muestra requerida. Para muestras con error absoluto el máximo se alcanza en $P=0.5$)
   * $Q=1-P$
   * $CV_y:$ Es el Coeficiente de Variación de la variable de $Y$ (Buscar en algún estudio similar o suponer un valor de $CV_y=1$)
 
