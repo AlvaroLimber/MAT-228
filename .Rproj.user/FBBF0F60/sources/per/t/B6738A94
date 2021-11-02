@@ -3,7 +3,7 @@
     "path": "~/GitHub/MAT-228/3_disenio.Rmd",
     "project_path": "3_disenio.Rmd",
     "type": "r_markdown",
-    "hash": "402082981",
+    "hash": "1445507433",
     "contents": "",
     "dirty": false,
     "created": 1621944535351.0,
@@ -13,16 +13,16 @@
         "tempName": "Untitled1",
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "309,30",
-        "scrollLine": "0",
-        "docOutlineVisible": "0"
+        "cursorPosition": "275,19",
+        "scrollLine": "271",
+        "docOutlineVisible": "1"
     },
     "folds": "",
-    "lastKnownWriteTime": 1629982326,
+    "lastKnownWriteTime": 1635888472,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1629982326528,
+    "last_content_update": 1635888472987,
     "read_only": false,
     "read_only_alternatives": []
 }

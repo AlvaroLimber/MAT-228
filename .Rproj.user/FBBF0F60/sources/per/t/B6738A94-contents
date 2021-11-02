@@ -273,7 +273,7 @@ Con:
   * $n_1:$ Tamaño de muestra para un muestreo de tipo aleatoria simple para una población finita.
 
 $$
-n_{1}=\frac{n_0}{1-\frac{n_0}{N}}
+n_{1}=\frac{n_0}{1+\frac{n_0}{N}}
 $$
 Con:
 
